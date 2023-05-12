@@ -1,5 +1,6 @@
 package com.example.friendservice.service;
 
+import com.example.friendservice.dto.AuthResponse;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.ResetPasswordToken;
 import com.example.friendservice.entity.User;
@@ -7,9 +8,13 @@ import com.example.friendservice.entity.VerificationToken;
 import com.example.friendservice.repository.ResetPasswordTokenRepository;
 import com.example.friendservice.repository.UserRepository;
 import com.example.friendservice.repository.VerificationTokenRepository;
+import com.example.friendservice.util.JwtTokenUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +36,10 @@ public class UserServiceImpl implements UserService {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private ApplicationEventPublisher applicationEventPublisher;
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+    @Autowired
+    AuthenticationManager authManager;
 
     @Override
     public Optional<User> registerUser(UserDTO _user) {
@@ -53,16 +62,33 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> login(User _user) {
+    public Optional<AuthResponse> login(User _user) {
+//            Authentication authentication = authManager.authenticate(
+//                    new UsernamePasswordAuthenticationToken(
+//                            _user.getEmail(), _user.getPassword())
+//            );
+//
+//            User user = (User) authentication.getPrincipal();
+//            String accessToken = jwtTokenUtil.generateAccessToken(user);
+//            AuthResponse response = new AuthResponse(user.getEmail(), accessToken);
+//
+//            return Optional.ofNullable(response);
+//
         User user = userRepository.findByEmailOrPhoneNum(
                 _user.getEmail(),
                 _user.getPhoneNum()
         );
         if (Optional.ofNullable(user).isPresent() &&
                 passwordEncoder.matches(_user.getPassword(), user.getPassword())) {
-            return Optional.ofNullable(user);
+
+            String accessToken = jwtTokenUtil.generateAccessToken(user);
+
+            logger.info("[access token] " + accessToken);
+            return Optional.ofNullable(
+                    new AuthResponse(user.getEmail(),accessToken)
+            );
         }
-        return Optional.empty(        );
+        return Optional.empty();
     }
 
     @Override

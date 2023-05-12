@@ -18,4 +18,5 @@ public class UserDTO {
     private String confirmPassword;
     private boolean sex;
     private LocalDate birthday;
+    private String accessToken;
 }

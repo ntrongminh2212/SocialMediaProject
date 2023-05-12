@@ -1,9 +1,6 @@
 package com.example.friendservice.controller;
 
-import com.example.friendservice.dto.EmailAddressDTO;
-import com.example.friendservice.dto.LoginDTO;
-import com.example.friendservice.dto.NewPasswordDTO;
-import com.example.friendservice.dto.UserDTO;
+import com.example.friendservice.dto.*;
 import com.example.friendservice.entity.User;
 import com.example.friendservice.service.SendEmailService;
 import com.example.friendservice.service.UserService;
@@ -79,13 +76,13 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public User login(@RequestBody LoginDTO loginDTO) {
+    public AuthResponse login(@RequestBody LoginDTO loginDTO) {
         User user = new User();
         user.setEmail(loginDTO.getAccountName());
         user.setPhoneNum(loginDTO.getAccountName());
         user.setPassword(loginDTO.getPassword());
         return userService.login(user)
-                .orElse(new User());
+                .orElse(new AuthResponse());
     }
 
     @GetMapping("/hello")
