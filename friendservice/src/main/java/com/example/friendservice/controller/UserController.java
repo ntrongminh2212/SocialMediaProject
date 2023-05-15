@@ -2,6 +2,7 @@ package com.example.friendservice.controller;
 
 import com.example.friendservice.dto.*;
 import com.example.friendservice.entity.User;
+import com.example.friendservice.mapper.UserMapper;
 import com.example.friendservice.service.SendEmailService;
 import com.example.friendservice.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -25,7 +27,7 @@ public class UserController {
     private SendEmailService sendEmailService;
 
     @PostMapping("/register")
-    public String registerUser(@RequestBody UserDTO _user, final HttpServletRequest request) {
+    public String registerUser(@RequestBody RegisterUserDTO _user, final HttpServletRequest request) {
         Optional<User> user = userService.registerUser(_user);
         if (user.isPresent()) {
             String token = UUID.randomUUID().toString();
@@ -48,7 +50,7 @@ public class UserController {
         String verifyURL = applicationURL(request) + "/user/verifyRegistration?token=" + newToken;
         String response = userService.verifyRegistration(token, newToken);
         if (response.compareTo("Token Expired! A new verification token has been created")==0){
-            User user = userService.getUserByToken(newToken);
+            User user = userService.getUserByVerificationToken(newToken);
 
             sendEmailService.sendSimpleEmail(user.getEmail().trim(),
                     "Account verification",
@@ -90,6 +92,14 @@ public class UserController {
         return "hello";
     }
 
+    @GetMapping("/info/{user_id}")
+    public Optional<UserDTO> getUserInfo(@PathVariable("user_id") Long user_id){
+        Optional<UserDTO> user = userService.getUserInfo(user_id);
+        if (user.isPresent()){
+            return user;
+        }
+        return Optional.empty();
+    }
     private String applicationURL(HttpServletRequest request) {
         return "http://" + request.getServerName()
                 + ":" + request.getServerPort()

@@ -1,5 +1,6 @@
 package com.example.friendservice.configuration;
 
+import com.example.friendservice.filter.AuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -9,17 +10,24 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
 
     private static final String[] WHITE_LIST_URLS = {
-            "/user/**",
+            "/user/login",
 //            "/user/verifyRegistration",
             "/swagger-ui/**",
             "/v3/api-docs/**"
     };
+
+    @Bean
+    public AuthenticationFilter jwtAuthenticationFilter() {
+        return new AuthenticationFilter();
+    }
+
     @Bean
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder(11);
@@ -33,7 +41,10 @@ public class WebSecurityConfig {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers(WHITE_LIST_URLS).permitAll();
+                .requestMatchers(WHITE_LIST_URLS).permitAll()
+                .anyRequest().authenticated();
+
+        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 

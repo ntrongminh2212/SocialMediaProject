@@ -1,6 +1,5 @@
-package com.example.friendservice.dto;
+package com.example.postservice.dto;
 
-import com.example.friendservice.entity.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

@@ -1,22 +1,21 @@
 package com.example.friendservice.dto;
 
-import com.example.friendservice.entity.Role;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class UserDTO {
+public class RegisterUserDTO {
     private Long userId;
     private String firstName;
     private String lastName;
     private String email;
     private String phoneNum;
+    private String password;
+    private String confirmPassword;
     private boolean sex;
     private LocalDate birthday;
-    private Role role;
+    private String accessToken;
 }

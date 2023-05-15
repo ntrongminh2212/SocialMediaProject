@@ -1,10 +1,13 @@
 package com.example.friendservice.service;
 
 import com.example.friendservice.dto.AuthResponse;
+import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.ResetPasswordToken;
+import com.example.friendservice.entity.Role;
 import com.example.friendservice.entity.User;
 import com.example.friendservice.entity.VerificationToken;
+import com.example.friendservice.mapper.UserMapper;
 import com.example.friendservice.repository.ResetPasswordTokenRepository;
 import com.example.friendservice.repository.UserRepository;
 import com.example.friendservice.repository.VerificationTokenRepository;
@@ -40,9 +43,11 @@ public class UserServiceImpl implements UserService {
     private JwtTokenUtil jwtTokenUtil;
     @Autowired
     AuthenticationManager authManager;
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
-    public Optional<User> registerUser(UserDTO _user) {
+    public Optional<User> registerUser(RegisterUserDTO _user) {
         User user = User.builder()
                 .email(_user.getEmail())
                 .phoneNum(_user.getPhoneNum())
@@ -51,7 +56,7 @@ public class UserServiceImpl implements UserService {
                 .birthday(_user.getBirthday())
                 .password(passwordEncoder.encode(_user.getPassword()))
                 .sex(_user.isSex())
-                .role("USER")
+                .role(Role.USER)
                 .build();
 
         User existUser = userRepository.findByEmailAndPhoneNum(user.getEmail(), user.getPhoneNum());
@@ -63,17 +68,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Optional<AuthResponse> login(User _user) {
-//            Authentication authentication = authManager.authenticate(
-//                    new UsernamePasswordAuthenticationToken(
-//                            _user.getEmail(), _user.getPassword())
-//            );
-//
-//            User user = (User) authentication.getPrincipal();
-//            String accessToken = jwtTokenUtil.generateAccessToken(user);
-//            AuthResponse response = new AuthResponse(user.getEmail(), accessToken);
-//
-//            return Optional.ofNullable(response);
-//
+
         User user = userRepository.findByEmailOrPhoneNum(
                 _user.getEmail(),
                 _user.getPhoneNum()
@@ -152,10 +147,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUserByToken(String _token) {
+    public User getUserByVerificationToken(String _token) {
         VerificationToken token = verificationTokenRepository.findByToken(_token);
 
         return token.getUser();
+    }
+
+    @Override
+    public Optional<User> getUserById(Long userId) {
+        return userRepository.findById(userId);
+    }
+
+    @Override
+    public Optional<UserDTO> getUserInfo(Long userId) {
+        Optional<User> user = getUserById(userId);
+        if (user.isPresent()){
+            return Optional.ofNullable(
+                    userMapper.userToUserDTO(user.get())
+            );
+        }
+        return Optional.empty();
     }
 }
 

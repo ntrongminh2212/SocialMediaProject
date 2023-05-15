@@ -198,3 +198,253 @@
 2023-05-12 17:26:58 INFO  JwtTokenUtil:20 - [Secret token]37fh2od8vnald983na3
 2023-05-12 17:29:28 INFO  AuthenticationInterceptor:16 - [preHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@5b5d66d8]][POST]/user/loginorg.apache.catalina.util.ParameterMap@6434923d
 2023-05-12 17:29:29 INFO  JwtTokenUtil:20 - [Secret token]37fh2od8vnald983na3
+2023-05-15 09:01:12 INFO  AuthenticationInterceptor:16 - [preHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@547358e9]][POST]/user/loginorg.apache.catalina.util.ParameterMap@79a47820
+2023-05-15 09:01:12 INFO  JwtTokenUtil:20 - [Secret token]37fh2od8vnald983na3
+2023-05-15 09:07:17 INFO  AuthenticationInterceptor:16 - [preHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4728714c]][POST]/user/loginorg.apache.catalina.util.ParameterMap@36685743
+2023-05-15 09:07:18 INFO  JwtTokenUtil:19 - [Secret token]37fh2od8vnald983na3
+2023-05-15 10:09:36 INFO  JwtTokenUtil:23 - [Secret token]214125442A462D4A614E645267556B58703273357638792F423F4528482B4B6250655368566D597133743677397A24432646294A404E635166546A576E5A7234
+2023-05-15 10:09:36 INFO  UserServiceImpl:86 - [access token] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMjAxNzYsImV4cCI6MTY4MjQxNzIwOX0.HGdPylPr69Zwd312F5E8ITinEa-EjRYZeJmPyeaSC_XlV3-I-jT6-CxVvGJDxj29mwbkx7Q5q3AvDvNWJFn_Ew
+2023-05-15 14:31:28 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:45:50 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:45:50 ERROR JwtTokenUtil:51 - Expired JWT token
+2023-05-15 14:45:59 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:45:59 ERROR JwtTokenUtil:51 - Expired JWT token
+2023-05-15 14:48:17 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:48:17 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:48:18 INFO  JwtTokenUtil:23 - [Secret token]214125442A462D4A614E645267556B58703273357638792F423F4528482B4B6250655368566D597133743677397A24432646294A404E635166546A576E5A7234
+2023-05-15 14:48:18 INFO  UserServiceImpl:91 - [access token] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzY4OTgsImV4cCI6MTY4MjQzMzkzMH0.QaoHgrLstSgBRJ64wKBzIMDuQ57gaD0AKMAGB7tirT_26Nb_w8q0vZNSKXwc_-ykclNschpR0kjknp4SLM2F3A
+2023-05-15 14:48:31 INFO  AuthenticationFilter:39 - [Request come]
+2023-05-15 14:48:31 ERROR JwtTokenUtil:51 - Expired JWT token
+2023-05-15 14:50:54 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 14:50:54 ERROR JwtTokenUtil:48 - Expired JWT token
+2023-05-15 14:52:04 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 14:52:04 ERROR JwtTokenUtil:48 - Expired JWT token
+2023-05-15 14:55:57 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 14:55:57 ERROR JwtTokenUtil:48 - Expired JWT token
+2023-05-15 15:02:50 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:02:50 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:02:51 INFO  JwtTokenUtil:20 - [Secret token]214125442A462D4A614E645267556B58703273357638792F423F4528482B4B6250655368566D597133743677397A24432646294A404E635166546A576E5A7234
+2023-05-15 15:02:51 INFO  UserServiceImpl:91 - [access token] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:03:08 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:03:08 INFO  AuthenticationFilter:44 - [Access token found] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:03:08 ERROR AuthenticationFilter:61 - failed on set user authentication
+java.lang.NumberFormatException: For input string: "13,ntrongminh2212@gmail.com"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:711)
+	at java.base/java.lang.Long.parseLong(Long.java:836)
+	at com.example.friendservice.util.JwtTokenUtil.getUserIdFromJWT(JwtTokenUtil.java:39)
+	at com.example.friendservice.filter.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-15 15:04:56 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:04:56 INFO  AuthenticationFilter:44 - [Access token found] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:04:56 INFO  JwtTokenUtil:39 - [User] 13,ntrongminh2212@gmail.com
+2023-05-15 15:04:56 ERROR AuthenticationFilter:61 - failed on set user authentication
+java.lang.NumberFormatException: For input string: "13,ntrongminh2212@gmail.com"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:711)
+	at java.base/java.lang.Long.parseLong(Long.java:836)
+	at com.example.friendservice.util.JwtTokenUtil.getUserIdFromJWT(JwtTokenUtil.java:40)
+	at com.example.friendservice.filter.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-15 15:13:42 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:13:42 INFO  AuthenticationFilter:44 - [Access token found] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:13:42 INFO  JwtTokenUtil:39 - [User] 13,ntrongminh2212@gmail.com
+2023-05-15 15:13:42 ERROR AuthenticationFilter:61 - failed on set user authentication
+java.lang.NumberFormatException: For input string: "13,ntrongminh2212@gmail.com"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:711)
+	at java.base/java.lang.Long.parseLong(Long.java:836)
+	at com.example.friendservice.util.JwtTokenUtil.getUserIdFromJWT(JwtTokenUtil.java:40)
+	at com.example.friendservice.filter.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-15 15:14:35 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:14:35 INFO  AuthenticationFilter:44 - [Access token found] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:14:35 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:14:35 INFO  AuthenticationFilter:44 - [Access token found] eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQxMzc3NzEsImV4cCI6MTY4NDc0MjU3MX0.8z81q6F52b2t2csl_j8o0hSUdOdo7CMP7hI_DujXZvNQbom3zWs_pDyi6gINT79sIYce4YWF8ocMLhS7zP8iMw
+2023-05-15 15:14:48 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:14:48 ERROR JwtTokenUtil:47 - Invalid JWT token
+2023-05-15 15:28:03 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:03 ERROR JwtTokenUtil:47 - Invalid JWT token
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:26 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:27 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:27 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:27 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:27 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:28:41 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 15:29:17 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 17:26:34 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 17:26:45 INFO  AuthenticationFilter:40 - [Request come filter]
+2023-05-15 17:26:53 INFO  AuthenticationFilter:40 - [Request come filter]
