@@ -17,6 +17,7 @@ import java.util.List;
 )
 public class Post implements Serializable {
     @Id
+    @Column(name = "post_id")
     @SequenceGenerator(
             name = "post_sequence",
             sequenceName = "post_sequence",
@@ -26,19 +27,12 @@ public class Post implements Serializable {
             strategy = GenerationType.SEQUENCE,
             generator = "post_sequence"
     )
-    private Long postID;
-    private Long creatorID;
+    private Long postId;
+    @Column(name = "creator_id")
+    private Long creatorId;
     private String statusContent;
     private String attachmentUrl;
 
-    @OneToMany(
-            cascade = CascadeType.ALL
-    )
-    @JoinColumn(
-            name = "post_id",
-            referencedColumnName = "postID"
-    )
-    private List<PostReaction> postReactions;
 }
 
 

@@ -44,6 +44,7 @@ public class User implements UserDetails {
     )
     private String email;
     private String phoneNum;
+    private String avatar;
     @Column(length = 60)
     private String password;
     @Enumerated(EnumType.STRING)

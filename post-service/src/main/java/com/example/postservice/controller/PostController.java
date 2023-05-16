@@ -21,7 +21,7 @@ public class PostController {
     @Autowired
     PostService postService;
     @GetMapping("/personal/{user_id}")
-    public Optional<List<Post>> getPostsOfUser(
+    public Optional<List<PostDTO>> getPostsOfUser(
             @PathVariable("user_id") Long user_id,
             final HttpServletRequest request
     ){

@@ -12,6 +12,7 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -100,6 +101,12 @@ public class UserController {
         }
         return Optional.empty();
     }
+
+    @PostMapping("/info/list")
+    public List<PostReactionDTO> getUserReactionDetail(@RequestBody List<PostReactionDTO> lstPostReactionDTO){
+        return userService.getUsersInfo(lstPostReactionDTO);
+    }
+
     private String applicationURL(HttpServletRequest request) {
         return "http://" + request.getServerName()
                 + ":" + request.getServerPort()

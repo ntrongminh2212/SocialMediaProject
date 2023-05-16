@@ -1,6 +1,7 @@
 package com.example.friendservice.service;
 
 import com.example.friendservice.dto.AuthResponse;
+import com.example.friendservice.dto.PostReactionDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.ResetPasswordToken;
@@ -22,6 +23,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -167,6 +169,17 @@ public class UserServiceImpl implements UserService {
             );
         }
         return Optional.empty();
+    }
+
+    @Override
+    public List<PostReactionDTO> getUsersInfo(List<PostReactionDTO> lstPostReactionDTO) {
+        for (PostReactionDTO postReactionDTO: lstPostReactionDTO) {
+            Optional<User> user = userRepository.findById(postReactionDTO.getUserId());
+            if (user.isPresent()){
+                postReactionDTO = userMapper.updatePostReactionDTO(postReactionDTO,user.get());
+            }
+        }
+        return lstPostReactionDTO;
     }
 }
 

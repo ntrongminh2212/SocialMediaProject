@@ -1,6 +1,5 @@
-package com.example.friendservice.dto;
+package com.example.cloudgateway.dto;
 
-import com.example.friendservice.entity.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -20,4 +19,5 @@ public class UserDTO {
     private boolean sex;
     private LocalDate birthday;
     private Role role;
+
 }

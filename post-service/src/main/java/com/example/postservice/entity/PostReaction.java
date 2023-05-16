@@ -10,25 +10,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@IdClass(PostReactionId.class)
 @Table(
         name = "tbl_post_reaction"
 )
 public class PostReaction {
-    @Id
-    @Column(name = "post_reaction_id")
-    private Long postReactionId;
-    @Id
-    private Long userId;
-
+    @EmbeddedId
+    PostReactionId postReactionId;
     private String reaction;
-
-    @ManyToOne(
-            cascade = CascadeType.ALL
-    )
-    @PrimaryKeyJoinColumn(
-            name = "post_reaction_id",
-            referencedColumnName = "post_id"
-    )
-    private Post post;
 }

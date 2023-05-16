@@ -1,24 +1,19 @@
 package com.example.postservice.dto;
 
+import com.example.postservice.id.PostReactionId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
-
-import java.time.LocalDate;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Builder
-public class UserDTO {
+public class PostReactionDTO {
     private Long userId;
     private String firstName;
     private String lastName;
-    private String email;
-    private String phoneNum;
     private String avatar;
-    private boolean sex;
-    private LocalDate birthday;
-    private Role role;
+    private String reaction;
 }

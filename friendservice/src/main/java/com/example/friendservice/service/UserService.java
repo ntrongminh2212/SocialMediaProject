@@ -1,10 +1,12 @@
 package com.example.friendservice.service;
 
 import com.example.friendservice.dto.AuthResponse;
+import com.example.friendservice.dto.PostReactionDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.User;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
@@ -23,4 +25,6 @@ public interface UserService {
     Optional<User> getUserById(Long userId);
 
     Optional<UserDTO> getUserInfo(Long userId);
+
+    List<PostReactionDTO> getUsersInfo(List<PostReactionDTO> lstPostReactionDTO);
 }
