@@ -1,6 +1,6 @@
 package com.example.friendservice.service;
 
-import com.example.friendservice.dto.AuthResponse;
+import com.example.friendservice.dto.AuthDTO;
 import com.example.friendservice.dto.PostReactionDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
@@ -17,8 +17,6 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -69,7 +67,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<AuthResponse> login(User _user) {
+    public Optional<AuthDTO> login(User _user) {
 
         User user = userRepository.findByEmailOrPhoneNum(
                 _user.getEmail(),
@@ -82,7 +80,7 @@ public class UserServiceImpl implements UserService {
 
             logger.info("[access token] " + accessToken);
             return Optional.ofNullable(
-                    new AuthResponse(user.getEmail(),accessToken)
+                    new AuthDTO(user.getEmail(),accessToken)
             );
         }
         return Optional.empty();

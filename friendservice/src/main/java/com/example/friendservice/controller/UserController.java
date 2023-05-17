@@ -2,16 +2,18 @@ package com.example.friendservice.controller;
 
 import com.example.friendservice.dto.*;
 import com.example.friendservice.entity.User;
-import com.example.friendservice.mapper.UserMapper;
+import com.example.friendservice.service.AuthenticationService;
 import com.example.friendservice.service.SendEmailService;
 import com.example.friendservice.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -23,9 +25,9 @@ public class UserController {
     @Autowired
     private UserService userService;
     @Autowired
-    private ApplicationEventPublisher applicationEventPublisher;
-    @Autowired
     private SendEmailService sendEmailService;
+    @Autowired
+    private AuthenticationService authenticationService;
 
     @PostMapping("/register")
     public String registerUser(@RequestBody RegisterUserDTO _user, final HttpServletRequest request) {
@@ -79,13 +81,13 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public AuthResponse login(@RequestBody LoginDTO loginDTO) {
+    public AuthDTO login(@RequestBody LoginDTO loginDTO) {
         User user = new User();
         user.setEmail(loginDTO.getAccountName());
         user.setPhoneNum(loginDTO.getAccountName());
         user.setPassword(loginDTO.getPassword());
         return userService.login(user)
-                .orElse(new AuthResponse());
+                .orElse(new AuthDTO());
     }
 
     @GetMapping("/hello")
@@ -93,8 +95,20 @@ public class UserController {
         return "hello";
     }
 
+    @GetMapping("/authenticate")
+    public ResponseEntity<UserDTO> authenticate(final HttpServletRequest request){
+        String authToken = request.getHeader(HttpHeaders.AUTHORIZATION);
+        Optional<UserDTO> userDTO = authenticationService.authenticateToken(authToken);
+        if (userDTO.isPresent()){
+            logger.info(userDTO.get().toString());
+            return ResponseEntity.ok(userDTO.get());
+        }
+        return new ResponseEntity<UserDTO>(HttpStatus.NOT_FOUND);
+    }
+
     @GetMapping("/info/{user_id}")
     public Optional<UserDTO> getUserInfo(@PathVariable("user_id") Long user_id){
+        logger.info("[request come]");
         Optional<UserDTO> user = userService.getUserInfo(user_id);
         if (user.isPresent()){
             return user;
@@ -102,7 +116,7 @@ public class UserController {
         return Optional.empty();
     }
 
-    @PostMapping("/info/list")
+    @PostMapping("/reaction-details")
     public List<PostReactionDTO> getUserReactionDetail(@RequestBody List<PostReactionDTO> lstPostReactionDTO){
         return userService.getUsersInfo(lstPostReactionDTO);
     }

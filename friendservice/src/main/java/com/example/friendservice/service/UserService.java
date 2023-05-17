@@ -1,6 +1,6 @@
 package com.example.friendservice.service;
 
-import com.example.friendservice.dto.AuthResponse;
+import com.example.friendservice.dto.AuthDTO;
 import com.example.friendservice.dto.PostReactionDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public interface UserService {
     public Optional<User> registerUser(RegisterUserDTO user);
-    public Optional<AuthResponse> login(User user);
+    public Optional<AuthDTO> login(User user);
     void saveUserVerificationToken(String token, User user);
 
     String verifyRegistration(String token,String newToken);

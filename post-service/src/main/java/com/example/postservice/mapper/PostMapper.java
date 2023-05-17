@@ -5,7 +5,6 @@ import com.example.postservice.dto.PostReactionDTO;
 import com.example.postservice.dto.UserDTO;
 import com.example.postservice.entity.Post;
 import com.example.postservice.entity.PostReaction;
-import com.example.postservice.id.PostReactionId;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
@@ -21,7 +20,9 @@ public interface PostMapper {
     PostReactionDTO userAndPostToPostReactionDTO(UserDTO userDTO, PostReaction postReaction);
 
     @Mapping(source = "lstPostReactionDTO",target = "postReactions")
-    PostDTO postToPostDTO(Post post, List<PostReactionDTO> lstPostReactionDTO);
+    PostDTO postToDTO(Post post, List<PostReactionDTO> lstPostReactionDTO);
+    PostDTO postToDTO(Post post);
+    Post postToEntity(PostDTO postDTO);
 }
 
 

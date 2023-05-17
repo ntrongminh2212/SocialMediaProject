@@ -12,13 +12,11 @@ import java.util.Optional;
 public interface UserClient {
     @GetMapping("/info/{user_id}")
     Optional<UserDTO> getUserInfo(
-            @RequestHeader(value = "Authorization", required = true) String authHeader,
             @PathVariable("user_id") Long user_id
     );
 
-    @PostMapping("/info/list")
+    @PostMapping("/reaction-details")
     List<PostReactionDTO> getUserReactionDetail(
-            @RequestHeader(value = "Authorization", required = true) String authHeader,
             @RequestBody List<PostReactionDTO> lstPostReactionDTO
     );
 }
