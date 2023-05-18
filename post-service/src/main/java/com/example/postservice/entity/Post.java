@@ -4,8 +4,11 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -32,7 +35,12 @@ public class Post implements Serializable {
     private Long creatorId;
     private String statusContent;
     private String attachmentUrl;
-
+    @Column(name = "created_time")
+    @CreationTimestamp
+    private Date createdTime;
+    @Column(name = "updated_datetime")
+    @UpdateTimestamp
+    private Date updatedTime;
 }
 
 

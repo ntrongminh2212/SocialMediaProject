@@ -20,8 +20,12 @@ public interface PostMapper {
     PostReactionDTO userAndPostToPostReactionDTO(UserDTO userDTO, PostReaction postReaction);
 
     @Mapping(source = "lstPostReactionDTO",target = "postReactions")
+    @Mapping(source = "post.creatorId",target = "userId")
     PostDTO postToDTO(Post post, List<PostReactionDTO> lstPostReactionDTO);
+
+    @Mapping(source = "post.creatorId",target = "userId")
     PostDTO postToDTO(Post post);
+    @Mapping(source = "postDTO.userId",target = "creatorId")
     Post postToEntity(PostDTO postDTO);
 }
 

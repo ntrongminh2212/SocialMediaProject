@@ -16,6 +16,16 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: 'true'
+  globalcors:
+    corsConfigurations:
+      '[/**]':
+        allowedOrigins: "*"
+        allowedHeaders: "*"
+        allowedMethods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
 
 eureka:
   client:

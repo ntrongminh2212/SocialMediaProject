@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,6 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -52,6 +55,12 @@ public class User implements UserDetails {
     private boolean sex;
     private LocalDate birthday;
     private boolean enable=false;
+    @Column(name = "joined_time")
+    @CreationTimestamp
+    private Date joinedTime;
+    @Column(name = "updated_time")
+    @UpdateTimestamp
+    private Date updatedTime;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

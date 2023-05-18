@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create post</title>
+</head>
+<body>
+    <div class="post-box">
+        <input id="status-content" type="text">
+        <div id="product-images">
+            <div class="images-group col-2">
+
+            </div>
+            <img id="main-img" class="img-fluid mb-2 col-10" src="" alt="Thêm ảnh">
+            <div id="selectimg-container">
+                <label for="selectimg"><i class="fa-solid fa-camera"></i> Chọn ảnh</label>
+                <input type="file" id="selectimg" name="selectimg" class="col" multiple
+                    accept="image/png, image/jpeg, image/webp" onchange="previewFile(this)">
+            </div>
+            <!-- <i id="remove-picture" class="fa-solid fa-xmark" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Xóa ảnh" onclick="removeSelectedImage()"></i> -->
+        </div>
+        <button type="submit" onclick="createPost()">Đăng bài</button>
+    </div>
+    <script src="../scripts/globalfunc.js"></script>
+    <script src="../scripts/api/post.js"></script>
+    <script src="../scripts/create-post.js"></script>
+</body>
+</html>

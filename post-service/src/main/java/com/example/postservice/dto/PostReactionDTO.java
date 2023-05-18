@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class PostReactionDTO {
     private Long userId;
+    private Long postId;
     private String firstName;
     private String lastName;
     private String avatar;

@@ -15,7 +15,16 @@ spring:
           uri: lb://POST-SERVICE
           predicates:
             - Path=/post/**
-
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
 eureka:
   client:
     register-with-eureka: true

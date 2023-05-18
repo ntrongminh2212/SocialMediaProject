@@ -13,9 +13,10 @@ import java.util.stream.Collectors;
 @Configuration
 public class AppConfig {
 
-        @Bean
-        @ConditionalOnMissingBean
-        public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
-            return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
-        }
+    @Bean
+    @ConditionalOnMissingBean
+    public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
+        return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
+    }
+
 }

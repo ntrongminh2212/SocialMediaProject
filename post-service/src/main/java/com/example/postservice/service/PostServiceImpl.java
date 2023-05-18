@@ -1,5 +1,6 @@
 package com.example.postservice.service;
 
+import com.cloudinary.Cloudinary;
 import com.example.postservice.dto.PostDTO;
 import com.example.postservice.dto.PostReactionDTO;
 import com.example.postservice.entity.Post;
@@ -13,9 +14,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.io.File;
+import java.util.*;
 
 @Service
 public class PostServiceImpl implements PostService {
@@ -30,6 +30,8 @@ public class PostServiceImpl implements PostService {
     PostMapper postMapper;
     @Autowired
     PostReactionMapper postReactionMapper;
+    @Autowired
+    CloudinaryService cloudinaryService;
 
     @Override
     public Optional<List<PostDTO>> getPostOfUser(Long userId) {
@@ -50,6 +52,8 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Optional<PostDTO> createPost(PostDTO postDTO) {
+        Map result = cloudinaryService.uploadImage(postDTO.getAttachmentUrl());
+        postDTO.setAttachmentUrl(String.valueOf(result.get("url")));
         Post post = postMapper.postToEntity(postDTO);
         return Optional.ofNullable(postMapper.postToDTO(postRepository.save(post)));
     }

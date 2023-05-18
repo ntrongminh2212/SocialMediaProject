@@ -110,3 +110,85 @@
 2023-05-17 16:00:29 INFO  AuthenticationFilter:49 - [Request come]Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ
 2023-05-17 16:00:29 INFO  AuthenticationFilter:52 - [Response] 
 2023-05-17 17:10:28 INFO  AuthenticationFilter:44 - FluxMap
+2023-05-18 09:37:00 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 09:37:00 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 09:37:24 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 09:37:24 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 09:38:17 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 09:38:17 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 09:38:54 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 09:38:54 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 09:40:57 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 09:40:57 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 09:41:23 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 10:01:17 DEBUG AuthenticationFilter:111 - request params ：{}{}
+2023-05-18 10:01:59 INFO  AuthenticationFilter:56 - [Method] POST
+2023-05-18 10:16:44 INFO  AuthenticationFilter:63 - {username=ntrongminh2212@gmail.com, password=123456}
+2023-05-18 10:16:54 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 10:16:54 DEBUG AuthenticationFilter:108 - request params ：{}{}
+2023-05-18 10:17:16 INFO  AuthenticationFilter:56 - [Method] GET
+2023-05-18 10:17:16 DEBUG AuthenticationFilter:108 - request params ：{}{}
+2023-05-18 10:21:02 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:21:15 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:22:48 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:22:48 INFO  AuthenticationFilter:73 - UserDTO(userId=13, firstName=Minh, lastName=Nguyen Trong, email=ntrongminh2212@gmail.com, phoneNum=0123456789, avatar=null, sex=true, birthday=2000-05-11, role=USER)
+2023-05-18 10:26:01 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:26:01 INFO  AuthenticationFilter:73 - UserDTO(userId=13, firstName=Minh, lastName=Nguyen Trong, email=ntrongminh2212@gmail.com, phoneNum=0123456789, avatar=null, sex=true, birthday=2000-05-11, role=USER)
+2023-05-18 10:27:11 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:27:27 INFO  AuthenticationFilter:87 - 13
+2023-05-18 10:33:17 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:33:22 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:33:43 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:34:25 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:34:30 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"979850fc-83b5-429e-b923-67b9684d8b8c", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:34:49 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:34:52 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"4f9e0a32-ad50-474f-ac44-57f3047d23c6", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:36:41 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:36:44 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"a2a501e1-7c55-4d95-93ac-f0c8569f7346", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:36:53 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:36:55 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"eaec6906-6053-47bb-b876-da7caff2645c", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:39:46 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 10:39:46 INFO  AuthenticationFilter:96 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"b8b989da-c02e-44dc-88c5-b6aa37044a94", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"75", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:40:06 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:40:06 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"7a41265a-2383-4850-b717-3415302eecc2", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:40:20 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:40:20 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"008dd1e1-21fe-4e4c-a4ba-6794a3b855bf", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:40:50 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:40:50 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"5a9e889a-d730-4285-b840-68047fb80aed", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:41:43 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:41:43 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"6c3fef76-a404-4760-94cd-583dbc4d3b3a", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:41:49 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:41:49 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"42ee568e-681c-4814-b009-af58625b1b9e", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:42:08 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:42:08 INFO  AuthenticationFilter:96 - [Authorization:"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMyxudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQyMDUxMTIsImV4cCI6MTY4NDgwOTkxMn0.DDXY0vZOrhvlbB7hunNe2zQvxPpGkD4bdT6D0WJiH5_iWn6Pvp4s8c8FLFdM1zFodp_I2wM08EGAdocpf4nIPQ", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"9a4ddbcb-c5d5-4f7f-ae58-6dcc816a3d50", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Cookie:"JSESSIONID=1E8CB1210C875326F8B65546A216DDD2"]
+2023-05-18 10:44:03 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:51:19 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:52:16 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 10:54:06 INFO  AuthenticationFilter:57 - [Method] GET
+2023-05-18 11:01:09 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:01:22 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:02:06 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:02:06 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:02:11 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:02:11 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:02:47 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:02:47 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:03:27 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:03:27 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:03:35 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:03:35 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:05:53 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:05:53 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:07:25 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:07:25 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:11:51 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:11:51 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:18:50 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:18:50 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:23:23 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:23:23 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:24:02 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:24:02 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 11:24:39 INFO  AuthenticationFilter:57 - [Method] POST
+2023-05-18 11:24:39 INFO  AuthenticationFilter:81 - {statusContent=abc, attachmentUrl=abc}
+2023-05-18 13:11:12 INFO  AuthenticationFilter:57 - [Method] GET
