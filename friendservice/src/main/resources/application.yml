@@ -5,6 +5,36 @@ spring:
   application:
     name: USER-SERVICE
 
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+  mail:
+    host: smtp.gmail.com
+    username: minh.socialnetworkproject@gmail.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    password: jysnswdlidcqvjyj
+
+  datasource:
+    password: sa123
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/frienddb
+
+app:
+  jwt:
+    secret: 214125442A462D4A614E645267556B58703273357638792F423F4528482B4B6250655368566D597133743677397A24432646294A404E635166546A576E5A7234
+
 eureka:
   client:
     register-with-eureka: true

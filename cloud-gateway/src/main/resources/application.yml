@@ -10,7 +10,7 @@ spring:
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/user/**
+            - Path=/user/**, /friend/**
         - id: POST-SERVICE
           uri: lb://POST-SERVICE
           predicates:
@@ -21,7 +21,7 @@ spring:
             allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods:
-              - GET
+              - GET+
               - POST
               - PUT
               - DELETE

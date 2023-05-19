@@ -32,7 +32,8 @@ public class AuthenticationFilter implements GlobalFilter {
 
     Logger logger = Logger.getLogger(AuthenticationFilter.class);
     private static final String[] PASS_FILTER_PATHS = {
-            "/user/login"
+            "/user/login",
+            "/user/register"
     };
     private static final String CONTENT_TYPE_JSON = "application/json";
     private static final String CONTENT_TYPE = "Content-Type";
@@ -70,10 +71,13 @@ public class AuthenticationFilter implements GlobalFilter {
                 authToken = authToken.substring(7);
                 UserDTO userDTO = userClient.authenticate(authToken).getBody();
 
-                if (userDTO==null){
+                if (userDTO == null) {
                     throw new RuntimeException("Authorization false");
                 }
-                if (null != contentType && HttpMethod.POST.name().equalsIgnoreCase(method) && contentType.contains(CONTENT_TYPE_JSON)) {
+                if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
+                        HttpMethod.PUT.name().equalsIgnoreCase(method) ||
+                        HttpMethod.DELETE.name().equalsIgnoreCase(method))
+                        && contentType.contains(CONTENT_TYPE_JSON)) {
 
                     ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config()
                             .setContentType(ContentType.APPLICATION_JSON.getMimeType())

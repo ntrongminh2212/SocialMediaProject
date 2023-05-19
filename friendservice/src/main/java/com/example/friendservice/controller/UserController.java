@@ -83,6 +83,7 @@ public class UserController {
     @PostMapping("/login")
     public AuthDTO login(@RequestBody LoginDTO loginDTO) {
         User user = new User();
+        logger.info(loginDTO);
         user.setEmail(loginDTO.getAccountName());
         user.setPhoneNum(loginDTO.getAccountName());
         user.setPassword(loginDTO.getPassword());

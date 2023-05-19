@@ -16,6 +16,7 @@ public class WebSecurityConfig {
 
     private static final String[] WHITE_LIST_URLS = {
             "/user/**",
+            "/friend/**",
 //            "/user/verifyRegistration",
             "/swagger-ui/**",
             "/v3/api-docs/**"

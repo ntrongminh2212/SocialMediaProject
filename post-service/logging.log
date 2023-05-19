@@ -99,3 +99,8 @@
 2023-05-18 17:21:32 INFO  PostServiceImpl:44 - [Request reaction for post 2]
 2023-05-18 17:21:32 INFO  PostServiceImpl:44 - [Request reaction for post 7]
 2023-05-18 17:21:32 INFO  PostServiceImpl:49 - [Done]
+2023-05-18 17:27:59 INFO  PostController:33 - request come 13
+2023-05-18 17:27:59 INFO  PostServiceImpl:39 - [Got all user posts]
+2023-05-18 17:28:00 INFO  PostServiceImpl:44 - [Request reaction for post 2]
+2023-05-18 17:28:00 INFO  PostServiceImpl:44 - [Request reaction for post 7]
+2023-05-18 17:28:00 INFO  PostServiceImpl:49 - [Done]
