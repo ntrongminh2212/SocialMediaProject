@@ -31,6 +31,12 @@ spring:
     username: postgres
     url: jdbc:postgresql://localhost:5432/frienddb
 
+  rabbitmq:
+    password: guest
+    port: '15672'
+    host: localhost
+    username: guest
+
 app:
   jwt:
     secret: 214125442A462D4A614E645267556B58703273357638792F423F4528482B4B6250655368566D597133743677397A24432646294A404E635166546A576E5A7234

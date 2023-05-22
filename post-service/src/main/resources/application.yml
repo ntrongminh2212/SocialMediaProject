@@ -26,6 +26,11 @@ spring:
           - POST
           - PUT
           - DELETE
+  rabbitmq:
+    password: guest
+    port: '15672'
+    host: localhost
+    username: guest
 
 eureka:
   client:
@@ -35,3 +40,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     preferIpAddress: true
+
+cloudinary:
+  cloud_name: minh2212
+  api_key: 689138855327619
+  api_secret: lvuOh4BHRyVcvy_8FCeVpC-G9a0

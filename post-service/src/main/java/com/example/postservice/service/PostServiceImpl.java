@@ -11,6 +11,7 @@ import com.example.postservice.mapper.PostReactionMapper;
 import com.example.postservice.repository.PostReactionRepository;
 import com.example.postservice.repository.PostRepository;
 import org.apache.log4j.Logger;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +33,8 @@ public class PostServiceImpl implements PostService {
     PostReactionMapper postReactionMapper;
     @Autowired
     CloudinaryService cloudinaryService;
-
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
     @Override
     public Optional<List<PostDTO>> getPostOfUser(Long userId) {
             Optional<List<Post>> lstPostByUserId = postRepository.findByCreatorId(userId);
@@ -42,6 +44,7 @@ public class PostServiceImpl implements PostService {
                 Optional<List<PostReaction>> lstPostReaction = reactionRepository.findByPost(post.getPostId());
                 List<PostReactionDTO> lstPostReactionDTO = postReactionMapper.getLstPostReactionDTO(lstPostReaction.get());
                 logger.info("[Request reaction for post "+post.getPostId()+"]");
+                rabbitTemplate.convertAndSend("friendservice.*",lstPostReactionDTO);
                 lstPostReactionDTO = userClient.getUserReactionDetail(lstPostReactionDTO);
                 PostDTO postDTO = postMapper.postToDTO(post,lstPostReactionDTO);
                 lstPostDTO.add(postDTO);

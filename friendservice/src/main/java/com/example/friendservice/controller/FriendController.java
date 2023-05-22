@@ -5,6 +5,7 @@ import com.example.friendservice.entity.Friend;
 import com.example.friendservice.service.FriendService;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.apache.log4j.Logger;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,8 @@ import java.util.Objects;
 public class FriendController {
     @Autowired
     private FriendService friendService;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
     private final Map<String,Object> falseResponse;
 
     public FriendController() {
@@ -53,6 +56,8 @@ public class FriendController {
         }
         return new ResponseEntity<Object>(falseResponse, HttpStatus.NOT_FOUND);
     }
+
+
 }
 
 

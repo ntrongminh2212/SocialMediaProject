@@ -323,3 +323,19 @@
 2023-05-19 16:52:13 INFO  AuthenticationFilter:100 - [Authorization:"Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQ0ODMzNzgsImV4cCI6MTY4NTA4ODE3OH0.qmKzEK2oJr2CcCgyXRhr0u6sRnacUEuZHiXRW1qMeDkTWppafH0grCABTVcQyQ0Tt_8HL6kjO3C-MmPOIUWl-A", Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"a3ffbf97-8916-47ab-88e8-a1017cdd3531", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"26", Cookie:"JSESSIONID=A4F537B4A30DB109B74272984B9411A7"]
 2023-05-19 16:52:25 INFO  AuthenticationFilter:58 - [Method] PUT
 2023-05-19 16:52:25 INFO  AuthenticationFilter:100 - [Authorization:"Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODQ0ODMzNzgsImV4cCI6MTY4NTA4ODE3OH0.qmKzEK2oJr2CcCgyXRhr0u6sRnacUEuZHiXRW1qMeDkTWppafH0grCABTVcQyQ0Tt_8HL6kjO3C-MmPOIUWl-A", Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"caf81fc0-4d8c-442d-9178-f12ca0d7e44f", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"26", Cookie:"JSESSIONID=A4F537B4A30DB109B74272984B9411A7"]
+2023-05-19 17:01:00 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:01:00 INFO  AuthenticationFilter:85 - {sourceId=15}
+2023-05-19 17:10:40 INFO  AuthenticationFilter:58 - [Method] POST
+2023-05-19 17:10:40 INFO  AuthenticationFilter:103 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"97344526-49cf-4953-aeae-9a6b53952559", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"88", Cookie:"JSESSIONID=A4F537B4A30DB109B74272984B9411A7"]
+2023-05-19 17:11:22 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:11:22 INFO  AuthenticationFilter:85 - {sourceId=15}
+2023-05-19 17:12:00 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:12:00 INFO  AuthenticationFilter:85 - {sourceId=16}
+2023-05-19 17:14:35 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:14:36 INFO  AuthenticationFilter:85 - {sourceId=16}
+2023-05-19 17:15:28 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:15:28 INFO  AuthenticationFilter:85 - {sourceId=15}
+2023-05-19 17:16:15 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:16:15 INFO  AuthenticationFilter:85 - {sourceId=15}
+2023-05-19 17:27:26 INFO  AuthenticationFilter:58 - [Method] PUT
+2023-05-19 17:27:27 INFO  AuthenticationFilter:85 - {sourceId=15}
