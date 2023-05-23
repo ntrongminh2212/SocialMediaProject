@@ -8,7 +8,6 @@ import com.example.friendservice.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -119,7 +118,7 @@ public class UserController {
 
     @PostMapping("/reaction-details")
     public List<PostReactionDTO> getUserReactionDetail(@RequestBody List<PostReactionDTO> lstPostReactionDTO){
-        return userService.getUsersInfo(lstPostReactionDTO);
+        return userService.getUserReactionDetail(lstPostReactionDTO);
     }
 
     private String applicationURL(HttpServletRequest request) {

@@ -104,3 +104,9 @@
 2023-05-18 17:28:00 INFO  PostServiceImpl:44 - [Request reaction for post 2]
 2023-05-18 17:28:00 INFO  PostServiceImpl:44 - [Request reaction for post 7]
 2023-05-18 17:28:00 INFO  PostServiceImpl:49 - [Done]
+2023-05-23 15:11:52 INFO  PostController:38 - request come 15
+2023-05-23 15:11:52 INFO  PostServiceImpl:43 - [Got all user posts]
+2023-05-23 15:11:52 INFO  PostServiceImpl:53 - [Done]
+2023-05-23 15:25:38 INFO  PostServiceImpl:67 - [Got new post from queue, creating post]
+2023-05-23 15:29:52 INFO  PostServiceImpl:67 - [Got new post from queue, creating post]
+2023-05-23 15:36:52 INFO  PostServiceImpl:67 - [Got new post from queue, creating post]

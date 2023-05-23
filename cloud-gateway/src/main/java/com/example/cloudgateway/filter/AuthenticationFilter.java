@@ -82,7 +82,7 @@ public class AuthenticationFilter implements GlobalFilter {
                     ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config()
                             .setContentType(ContentType.APPLICATION_JSON.getMimeType())
                             .setRewriteFunction(Map.class, Map.class, (exchange1, originalRequestBody) -> {
-                                logger.info(originalRequestBody);
+//                                logger.info(originalRequestBody);
                                 originalRequestBody.put("userId", userDTO.getUserId());
                                 return Mono.just(originalRequestBody);
                             });

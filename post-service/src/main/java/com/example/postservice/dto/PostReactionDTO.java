@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class PostReactionDTO {
+
     private Long userId;
     private Long postId;
     private String firstName;

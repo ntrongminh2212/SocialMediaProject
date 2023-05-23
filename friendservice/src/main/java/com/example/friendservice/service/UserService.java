@@ -26,5 +26,5 @@ public interface UserService {
 
     Optional<UserDTO> getUserInfo(Long userId);
 
-    List<PostReactionDTO> getUsersInfo(List<PostReactionDTO> lstPostReactionDTO);
+    List<PostReactionDTO> getUserReactionDetail(List<PostReactionDTO> lstPostReactionDTO);
 }

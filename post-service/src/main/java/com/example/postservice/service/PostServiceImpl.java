@@ -1,6 +1,7 @@
 package com.example.postservice.service;
 
 import com.cloudinary.Cloudinary;
+import com.example.postservice.configuration.MessageConfig;
 import com.example.postservice.dto.PostDTO;
 import com.example.postservice.dto.PostReactionDTO;
 import com.example.postservice.entity.Post;
@@ -11,6 +12,7 @@ import com.example.postservice.mapper.PostReactionMapper;
 import com.example.postservice.repository.PostReactionRepository;
 import com.example.postservice.repository.PostRepository;
 import org.apache.log4j.Logger;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,7 +46,6 @@ public class PostServiceImpl implements PostService {
                 Optional<List<PostReaction>> lstPostReaction = reactionRepository.findByPost(post.getPostId());
                 List<PostReactionDTO> lstPostReactionDTO = postReactionMapper.getLstPostReactionDTO(lstPostReaction.get());
                 logger.info("[Request reaction for post "+post.getPostId()+"]");
-                rabbitTemplate.convertAndSend("friendservice.*",lstPostReactionDTO);
                 lstPostReactionDTO = userClient.getUserReactionDetail(lstPostReactionDTO);
                 PostDTO postDTO = postMapper.postToDTO(post,lstPostReactionDTO);
                 lstPostDTO.add(postDTO);
@@ -53,14 +54,22 @@ public class PostServiceImpl implements PostService {
         return Optional.of(lstPostDTO);
     }
 
-    @Override
-    public Optional<PostDTO> createPost(PostDTO postDTO) {
+//    @Override
+//    public Optional<PostDTO> createPost(PostDTO postDTO) {
+//        Map result = cloudinaryService.uploadImage(postDTO.getAttachmentUrl());
+//        postDTO.setAttachmentUrl(String.valueOf(result.get("url")));
+//        Post post = postMapper.postToEntity(postDTO);
+//        return Optional.ofNullable(postMapper.postToDTO(postRepository.save(post)));
+//    }
+
+    @RabbitListener(queues = MessageConfig.QUEUE)
+    public void createPost(PostDTO postDTO) {
+        logger.info("[Got new post from queue, creating post]");
         Map result = cloudinaryService.uploadImage(postDTO.getAttachmentUrl());
         postDTO.setAttachmentUrl(String.valueOf(result.get("url")));
         Post post = postMapper.postToEntity(postDTO);
-        return Optional.ofNullable(postMapper.postToDTO(postRepository.save(post)));
+        postRepository.save(post);
     }
-
 }
 
 

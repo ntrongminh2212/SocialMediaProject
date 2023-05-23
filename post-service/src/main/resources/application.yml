@@ -26,11 +26,6 @@ spring:
           - POST
           - PUT
           - DELETE
-  rabbitmq:
-    password: guest
-    port: '15672'
-    host: localhost
-    username: guest
 
 eureka:
   client:

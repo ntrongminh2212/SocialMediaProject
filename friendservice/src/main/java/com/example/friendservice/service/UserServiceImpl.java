@@ -14,6 +14,8 @@ import com.example.friendservice.repository.UserRepository;
 import com.example.friendservice.repository.VerificationTokenRepository;
 import com.example.friendservice.util.JwtTokenUtil;
 import org.apache.log4j.Logger;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -170,7 +172,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<PostReactionDTO> getUsersInfo(List<PostReactionDTO> lstPostReactionDTO) {
+    public List<PostReactionDTO> getUserReactionDetail(List<PostReactionDTO> lstPostReactionDTO) {
         for (PostReactionDTO postReactionDTO: lstPostReactionDTO) {
             Optional<User> user = userRepository.findById(postReactionDTO.getUserId());
             if (user.isPresent()){

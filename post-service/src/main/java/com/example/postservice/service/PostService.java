@@ -8,5 +8,7 @@ import java.util.Optional;
 public interface PostService {
     Optional<List<PostDTO>> getPostOfUser(Long userId);
 
-    Optional<PostDTO> createPost(PostDTO postDTO);
+//    Optional<PostDTO> createPost(PostDTO postDTO);
+
+    void createPost(PostDTO postDTO);
 }
