@@ -56,8 +56,6 @@ public class FriendController {
         }
         return new ResponseEntity<Object>(falseResponse, HttpStatus.NOT_FOUND);
     }
-
-
 }
 
 

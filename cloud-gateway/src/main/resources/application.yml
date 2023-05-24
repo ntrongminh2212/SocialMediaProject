@@ -14,7 +14,7 @@ spring:
         - id: POST-SERVICE
           uri: lb://POST-SERVICE
           predicates:
-            - Path=/post/**
+            - Path=/post/**, /comment/**
       globalcors:
         corsConfigurations:
           '[/**]':

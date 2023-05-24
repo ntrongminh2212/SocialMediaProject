@@ -65,25 +65,13 @@ function DateSelectedListener(eSelectDay, eSelectMonth, eSelectYear) {
 function Validator(options) {
     var eForm = document.querySelector(options.form);
 
-    function validate(eInput, requirement, eError) {
-        var message = requirement.check(eInput.value);
-        if (message) {
-            eError.innerText = message;
-            eInput.parentElement.classList.add('invalid');
-        } else {
-            eError.innerText = '';
-            eInput.parentElement.classList.remove('invalid');
-        }
-        return !message;
-    }
-
     eForm.onsubmit = function (event) {
         event.preventDefault();
         let isFormValid = true;
         options.requirements.forEach(requirement => {
             var eInput = eForm.querySelector(requirement.inputId);
             var eError = eInput.parentElement.querySelector('.form-message');
-            const isValid = validate(eInput, requirement, eError);
+            const isValid = Validator.validate(eInput, requirement, eError);
             if (!isValid)
                 isFormValid = false;
         })
@@ -120,7 +108,7 @@ function Validator(options) {
         var eError = eInput.parentElement.querySelector('.form-message');
         if (eInput) {
             eInput.onblur = function () {
-                validate(eInput, requirement, eError);
+                Validator.validate(eInput, requirement, eError);
             }
             eInput.onkeydown = function () {
                 eError.innerText = '';
@@ -128,6 +116,18 @@ function Validator(options) {
             }
         }
     });
+}
+
+Validator.validate = function (eInput, requirement, eError) {
+    var message = requirement.check(eInput.value);
+    if (message) {
+        eError.innerText = message;
+        eInput.parentElement.classList.add('invalid');
+    } else {
+        eError.innerText = '';
+        eInput.parentElement.classList.remove('invalid');
+    }
+    return !message;
 }
 
 Validator.isRequired = function (selector, errMes) {
@@ -140,7 +140,7 @@ Validator.isRequired = function (selector, errMes) {
 }
 
 Validator.isEmail = function (selector, message) {
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
     return {
         inputId: selector,
         check: function (value) {
@@ -150,7 +150,7 @@ Validator.isEmail = function (selector, message) {
 }
 
 Validator.isUsername = function (selector, message) {
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
     let phoneNumRegex = /((09|03|07|08|05)+([0-9]{8})\b)/;
     return {
         inputId: selector,

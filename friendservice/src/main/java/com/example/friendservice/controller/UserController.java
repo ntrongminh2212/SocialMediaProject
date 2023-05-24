@@ -80,14 +80,18 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public AuthDTO login(@RequestBody LoginDTO loginDTO) {
+    public ResponseEntity<AuthDTO> login(@RequestBody LoginDTO loginDTO) {
         User user = new User();
         logger.info(loginDTO);
         user.setEmail(loginDTO.getAccountName());
         user.setPhoneNum(loginDTO.getAccountName());
         user.setPassword(loginDTO.getPassword());
-        return userService.login(user)
-                .orElse(new AuthDTO());
+
+        Optional<AuthDTO> authDTO = userService.login(user);
+        if (authDTO.isPresent()) {
+            return ResponseEntity.ok(authDTO.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 
     @GetMapping("/hello")
