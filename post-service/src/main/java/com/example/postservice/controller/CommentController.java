@@ -1,6 +1,8 @@
 package com.example.postservice.controller;
 
 import com.example.postservice.dto.CommentDTO;
+import com.example.postservice.dto.CommentReactionDTO;
+import com.example.postservice.entity.CommentReaction;
 import com.example.postservice.service.CommentService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,5 +38,11 @@ public class CommentController {
          if (rs) return ResponseEntity.ok(rs);
 
          return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/react-comment")
+    public ResponseEntity<CommentReactionDTO> reactToComment(@RequestBody CommentReactionDTO reactionDTO){
+        reactionDTO = commentService.reactToComment(reactionDTO);
+        return ResponseEntity.ok(reactionDTO);
     }
 }

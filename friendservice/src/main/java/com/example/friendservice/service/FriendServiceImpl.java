@@ -30,7 +30,7 @@ public class FriendServiceImpl implements FriendService{
     public int acceptFriendRequest(Map<String, String> body) {
         Long sourceId = Long.parseLong(body.get("sourceId"));
         Long targetId = Long.parseLong(body.get("userId"));
-        return friendRepository.acceptFriend(sourceId,targetId);
 
+        return friendRepository.acceptFriend(sourceId,targetId);
     }
 }

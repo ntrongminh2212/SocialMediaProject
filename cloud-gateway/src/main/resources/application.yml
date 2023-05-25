@@ -15,13 +15,17 @@ spring:
           uri: lb://POST-SERVICE
           predicates:
             - Path=/post/**, /comment/**
+        - id: MESSAGE-SERVICE
+          uri: lb://MESSAGE-SERVICE
+          predicates:
+            - Path=/message/**
       globalcors:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods:
-              - GET+
+              - GET
               - POST
               - PUT
               - DELETE
