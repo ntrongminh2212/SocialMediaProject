@@ -176,6 +176,7 @@ public class UserServiceImpl implements UserService {
             Optional<User> user = userRepository.findById(postReactionDTO.getUserId());
             if (user.isPresent()){
                 postReactionDTO = userMapper.updatePostReactionDTO(postReactionDTO,user.get());
+                logger.info("123");
             }
         }
         return lstPostReactionDTO;

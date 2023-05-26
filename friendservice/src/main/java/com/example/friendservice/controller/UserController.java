@@ -7,6 +7,7 @@ import com.example.friendservice.service.SendEmailService;
 import com.example.friendservice.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -100,14 +101,15 @@ public class UserController {
     }
 
     @GetMapping("/authenticate")
-    public ResponseEntity<UserDTO> authenticate(final HttpServletRequest request){
+    public Optional<UserDTO> authenticate(final HttpServletRequest request){
         String authToken = request.getHeader(HttpHeaders.AUTHORIZATION);
         Optional<UserDTO> userDTO = authenticationService.authenticateToken(authToken);
         if (userDTO.isPresent()){
             logger.info(userDTO.get().toString());
-            return ResponseEntity.ok(userDTO.get());
+            return userDTO;
         }
-        return new ResponseEntity<UserDTO>(HttpStatus.NOT_FOUND);
+
+        return Optional.empty();
     }
 
     @GetMapping("/info/{user_id}")

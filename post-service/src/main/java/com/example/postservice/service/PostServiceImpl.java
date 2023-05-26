@@ -1,14 +1,17 @@
 package com.example.postservice.service;
 
-import com.cloudinary.Cloudinary;
 import com.example.postservice.configuration.MessageConfig;
 import com.example.postservice.dto.PostDTO;
 import com.example.postservice.dto.PostReactionDTO;
+import com.example.postservice.entity.Comment;
+import com.example.postservice.entity.CommentReaction;
 import com.example.postservice.entity.Post;
 import com.example.postservice.entity.PostReaction;
 import com.example.postservice.feignclient.UserClient;
 import com.example.postservice.mapper.PostMapper;
 import com.example.postservice.mapper.PostReactionMapper;
+import com.example.postservice.repository.CommentReactionRepository;
+import com.example.postservice.repository.CommentRepository;
 import com.example.postservice.repository.PostReactionRepository;
 import com.example.postservice.repository.PostRepository;
 import org.apache.log4j.Logger;
@@ -17,7 +20,6 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
 import java.util.*;
 
 @Service
@@ -29,6 +31,10 @@ public class PostServiceImpl implements PostService {
     PostRepository postRepository;
     @Autowired
     PostReactionRepository reactionRepository;
+    @Autowired
+    CommentRepository commentRepository;
+    @Autowired
+    CommentReactionRepository commentReactionRepository;
     @Autowired
     PostMapper postMapper;
     @Autowired
@@ -69,6 +75,25 @@ public class PostServiceImpl implements PostService {
         postDTO.setAttachmentUrl(String.valueOf(result.get("url")));
         Post post = postMapper.postToEntity(postDTO);
         postRepository.save(post);
+    }
+
+    @Override
+    public Optional<PostDTO> getPostDetail(Long postId) {
+        Optional<Post> post = postRepository.findById(postId);
+        if (post.isPresent()){
+            PostDTO postDTO = new PostDTO();
+            List<PostReaction> postReactions = new ArrayList<>();
+            List<Comment> comments = new ArrayList<>();
+
+            postReactions = reactionRepository.findByPost(postId).get();
+            comments = commentRepository.findByPostId(postId);
+
+            for (Comment comment:
+                 comments) {
+
+            }
+        }
+        return Optional.empty();
     }
 }
 

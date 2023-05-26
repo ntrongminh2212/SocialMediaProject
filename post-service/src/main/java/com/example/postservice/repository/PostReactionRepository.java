@@ -19,4 +19,13 @@ public interface PostReactionRepository extends JpaRepository<PostReaction, Post
             nativeQuery = true
     )
     Optional<List<PostReaction>> findByPost(Long postId);
+
+    @Query(
+            value = "SELECT *\n" +
+                    "FROM tbl_post_reaction\n" +
+                    "WHERE post_id = ?1 \n" +
+                    "AND user_id = ?2",
+            nativeQuery = true
+    )
+    Optional<PostReaction> findByPostIdAndUserId(Long postId, Long userId);
 }

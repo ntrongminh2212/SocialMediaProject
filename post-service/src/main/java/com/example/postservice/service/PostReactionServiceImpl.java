@@ -18,6 +18,14 @@ public class PostReactionServiceImpl implements PostReactionService {
 
     @Override
     public Optional<PostReactionDTO> reactToPost(PostReactionDTO postReactionDTO) {
+        Optional<PostReaction> optional = reactionRepository.findByPostIdAndUserId(
+                postReactionDTO.getPostId(),
+                postReactionDTO.getUserId()
+        );
+        if (optional.isPresent()){
+            return Optional.ofNullable(reactionMapper.postReactionToDTO(optional.get()));
+        }
+
         PostReaction postReaction = reactionMapper.postReactionToEntity(postReactionDTO);
         return Optional.ofNullable(reactionMapper.postReactionToDTO(
                 reactionRepository.save(postReaction)

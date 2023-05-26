@@ -14,6 +14,7 @@ import org.springframework.cloud.gateway.filter.factory.rewrite.ModifyRequestBod
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
@@ -71,9 +72,6 @@ public class AuthenticationFilter implements GlobalFilter {
                 authToken = authToken.substring(7);
                 UserDTO userDTO = userClient.authenticate(authToken).getBody();
 
-                if (userDTO == null) {
-                    throw new RuntimeException("Authorization false");
-                }
                 if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
                         HttpMethod.PUT.name().equalsIgnoreCase(method) ||
                         HttpMethod.DELETE.name().equalsIgnoreCase(method))
@@ -83,14 +81,16 @@ public class AuthenticationFilter implements GlobalFilter {
                             .setContentType(ContentType.APPLICATION_JSON.getMimeType())
                             .setRewriteFunction(Map.class, Map.class, (exchange1, originalRequestBody) -> {
 //                                logger.info(originalRequestBody);
-                                originalRequestBody.put("userId", userDTO.getUserId());
+                                if (userDTO!=null) {
+                                    originalRequestBody.put("userId", userDTO.getUserId());
+                                }
                                 return Mono.just(originalRequestBody);
                             });
 
                     return new ModifyRequestBodyGatewayFilterFactory().apply(modifyRequestConfig).filter(exchange, chain);
                 }
 
-                if (HttpMethod.GET.name().equalsIgnoreCase(method)) {
+                if (HttpMethod.GET.name().equalsIgnoreCase(method) && userDTO!=null) {
                     return chain.filter(exchange.mutate().request(
                                     exchange.getRequest().mutate()
                                             .header("userId", String.valueOf(userDTO.getUserId()))

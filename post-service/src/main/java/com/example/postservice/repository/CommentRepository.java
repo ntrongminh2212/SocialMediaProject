@@ -7,9 +7,12 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
     Optional<Comment> findByCommentIdAndUserId(Long commentId, Long userId);
+
+    List<Comment> findByPostId(Long postId);
 }

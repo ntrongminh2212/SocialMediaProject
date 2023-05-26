@@ -17,4 +17,5 @@ public class PostDTO {
     private String statusContent;
     private String attachmentUrl;
     private List<PostReactionDTO> postReactions;
+    private List<CommentDTO> comments;
 }

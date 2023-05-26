@@ -11,4 +11,6 @@ public interface PostService {
 //    Optional<PostDTO> createPost(PostDTO postDTO);
 
     void createPost(PostDTO postDTO);
+
+    Optional<PostDTO> getPostDetail(Long postId);
 }

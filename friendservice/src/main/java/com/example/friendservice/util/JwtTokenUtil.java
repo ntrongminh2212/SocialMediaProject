@@ -24,7 +24,7 @@ public class JwtTokenUtil {
                 .setIssuer("NguyenTrongMinh")
                 .setIssuedAt(current)
                 .setExpiration(new Date(current.getTime()+ EXPIRE_DURATION))
-                .signWith(SignatureAlgorithm.HS512,SECRET_KEY)
+                .signWith(SignatureAlgorithm.HS256,SECRET_KEY)
                 .compact();
 
         return token;
@@ -51,6 +51,8 @@ public class JwtTokenUtil {
             logger.error("Unsupported JWT token");
         } catch (IllegalArgumentException ex) {
             logger.error("JWT claims string is empty.");
+        }catch (Exception ex){
+            logger.error(ex.getMessage());
         }
         return false;
     }

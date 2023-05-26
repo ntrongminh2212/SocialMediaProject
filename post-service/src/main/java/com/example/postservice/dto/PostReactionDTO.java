@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,4 +20,5 @@ public class PostReactionDTO {
     private String lastName;
     private String avatar;
     private String reaction;
+    private Date reactedTime;
 }
