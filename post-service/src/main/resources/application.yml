@@ -2,6 +2,8 @@ server:
   port: 9002
 
 spring:
+  codec:
+    max-in-memory-size: 10MB
   application:
     name: POST-SERVICE
   datasource:

@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +21,5 @@ public class CommentDTO {
     private String content;
     private Date createTime;
     private Date updateTime;
+    private List<CommentReactionDTO> commentReactionDTOList;
 }

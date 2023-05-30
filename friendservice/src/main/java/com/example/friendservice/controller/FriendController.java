@@ -1,6 +1,8 @@
 package com.example.friendservice.controller;
 
 import com.example.friendservice.dto.FriendDTO;
+import com.example.friendservice.dto.ResponseDTO;
+import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.Friend;
 import com.example.friendservice.service.FriendService;
 import com.fasterxml.jackson.databind.util.JSONPObject;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -55,6 +58,18 @@ public class FriendController {
             return ResponseEntity.ok(true);
         }
         return new ResponseEntity<Object>(falseResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/list")
+    public ResponseEntity<Object> getListFriend(
+            @RequestHeader("userId") Long userId
+    ){
+        logger.info(userId);
+        if (userId!=null){
+            List<UserDTO> friendList = friendService.getFriendList(userId);
+            return ResponseEntity.ok(friendList);
+        }
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 }
 

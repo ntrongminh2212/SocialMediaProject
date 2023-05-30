@@ -14,5 +14,9 @@ import java.util.Optional;
 public interface CommentRepository extends JpaRepository<Comment, Long> {
     Optional<Comment> findByCommentIdAndUserId(Long commentId, Long userId);
 
+    @Query(
+            value = "SELECT* FROM tbl_comment WHERE post_id = ?1",
+            nativeQuery = true
+    )
     List<Comment> findByPostId(Long postId);
 }

@@ -33,5 +33,5 @@ function createPost() {
     }
 
     console.log(newPost);
-    createNewPostAPI(newPost);
+    // createNewPostAPI(newPost);
 }

@@ -29,6 +29,9 @@ spring:
               - POST
               - PUT
               - DELETE
+  codec:
+    max-in-memory-size: 10MB
+
 eureka:
   client:
     register-with-eureka: true

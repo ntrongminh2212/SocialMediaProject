@@ -4,6 +4,7 @@ import com.example.postservice.dto.CommentDTO;
 import com.example.postservice.dto.CommentReactionDTO;
 import com.example.postservice.entity.Comment;
 import com.example.postservice.entity.CommentReaction;
+import com.example.postservice.id.CommentReactionId;
 import com.example.postservice.mapper.CommentMapper;
 import com.example.postservice.mapper.CommentReactionMapper;
 import com.example.postservice.repository.CommentReactionRepository;
@@ -25,7 +26,8 @@ public class CommentServiceImpl implements CommentService{
     private CommentReactionMapper commentReactionMapper;
     @Override
     public CommentDTO sendComment(CommentDTO commentDTO) {
-        Comment comment = commentRepository.save(commentMapper.commentToEntity(commentDTO));
+        Comment comment = commentMapper.commentToEntity(commentDTO);
+        commentRepository.save(comment);
         return commentMapper.commentToDTO(comment);
     }
 
@@ -49,6 +51,9 @@ public class CommentServiceImpl implements CommentService{
                 commentDTO.getUserId()
         );
         if (comment.isPresent()){
+            reactionRepository.deleteAll(
+                    reactionRepository.findByCommentId(comment.get().getCommentId())
+            );
             commentRepository.delete(comment.get());
             return true;
         }
@@ -57,7 +62,11 @@ public class CommentServiceImpl implements CommentService{
 
     @Override
     public CommentReactionDTO reactToComment(CommentReactionDTO reactionDTO) {
-        CommentReaction comment = commentReactionMapper.commentReactionToEntity(reactionDTO);
-        return commentReactionMapper.commentReactionToDTO(reactionRepository.save(comment));
+        Optional<CommentReaction> commentReactionOptional =  reactionRepository.findById(reactionDTO.getCommentId(),reactionDTO.getUserId());
+        if (commentReactionOptional.isEmpty()) {
+            CommentReaction commentReaction = commentReactionMapper.commentReactionToEntity(reactionDTO);
+            return commentReactionMapper.commentReactionToDTO(reactionRepository.save(commentReaction));
+        }
+        return commentReactionMapper.commentReactionToDTO(commentReactionOptional.get());
     }
 }

@@ -14,7 +14,7 @@ public interface CommentReactionMapper {
     @Mapping(source = "commentReaction.commentReactionId.comment.commentId",target = "commentId")
     CommentReactionDTO commentReactionToDTO(CommentReaction commentReaction);
     @Mapping(source = "commentReactionDTO.userId",target = "commentReactionId.userId")
-    @Mapping(source = "commentReactionDTO.postId",target = "commentReactionId.comment.commentId")
+    @Mapping(source = "commentReactionDTO.commentId",target = "commentReactionId.comment.commentId")
     CommentReaction commentReactionToEntity(CommentReactionDTO commentReactionDTO);
-    List<CommentReactionDTO> getLstCommentReactionDTO(List<CommentReaction> commentReactionList);
+    List<CommentReactionDTO> commentReactionListToDTO(List<CommentReaction> commentReactionList);
 }

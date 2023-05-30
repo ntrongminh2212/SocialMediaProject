@@ -17,6 +17,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -42,6 +43,9 @@ public class AuthenticationFilter implements GlobalFilter {
     private final ModifyRequestBodyGatewayFilterFactory factory;
 
     @Autowired
+    private WebClient webClient;
+
+    @Autowired
     public AuthenticationFilter(@Lazy UserClient userClient, ModifyRequestBodyGatewayFilterFactory factory) {
         this.userClient = userClient;
         this.factory = factory;
@@ -64,7 +68,7 @@ public class AuthenticationFilter implements GlobalFilter {
 
         } else {
             if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-                throw new RuntimeException("Missing authorization header");
+                return chain.filter(exchange);
             }
 
             String authToken = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
@@ -75,7 +79,13 @@ public class AuthenticationFilter implements GlobalFilter {
                 if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
                         HttpMethod.PUT.name().equalsIgnoreCase(method) ||
                         HttpMethod.DELETE.name().equalsIgnoreCase(method))
-                        && contentType.contains(CONTENT_TYPE_JSON)) {
+                        && contentType.contains(CONTENT_TYPE_JSON)
+                        && userDTO!=null
+                ) {
+                    exchange.mutate().request(
+                            exchange.getRequest().mutate()
+                                    .header("userId", String.valueOf(userDTO.getUserId()))
+                                    .build());
 
                     ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config()
                             .setContentType(ContentType.APPLICATION_JSON.getMimeType())

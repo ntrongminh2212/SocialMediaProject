@@ -1,10 +1,7 @@
 package com.example.postservice.id;
 
 import com.example.postservice.entity.Post;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.IdClass;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +13,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Embeddable
 public class PostReactionId implements Serializable {
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "post_id")
     private Post post;
     private Long userId;

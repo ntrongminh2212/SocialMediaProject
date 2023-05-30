@@ -16,5 +16,5 @@ public interface PostReactionMapper {
     @Mapping(source = "postReactionDTO.userId",target = "postReactionId.userId")
     @Mapping(source = "postReactionDTO.postId",target = "postReactionId.post.postId")
     PostReaction postReactionToEntity(PostReactionDTO postReactionDTO);
-    List<PostReactionDTO> getLstPostReactionDTO(List<PostReaction> postReactionList);
+    List<PostReactionDTO> postReactionListToDTO(List<PostReaction> postReactionList);
 }

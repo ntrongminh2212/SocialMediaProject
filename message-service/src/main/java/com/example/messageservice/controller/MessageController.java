@@ -9,6 +9,9 @@ import com.example.messageservice.service.MessageService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.messaging.handler.annotation.DestinationVariable;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,7 +19,7 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
-@RequestMapping(path = "/message")
+//@RequestMapping(path = "/message")
 public class MessageController {
     Logger logger = Logger.getLogger(MessageController.class);
     @Autowired
@@ -38,12 +41,15 @@ public class MessageController {
         return ResponseEntity.badRequest().build();
     }
 
-    @PostMapping("/send")
+    @MessageMapping("/send/{conversationId}")
+    @SendTo("/conversation/{conversationId}")
     public ResponseEntity<MessageDTO> sendMessage(
-            @RequestBody MessageDTO messageDTO
+            @DestinationVariable Long conversationId
     ){
-        messageDTO = messageService.sendMessage(messageDTO);
-        return ResponseEntity.ok(messageDTO);
+        logger.info(conversationId);
+//        logger.info(messageDTO.getContent());
+//        messageDTO = messageService.sendMessage(messageDTO);
+        return null;
     }
 
     @DeleteMapping("/unsend")

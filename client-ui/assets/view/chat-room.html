@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- https://cdnjs.com/libraries/sockjs-client -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+     <!-- https://cdnjs.com/libraries/stomp.js/ -->
+     <script  src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <title>Chat room</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="message" id="message">
+        <button id="send" type="submit">Send</button>
+    </div>
+
+    <div>
+        <h3>Messages:</h3>
+        <ul id="message-box">
+        </ul>
+    </div>
+    <script src="../scripts/message.js"></script>
+</body>
+
+</html>

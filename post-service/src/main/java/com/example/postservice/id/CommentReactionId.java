@@ -1,6 +1,7 @@
 package com.example.postservice.id;
 
 import com.example.postservice.entity.Comment;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

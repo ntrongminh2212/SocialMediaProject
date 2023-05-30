@@ -18,7 +18,7 @@ public interface PostReactionRepository extends JpaRepository<PostReaction, Post
                     "WHERE post_id = ?1",
             nativeQuery = true
     )
-    Optional<List<PostReaction>> findByPost(Long postId);
+    Optional<List<PostReaction>> findByPostId(Long postId);
 
     @Query(
             value = "SELECT *\n" +

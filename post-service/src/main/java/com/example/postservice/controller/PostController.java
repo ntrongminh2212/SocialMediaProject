@@ -17,6 +17,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -54,6 +55,7 @@ public class PostController {
             if (postDTO.isPresent()){
                 return ResponseEntity.ok(postDTO);
             }
+            return new ResponseEntity<>(ResponseDTO.NOTFOUND,HttpStatus.NOT_FOUND);
         }
         return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
@@ -64,8 +66,8 @@ public class PostController {
             @RequestBody PostDTO postDTO
     ) throws IOException {
         if (postDTO.getUserId()!=null) {
-            rabbitTemplate.convertAndSend(MessageConfig.EXCHANGE, MessageConfig.ROUTING_KEY, postDTO);
-            return ResponseEntity.ok(true);
+            postDTO = postService.createPost(postDTO).get();
+            return ResponseEntity.ok(postDTO);
         }
         return new ResponseEntity<>(ResponseDTO.BADREQUEST, HttpStatus.BAD_REQUEST);
     }
@@ -83,8 +85,31 @@ public class PostController {
         return new ResponseEntity<>(ResponseDTO.BADREQUEST, HttpStatus.BAD_REQUEST);
     }
 
-//    @DeleteMapping("/delete-post")
-//    public
+    @DeleteMapping("/delete-post")
+    public ResponseEntity<Object> deletePost(@RequestBody PostDTO postDTO){
+        if (postDTO.getUserId() !=null){
+            boolean rs = postService.deletePost(postDTO);
+            if (rs) return ResponseEntity.ok(new HashMap<>(){{
+                put("status",200);
+                put("success", true);
+            }});
+            else return new ResponseEntity<>(ResponseDTO.NOTFOUND,HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+    }
+
+    @GetMapping("/new-feeds")
+    public ResponseEntity<Object> getNewFeeds(
+            final HttpServletRequest request
+    ){
+        if (request.getHeader("userId")!=null){
+            Long userId = Long.parseLong(request.getHeader("userId"));
+            List<PostDTO> newFeedPostList = postService.getNewFeed(userId);
+            return ResponseEntity.ok(newFeedPostList);
+        }
+        return ResponseEntity.badRequest()
+                .body(ResponseDTO.BADREQUEST);
+    }
 }
 
 

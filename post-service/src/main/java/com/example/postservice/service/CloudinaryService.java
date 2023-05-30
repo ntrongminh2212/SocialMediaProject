@@ -1,6 +1,7 @@
 package com.example.postservice.service;
 
 import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,21 @@ public class CloudinaryService {
                     .upload(base64Image, options);
         } catch (IOException e) {
             logger.info(e.getMessage());
+        }
+        return result;
+    }
+
+    public Map<String, String> deleteImage(String imageUrl) {
+        Map result = null;
+        int beginIndex = imageUrl.lastIndexOf("/");
+        int lastIndex = imageUrl.lastIndexOf(".");
+        imageUrl = imageUrl.substring(beginIndex,lastIndex);
+        logger.info("[Public Id] " + imageUrl+ "["+beginIndex+","+lastIndex+"]");
+        try {
+            result = cloudinary.uploader()
+                    .destroy(options.get("folder")+imageUrl, ObjectUtils.emptyMap());
+        } catch (Exception e) {
+            logger.error(e.getMessage());
         }
         return result;
     }
