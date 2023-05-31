@@ -1,4 +1,4 @@
-const host = "http://localhost:9003"
+const host = "http://localhost:8080"
 const params = new URLSearchParams(window.location.search)
 let conversationId;
 let messageInput = document.querySelector('#message');
@@ -10,10 +10,10 @@ if (params.has("conversationId")) {
 }
 
 function connect() {
-    var socket = new SockJS(`${host}/message/ws`);
+    var socket = new SockJS(`${host}/ws`);
     stompClient = Stomp.over(socket);
 
-    stompClient.connect({}, onConnected, onError);
+    stompClient.connect({ "Authorization": `Bearer ${localStorage.getItem("userToken")}` }, onConnected, onError);
 }
 
 // Connect to WebSocket Server.
@@ -26,17 +26,23 @@ function sendMessage(event) {
             content: messageInput.value,
             conversationId: conversationId
         };
-        stompClient.send(`${host}/send/${conversationId}`, {}, JSON.stringify(chatMessage));
+        stompClient.send(
+            `/app/send/${conversationId}`,
+            { "Authorization": `Bearer ${localStorage.getItem("userToken")}` },
+            JSON.stringify(chatMessage)
+        );
         messageInput.value = '';
     }
     event.preventDefault();
 }
 
 
-function onConnected() {
-    console.log("Connected!");
-    // Subscribe to the Public Topic
-    stompClient.subscribe(`${host}/message/conversation/${conversationId}`, onMessageReceived);
+async function onConnected() {
+    stompClient.subscribe(
+        `/conversation/${conversationId}`,
+        onMessageReceived,
+        { "Authorization": `Bearer ${localStorage.getItem("userToken")}` }
+    );
 }
 
 function onError() {
@@ -44,8 +50,9 @@ function onError() {
 }
 
 function onMessageReceived(payload) {
+    console.log("Subcribe");
     var message = JSON.parse(payload.body);
-    console.log(message);
+    console.log('Receive: ',message);
 }
 
 sendButton.addEventListener("click",sendMessage);

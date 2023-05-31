@@ -18,7 +18,7 @@ spring:
         - id: MESSAGE-SERVICE
           uri: lb://MESSAGE-SERVICE
           predicates:
-            - Path=/message/**
+            - Path=/message/**, /ws/**, /conversation/**
       globalcors:
         corsConfigurations:
           '[/**]':

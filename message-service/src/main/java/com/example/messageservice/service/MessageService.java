@@ -15,4 +15,8 @@ public interface MessageService {
     MessageDTO sendMessage(MessageDTO messageDTO);
 
     boolean unSendMessage(MessageDTO messageDTO);
+
+    boolean isParticipant(Long userId, Long conversationId);
+
+    List<MessageDTO> getMsgsByConversationId(Long conversationId);
 }

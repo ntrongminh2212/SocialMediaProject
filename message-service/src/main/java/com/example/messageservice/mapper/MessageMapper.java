@@ -6,6 +6,8 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
 
+import java.util.List;
+
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface MessageMapper {
 
@@ -13,4 +15,6 @@ public interface MessageMapper {
     MessageDTO messageToDTO(Message message);
     @Mapping(source = "messageDTO.conversationId",target = "conversation.conversationId")
     Message messageToEntity(MessageDTO messageDTO);
+
+    List<MessageDTO> messageListToDTO(List<Message> messageList);
 }

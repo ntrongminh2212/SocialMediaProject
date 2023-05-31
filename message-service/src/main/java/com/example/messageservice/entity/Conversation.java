@@ -1,5 +1,6 @@
 package com.example.messageservice.entity;
 
+import com.example.messageservice.dto.ConversationType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,6 +27,7 @@ public class Conversation {
     private Long conversationId;
     private Long userId;
     private String name;
+    private ConversationType type = ConversationType.PRIVATE;
     @CreationTimestamp
     private Date createdTime;
 }

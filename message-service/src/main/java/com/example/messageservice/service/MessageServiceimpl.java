@@ -83,6 +83,19 @@ public class MessageServiceimpl implements MessageService {
         }
         return false;
     }
+
+    @Override
+    public boolean isParticipant(Long userId, Long conversationId) {
+        Optional<Participant> participant = participantRepository.findByUserIdAndConversationId(userId,conversationId);
+        if (participant.isPresent()) return true;
+        return false;
+    }
+
+    @Override
+    public List<MessageDTO> getMsgsByConversationId(Long conversationId) {
+        List<Message> messageList = messageRepository.findByConversationId(conversationId);
+        return messageMapper.messageListToDTO(messageList);
+    }
 }
 
 

@@ -1,0 +1,26 @@
+2023-05-31 10:59:32 INFO  MessageController:24 - 123
+2023-05-31 11:00:12 INFO  MessageController:24 - abc
+2023-05-31 11:04:29 INFO  MessageController:26 - 1232
+2023-05-31 11:41:57 INFO  ConversationController:49 - 1232
+2023-05-31 13:13:17 INFO  ConversationController:49 - 1232
+2023-05-31 13:15:00 INFO  ConversationController:49 - 1232
+2023-05-31 13:15:15 INFO  ConversationController:49 - 1232
+2023-05-31 13:15:24 INFO  ConversationController:49 - 1232
+2023-05-31 13:15:35 INFO  ConversationController:49 - abc2
+2023-05-31 13:15:57 INFO  ConversationController:49 - abc2
+2023-05-31 13:16:06 INFO  ConversationController:49 - abc2
+2023-05-31 13:16:12 INFO  ConversationController:49 - abc2
+2023-05-31 13:59:34 INFO  ConversationController:51 - 1232
+2023-05-31 14:15:57 INFO  WebSocketConfiguration:43 - {Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNyxtaW5oLnRyb25nLm5ndXllbjEyMzQ1QHlvcG1haWwuY29tIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MDY3ODMxLCJleHAiOjE2ODU2NzI2MzF9.Z3zzo-EZBB_vxhpMDmRKckaObdlUNMEjuy7myTv-RIrrA5MZWToPdcGRahwfn8BtvcYRN-kpZo517XdbX20tkQ], accept-version=[1.1,1.0], heart-beat=[10000,10000]}
+2023-05-31 14:17:14 INFO  WebSocketConfiguration:43 - {Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNyxtaW5oLnRyb25nLm5ndXllbjEyMzQ1QHlvcG1haWwuY29tIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MDY3ODMxLCJleHAiOjE2ODU2NzI2MzF9.Z3zzo-EZBB_vxhpMDmRKckaObdlUNMEjuy7myTv-RIrrA5MZWToPdcGRahwfn8BtvcYRN-kpZo517XdbX20tkQ], accept-version=[1.1,1.0], heart-beat=[10000,10000]}
+2023-05-31 14:18:21 INFO  WebSocketConfiguration:43 - [Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNyxtaW5oLnRyb25nLm5ndXllbjEyMzQ1QHlvcG1haWwuY29tIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MDY3ODMxLCJleHAiOjE2ODU2NzI2MzF9.Z3zzo-EZBB_vxhpMDmRKckaObdlUNMEjuy7myTv-RIrrA5MZWToPdcGRahwfn8BtvcYRN-kpZo517XdbX20tkQ]
+2023-05-31 14:19:03 INFO  ConversationController:51 - 1232
+2023-05-31 14:21:14 INFO  ConversationController:51 - 1232
+2023-05-31 14:22:34 INFO  WebSocketConfiguration:44 - [Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNyxtaW5oLnRyb25nLm5ndXllbjEyMzQ1QHlvcG1haWwuY29tIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MDY3ODMxLCJleHAiOjE2ODU2NzI2MzF9.Z3zzo-EZBB_vxhpMDmRKckaObdlUNMEjuy7myTv-RIrrA5MZWToPdcGRahwfn8BtvcYRN-kpZo517XdbX20tkQ]
+2023-05-31 14:25:21 INFO  WebSocketConfiguration:44 - [Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNyxtaW5oLnRyb25nLm5ndXllbjEyMzQ1QHlvcG1haWwuY29tIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MDY3ODMxLCJleHAiOjE2ODU2NzI2MzF9.Z3zzo-EZBB_vxhpMDmRKckaObdlUNMEjuy7myTv-RIrrA5MZWToPdcGRahwfn8BtvcYRN-kpZo517XdbX20tkQ]
+2023-05-31 14:25:21 INFO  ConversationController:51 - 1232
+2023-05-31 14:44:30 INFO  WebSocketConfiguration:55 - [B@1f4f7e82
+2023-05-31 14:48:38 INFO  WebSocketConfiguration:55 - [B@79f2ca20
+2023-05-31 14:48:38 INFO  ConversationController:51 - 1232
+2023-05-31 14:54:54 INFO  ConversationController:51 - 1232
+2023-05-31 15:08:32 INFO  ConversationController:51 - 1232
