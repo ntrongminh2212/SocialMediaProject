@@ -50,8 +50,8 @@ public class MessageServiceimpl implements MessageService {
         Long conversationId = inviteFormDTO.getLstParticipantDTO().get(0).getConversationId();
 
         Optional<Participant> invitor = participantRepository.findByUserIdAndConversationId(user_id,conversationId);
-
-        if(invitor.isPresent()){
+        Optional<Conversation> conversationOwner = conversationRepository.findByUserIdAndConversationId(user_id,conversationId);
+        if(invitor.isPresent()|| conversationOwner.isPresent()){
             for (ParticipantDTO participantDTO:
                  inviteFormDTO.getLstParticipantDTO()) {
                  Participant participant = participantMapper.participantToEntity(participantDTO);
@@ -66,9 +66,16 @@ public class MessageServiceimpl implements MessageService {
     @Override
     public MessageDTO sendMessage(MessageDTO messageDTO) {
         Message message = messageMapper.messageToEntity(messageDTO);
-        return messageMapper.messageToDTO(
+        messageDTO = messageMapper.messageToDTO(
                 messageRepository.save(message)
         );
+        messageDTO.setNickname(
+                participantRepository.findByUserIdAndConversationId(
+                        messageDTO.getUserId(),
+                        messageDTO.getConversationId()
+                ).get().getNickName()
+        );
+        return messageDTO;
     }
 
     @Override
@@ -94,7 +101,17 @@ public class MessageServiceimpl implements MessageService {
     @Override
     public List<MessageDTO> getMsgsByConversationId(Long conversationId) {
         List<Message> messageList = messageRepository.findByConversationId(conversationId);
-        return messageMapper.messageListToDTO(messageList);
+        List<MessageDTO> messageDTOList =  messageMapper.messageListToDTO(messageList);
+        for (MessageDTO messageDTO:
+             messageDTOList) {
+            messageDTO.setNickname(
+                    participantRepository.findByUserIdAndConversationId(
+                            messageDTO.getUserId(),
+                            messageDTO.getConversationId()
+                    ).get().getNickName()
+            );
+        }
+        return messageDTOList;
     }
 }
 

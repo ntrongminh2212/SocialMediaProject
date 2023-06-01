@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -68,7 +69,8 @@ public class AuthenticationFilter implements GlobalFilter {
 
         } else {
             if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-                return chain.filter(exchange);
+                exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
+                return Mono.empty();
             }
 
             String authToken = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
@@ -76,6 +78,10 @@ public class AuthenticationFilter implements GlobalFilter {
                 authToken = authToken.substring(7);
                 UserDTO userDTO = userClient.authenticate(authToken).getBody();
 
+                if (userDTO ==null){
+                    exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
+                    return Mono.empty();
+                }
                 if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
                         HttpMethod.PUT.name().equalsIgnoreCase(method) ||
                         HttpMethod.DELETE.name().equalsIgnoreCase(method))
@@ -108,6 +114,10 @@ public class AuthenticationFilter implements GlobalFilter {
                             .build());
 
                 }
+            }
+            else {
+                exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
+                return Mono.empty();
             }
         }
         logger.info(exchange.getRequest().getHeaders());

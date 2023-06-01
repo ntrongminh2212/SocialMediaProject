@@ -112,14 +112,36 @@ public class UserController {
         return Optional.empty();
     }
 
-    @GetMapping("/info/{user_id}")
-    public Optional<UserDTO> getUserInfo(@PathVariable("user_id") Long user_id){
-        logger.info("[request come]");
-        Optional<UserDTO> user = userService.getUserInfo(user_id);
-        if (user.isPresent()){
-            return user;
+    @GetMapping("/info")
+    public ResponseEntity<Object> getUserInfo(
+            final HttpServletRequest request
+    ) {
+        if (request.getHeader("userId")!=null) {
+            Long user_id = Long.parseLong(request.getHeader("userId"));
+            Optional<UserDTO> user = userService.getUserInfo(user_id);
+            if (user.isPresent()) {
+                return ResponseEntity.ok(user.get());
+            }
+            return new ResponseEntity<>(ResponseDTO.NOTFOUND,HttpStatus.NOT_FOUND);
         }
-        return Optional.empty();
+        ResponseDTO.BADREQUEST.put("message","Not an user");
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+    }
+
+    @GetMapping("/info/{user_id}")
+    public ResponseEntity<Object> getUserInfo(
+            @PathVariable("user_id") Long user_id,
+            final HttpServletRequest request
+    ) {
+        if (request.getHeader("userId")!=null) {
+            Optional<UserDTO> user = userService.getUserInfo(user_id);
+            if (user.isPresent()) {
+                return ResponseEntity.ok(user.get());
+            }
+            return new ResponseEntity<>(ResponseDTO.NOTFOUND,HttpStatus.NOT_FOUND);
+        }
+        ResponseDTO.BADREQUEST.put("message","Not an user");
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 
     @PostMapping("/reaction-details")

@@ -62,6 +62,9 @@ public class User implements UserDetails {
     @UpdateTimestamp
     private Date updatedTime;
 
+    public String getFullName(){
+        return this.lastName+" "+this.firstName;
+    }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));

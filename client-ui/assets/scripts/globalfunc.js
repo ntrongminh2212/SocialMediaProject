@@ -1,5 +1,14 @@
 function requestOption(method, body, userToken) {
-    return {
+    return method==='GET'?
+    {
+        method: method,
+        mode: 'cors',
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${userToken}`
+        }
+    }:
+    {
         method: method,
         mode: 'cors',
         headers: {

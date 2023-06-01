@@ -14,6 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MessageDTO {
+    private String nickname;
     private Long messageId;
     private Long conversationId;
     private String content;

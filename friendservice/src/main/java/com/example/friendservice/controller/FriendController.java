@@ -14,10 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 @RestController
 @RequestMapping(path = "/friend")
@@ -41,23 +38,33 @@ public class FriendController {
     }
 
     @PostMapping("/request")
-    public FriendDTO requestFriend(
+    public ResponseEntity<Object> requestFriend(
             @RequestBody Map<String, String> body
     ) {
-        logger.info("[Friend request come]");
-        return friendService.requestFriend(body);
+        if (body.get("userId") !=null) {
+            Optional<FriendDTO> friendDTO =friendService.requestFriend(body);
+            if (friendDTO.isPresent()) {
+                return ResponseEntity.ok(friendDTO.get());
+            }
+            ResponseDTO.BADREQUEST.put("message", "Friend request has already exist");
+            return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+        }
+        ResponseDTO.BADREQUEST.put("message", "User not identified");
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 
     @PutMapping("/request")
     public ResponseEntity<Object> acceptFriendRequest(
             @RequestBody Map<String, String> body
     ){
-
-        int rs= friendService.acceptFriendRequest(body);
-        if (rs>0){
-            return ResponseEntity.ok(true);
+        if (body.get("userId") !=null) {
+            int rs = friendService.acceptFriendRequest(body);
+            if (rs > 0) {
+                return ResponseEntity.ok(true);
+            }
+            return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<Object>(falseResponse, HttpStatus.NOT_FOUND);
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 
     @GetMapping("/list")

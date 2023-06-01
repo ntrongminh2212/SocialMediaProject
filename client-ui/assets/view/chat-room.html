@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 
+    user_id: userToken
+    15     : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNSxtaW5oLm5ndXllbkBzdWNjZXNzc29mdHdhcmUuZ2xvYmFsIiwiaXNzIjoiTmd1eWVuVHJvbmdNaW5oIiwiaWF0IjoxNjg1MzMwMDY2LCJleHAiOjE2ODU5MzQ4NjZ9.Au7eZaw5qDqOCWf3PBu17xvbWF0SUdxSPvGzfVwSBoE
+    16     : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU1OTMzMTEsImV4cCI6MTY4NjE5ODExMX0.ShuGLI3z7S7IVb_0EJSVQfAi2ak73DWKDMWcUpn3BDM
+    18     : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCxzbS51c2VyNEB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NTYwODI2NiwiZXhwIjoxNjg2MjEzMDY2fQ.b1Pr9SLS0Qs5m7wyNrlXKvCZu08an24AmxbvWwHfzZY
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- https://cdnjs.com/libraries/sockjs-client -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
-     <!-- https://cdnjs.com/libraries/stomp.js/ -->
-     <script  src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <!-- https://cdnjs.com/libraries/sockjs-client -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <!-- https://cdnjs.com/libraries/stomp.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
     <title>Chat room</title>
-</head>
+    <style>
+        .msg {
+            list-style-type: none;
+            padding: 8px 0;
+        }
+    
+        .send-time {
+            color: grey;
+            margin-right: 24px;
+        }
+    
+        .sender-nickname {
+            color: grey;
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+    </head>
 
 <body>
+    <h2 id="fullname"></h2>
     <div>
         <input type="text" name="message" id="message">
         <button id="send" type="submit">Send</button>
@@ -22,8 +45,27 @@
     <div>
         <h3>Messages:</h3>
         <ul id="message-box">
+
         </ul>
     </div>
+    <script src="../scripts/globalfunc.js"></script>
+    <script src="../scripts/api/user-api.js"></script>
+    <script>
+        async function authenticate() {
+            const userToken = prompt("User token:");
+            if (!userToken) {
+                sessionStorage.setItem("userToken", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU1OTMzMTEsImV4cCI6MTY4NjE5ODExMX0.ShuGLI3z7S7IVb_0EJSVQfAi2ak73DWKDMWcUpn3BDM");
+            } else {
+                sessionStorage.setItem("userToken", userToken)
+            }
+            const userInfo = await getPersonalInfoAPI();
+            console.log(userInfo);
+            document.querySelector("#fullname")
+                .innerHTML = `${userInfo.lastName} ${userInfo.firstName}`;
+        }
+        authenticate()
+    </script>
+    <script src="../scripts/api/message-api.js"></script>
     <script src="../scripts/message.js"></script>
 </body>
 

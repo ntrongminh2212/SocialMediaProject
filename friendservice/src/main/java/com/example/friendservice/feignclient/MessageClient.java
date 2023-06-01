@@ -13,7 +13,7 @@ import java.util.List;
 @FeignClient(value = "MESSAGE-SERVICE",path = "/message/")
 public interface MessageClient {
     @PostMapping("/create-conversation")
-    ResponseEntity<ConversationDTO> createConversation(ConversationDTO conversationDTO);
+    ResponseEntity<ConversationDTO> createConversation(@RequestBody ConversationDTO conversationDTO);
 
     @PostMapping("/conversation-participate")
     ResponseEntity<List<ParticipantDTO>> participateInConversation(

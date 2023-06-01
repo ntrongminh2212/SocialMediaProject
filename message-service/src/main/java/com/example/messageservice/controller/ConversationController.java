@@ -27,9 +27,13 @@ public class ConversationController {
     @Autowired
     private MessageService messageService;
     @PostMapping("/message/create-conversation")
-    public ResponseEntity<ConversationDTO> createConversation(ConversationDTO conversationDTO){
-        conversationDTO = messageService.createConversation(conversationDTO);
-        return ResponseEntity.ok(conversationDTO);
+    public ResponseEntity<Object> createConversation(@RequestBody ConversationDTO conversationDTO){
+        if (conversationDTO.getUserId()!=null) {
+            conversationDTO = messageService.createConversation(conversationDTO);
+            return ResponseEntity.ok(conversationDTO);
+        }
+        ResponseDTO.BADREQUEST.put("message","Not an user");
+        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 
     @PostMapping("/message/conversation-participate")
@@ -68,7 +72,11 @@ public class ConversationController {
         if (rs) {
             return ResponseEntity.ok(true);
         }
-        return ResponseEntity.badRequest().build();
+        ResponseDTO.BADREQUEST
+                .put("message", "User's not own this message");
+        return ResponseEntity.badRequest().body(
+                ResponseDTO.BADREQUEST
+        );
     }
 
     @GetMapping("/message")
@@ -77,8 +85,13 @@ public class ConversationController {
         final HttpServletRequest request
     ){
         if (request.getHeader("userId") !=null) {
-            List<MessageDTO> messageDTOList = messageService.getMsgsByConversationId(conversationId);
-            return ResponseEntity.ok(messageDTOList);
+            Long userId = Long.parseLong(request.getHeader("userId"));
+            if (messageService.isParticipant(userId,conversationId)) {
+                List<MessageDTO> messageDTOList = messageService.getMsgsByConversationId(conversationId);
+                return ResponseEntity.ok(messageDTOList);
+            }
+            ResponseDTO.BADREQUEST.put("message","Not a participant");
+            return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
         }
         return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }

@@ -15,4 +15,10 @@ public class ParticipantDTO {
     private String nickName;
     private Date joinTime;
     private Date updateTime;
+
+    public ParticipantDTO(Long conversationId, Long userId, String nickName) {
+        this.conversationId = conversationId;
+        this.userId = userId;
+        this.nickName = nickName;
+    }
 }

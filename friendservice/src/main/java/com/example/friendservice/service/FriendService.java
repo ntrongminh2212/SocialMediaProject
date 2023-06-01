@@ -5,9 +5,10 @@ import com.example.friendservice.dto.UserDTO;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public interface FriendService {
-    FriendDTO requestFriend(Map<String,String> body);
+    Optional<FriendDTO> requestFriend(Map<String,String> body);
 
     int acceptFriendRequest(Map<String, String> body);
 

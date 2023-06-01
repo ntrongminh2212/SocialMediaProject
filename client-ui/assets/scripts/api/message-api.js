@@ -1,30 +1,10 @@
-const userRouteURL = 'http://localhost:8080/user'
+const messageRouteURL = 'http://localhost:8080/message'
 
-async function login(account) {
-    return fetch(userRouteURL + `/login`, requestOption('POST', account))
-        .then(res => {
-            if (res.status === 200) {
-                return res.json();
-            }
-        })
-        .then(res => {
-            console.log(res);
-                // notificationDialog("success", "Đăng nhập thành công");
-                // window.location.href = `./product-detail.html?id=${res.product_id}`;
-                return res;
-            })
-        .catch(err => {
-            return false;
-        });
-}
-//http://localhost:8080/user/info
-
-
-async function getPersonalInfoAPI() {
+function getConversationMsgsAPI(conversationId) {
     const userToken = sessionStorage.getItem('userToken')
     if (userToken) {
         return fetch(
-            userRouteURL+"/info",
+            messageRouteURL + `?conversation_id=${conversationId}`,
             requestOption('GET', "", userToken)
         )
             .then(res => {
