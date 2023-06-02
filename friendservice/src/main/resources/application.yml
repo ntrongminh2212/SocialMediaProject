@@ -39,7 +39,7 @@ spring:
 
 app:
   jwt:
-    secret: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=
+    secret: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
 
 eureka:
   client:

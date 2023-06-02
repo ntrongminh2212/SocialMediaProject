@@ -86,22 +86,24 @@ public class PostServiceImpl implements PostService {
         Optional<Post> post = postRepository.findById(postId);
         if (post.isPresent()) {
             PostDTO postDTO = postMapper.postToDTO(post.get());
-            List<PostReaction> postReactions = new ArrayList<>();
-            List<Comment> comments = new ArrayList<>();
+            List<PostReactionDTO> postReactionDTOList = postReactionMapper.postReactionListToDTO(
+                    post.get().getPostReactions()
+            );
 
-            postReactions = reactionRepository.findByPostId(postId).get();
-            comments = commentRepository.findByPostId(postId);
+            List<CommentDTO> commentDTOList = commentMapper.commentListToDTO(
+                    post.get().getComments()
+            );
 
-            List<CommentDTO> commentDTOList = commentMapper.commentListToDTO(comments);
-            for (CommentDTO commentDTO :
-                    commentDTOList) {
-                List<CommentReaction> commentReactionList =
-                        commentReactionRepository.findByCommentId(commentDTO.getCommentId());
+            //Qua nhieu lan goi db cho 1 vong lap
+            for (Comment comment :
+                    post.get().getComments()) {
                 List<CommentReactionDTO> commentReactionDTOList =
-                        commentReactionMapper.commentReactionListToDTO(commentReactionList);
-                commentDTO.setCommentReactionDTOList(commentReactionDTOList);
+                        commentReactionMapper.commentReactionListToDTO(
+                                comment.getCommentReactions()
+                        );
+//                commentDTO.setCommentReactionDTOList(commentReactionDTOList);
             }
-            List<PostReactionDTO> postReactionDTOList = postReactionMapper.postReactionListToDTO(postReactions);
+
             postDTO.setComments(commentDTOList);
             postDTO.setPostReactions(postReactionDTOList);
             return Optional.of(postDTO);

@@ -1,0 +1,44 @@
+server:
+  port: 9004
+
+spring:
+  codec:
+    max-in-memory-size: 10MB
+  application:
+    name: GROUP-SERVICE
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/groupdb
+    password: sa123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  globalcors:
+    corsConfigurations:
+      '[/**]':
+        allowedOrigins: "*"
+        allowedHeaders: "*"
+        allowedMethods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+#cloudinary:
+#  cloud_name: minh2212
+#  api_key: 689138855327619
+#  api_secret: lvuOh4BHRyVcvy_8FCeVpC-G9a0

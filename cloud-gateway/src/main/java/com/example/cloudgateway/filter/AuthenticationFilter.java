@@ -36,7 +36,10 @@ public class AuthenticationFilter implements GlobalFilter {
     Logger logger = Logger.getLogger(AuthenticationFilter.class);
     private static final String[] PASS_FILTER_PATHS = {
             "/user/login",
-            "/user/register"
+            "/user/register",
+            "/ws/info",
+            "/ws",
+            "/conversation/**"
     };
     private static final String CONTENT_TYPE_JSON = "application/json";
     private static final String CONTENT_TYPE = "Content-Type";
@@ -114,10 +117,6 @@ public class AuthenticationFilter implements GlobalFilter {
                             .build());
 
                 }
-            }
-            else {
-                exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
-                return Mono.empty();
             }
         }
         logger.info(exchange.getRequest().getHeaders());

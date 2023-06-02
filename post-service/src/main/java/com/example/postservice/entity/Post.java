@@ -10,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -41,6 +42,11 @@ public class Post implements Serializable {
     @Column(name = "updated_datetime")
     @UpdateTimestamp
     private Date updatedTime;
+
+    @OneToMany(mappedBy = "post", fetch = FetchType.EAGER)
+    private List<Comment> comments;
+    @OneToMany(mappedBy = "postReactionId.post", fetch = FetchType.EAGER)
+    private List<PostReaction> postReactions;
 }
 
 

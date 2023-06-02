@@ -1238,3 +1238,314 @@
 2023-06-01 17:37:07 INFO  AuthenticationFilter:64 - [Method] GET
 2023-06-01 17:37:15 INFO  AuthenticationFilter:64 - [Method] GET
 2023-06-01 17:37:25 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:28 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:28 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:40 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:40 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:53 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:15:53 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:16:17 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:16:23 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:16:55 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:16:58 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:17:36 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:17:36 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:17:59 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:17:59 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:33 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:33 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:45 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:45 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:55 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:18:55 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:19:08 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:19:10 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:19:31 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:19:49 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:20:39 INFO  AuthenticationFilter:64 - [Method] GET
+2023-06-02 09:21:05 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:21:16 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:05 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:23 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:25 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:31 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:39 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:45 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:50 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:24:55 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:06 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:10 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:15 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:20 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:27 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:40 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:40 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:53 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:55 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:25:55 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", Cache-Control:"max-age=0", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:10 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:10 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:15 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:15 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:17 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:17 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:17 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:17 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:17 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:17 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:19 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:19 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:19 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:19 INFO  AuthenticationFilter:124 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:27:27 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:27:27 INFO  AuthenticationFilter:65 - [Method] GET
+2023-06-02 09:28:27 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:28:27 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:29:34 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:29:34 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:29:50 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:30:02 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:30:45 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:31:02 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:31:23 INFO  AuthenticationFilter:66 - [Method] GET
+2023-06-02 09:31:53 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:31:57 INFO  AuthenticationFilter:126 - [Host:"localhost:8080", Connection:"keep-alive", Cache-Control:"max-age=0", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:32:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:32:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:32:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:32:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:11 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:11 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:41 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:41 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:35:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:39:30 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:39:30 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", Cache-Control:"max-age=0", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"none", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:39:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:39:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:40:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:41:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:41:31 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:41:51 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:43:02 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:43:02 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:44:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:44:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:44:55 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:45:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:46:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:46:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:46:39 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:46:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:47:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:47:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:47:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:48:02 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:48:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:48:11 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:49:05 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 09:49:39 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 09:49:39 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"010d52be-a1bb-4f37-8581-93be7ac6e893", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"74"]
+2023-06-02 09:50:07 INFO  AuthenticationFilter:67 - [Method] DELETE
+2023-06-02 09:50:07 INFO  AuthenticationFilter:122 - [Authorization:"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCxzbS51c2VyNEB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NTY3NDE4MCwiZXhwIjoxNjg2Mjc4OTgwfQ.j11SRwP5LlkQHD2zF5Ksa2xZiiUMJWw-gPnt0dMW27c", Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"646543ad-db4f-4257-a89e-2b191df0ed4b", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"22"]
+2023-06-02 09:51:12 INFO  AuthenticationFilter:67 - [Method] DELETE
+2023-06-02 09:51:54 INFO  AuthenticationFilter:67 - [Method] DELETE
+2023-06-02 09:52:08 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:15 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:15 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:15 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:54:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:26 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:26 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:54:26 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:54:26 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:55:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:55:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:55:12 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:55:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:59:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:59:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 09:59:39 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 09:59:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:22 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:00:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:27 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:27 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:00:27 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:00:27 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:05 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:07 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:12 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:23 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:23 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:23 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:23 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:24 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:01:29 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:01:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:03:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:03:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:03:38 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:03:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:04:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:04:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:04:12 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:04:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:04 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:06:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:16 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:06:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:21 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:06:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:35 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:35 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:35 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:06:35 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:43 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:43 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:06:43 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:06:43 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:08 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:08 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:08 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:08:08 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:14 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:14 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:08:14 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:08:14 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:10:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:01 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:19 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:28 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:33 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:48 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:53 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:11:58 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:12:02 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:12:07 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:12:12 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:13:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:13:45 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:13:48 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:13:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:14:11 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:14:14 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:14:25 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:14:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:19:54 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:20:01 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:22:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:35:55 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 10:35:55 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"928a296a-3d75-425f-8be2-2373b80188a6", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"78"]
+2023-06-02 10:36:09 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:36:19 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:22 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:43 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:37:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:00 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:10 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:17 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:30 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:38:35 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:39:13 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 10:39:13 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"9168f5a6-953e-4eeb-ad49-b805b6a7cb37", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"88"]
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:40:52 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:40:52 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:40:52 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:41:14 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 10:41:14 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"9d77b622-84f9-4474-81db-15387da82460", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"88"]
+2023-06-02 10:45:47 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 10:45:47 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"560e3b5e-bce8-436c-af27-ac7b712bfc86", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"74"]
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:46:37 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:46:37 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:46:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:58:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:58:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:58:39 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:58:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:19 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:19 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:19 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:59:19 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:21 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:59:21 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:40 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:40 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 10:59:40 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 10:59:40 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:16 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 11:04:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:24 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 11:04:24 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:31 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:31 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:04:31 INFO  AuthenticationFilter:122 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Accept:"*/*", Origin:"http://127.0.0.1:5500", Sec-Fetch-Site:"cross-site", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://127.0.0.1:5500/", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9"]
+2023-06-02 11:04:31 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:06:46 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:06:46 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"10fab2de-7f15-439d-85d8-fd188281dbbe", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"225"]
+2023-06-02 11:10:17 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:10:17 INFO  AuthenticationFilter:122 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"8bdbc737-243f-4c98-9d2a-047661483eeb", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"74"]
+2023-06-02 11:11:49 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:18:40 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:19:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:21:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:21:40 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:23:28 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:23:35 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:24:05 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:24:13 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 11:24:48 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-02 11:25:36 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 16:50:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 16:50:57 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 16:51:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-02 16:54:37 INFO  AuthenticationFilter:67 - [Method] GET

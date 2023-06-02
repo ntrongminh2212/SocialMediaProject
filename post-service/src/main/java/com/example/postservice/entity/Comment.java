@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -37,4 +38,7 @@ public class Comment {
     private Date createTime;
     @UpdateTimestamp
     private Date updateTime;
+
+    @OneToMany(mappedBy = "commentReactionId.comment", fetch = FetchType.EAGER)
+    private List<CommentReaction> commentReactions;
 }

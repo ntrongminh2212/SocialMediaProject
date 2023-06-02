@@ -50,8 +50,8 @@ async function onConnected() {
     renderMessage(msgList);
 }
 
-function onError() {
-    console.log("Error");
+function onError(error) {
+    alert(error)
 }
 
 function onMessageReceived(payload) {
