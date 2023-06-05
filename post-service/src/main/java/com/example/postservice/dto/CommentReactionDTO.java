@@ -14,6 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CommentReactionDTO {
+    private UserDTO user;
     private Long commentId;
     private Long userId;
     private String reaction;

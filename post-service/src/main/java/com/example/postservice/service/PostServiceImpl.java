@@ -50,14 +50,19 @@ public class PostServiceImpl implements PostService {
     @Override
     public Optional<List<PostDTO>> getPostOfUser(Long userId) {
         Optional<List<Post>> lstPostByUserId = postRepository.findByCreatorIdOrderByCreatedTimeDesc(userId);
-        logger.info("[Got all user posts]");
+        Map<Long, UserDTO> userDTOMap = userClient.getListUserDetail(
+                getUserIdSet(lstPostByUserId.get())
+        );
         List<PostDTO> lstPostDTO = new ArrayList<>();
         for (Post post : lstPostByUserId.get()) {
             Optional<List<PostReaction>> lstPostReaction = reactionRepository.findByPostId(post.getPostId());
             List<PostReactionDTO> lstPostReactionDTO = postReactionMapper.postReactionListToDTO(lstPostReaction.get());
             logger.info("[Request reaction for post " + post.getPostId() + "]");
-            lstPostReactionDTO = userClient.getUserReactionDetail(lstPostReactionDTO);
+            for (PostReactionDTO postReactionDTO : lstPostReactionDTO) {
+                postReactionDTO.setUser(userDTOMap.get(postReactionDTO.getUserId()));
+            }
             PostDTO postDTO = postMapper.postToDTO(post, lstPostReactionDTO);
+            postDTO.setUser(userDTOMap.get(postDTO.getUserId()));
             lstPostDTO.add(postDTO);
         }
         logger.info("[Done]");
@@ -85,26 +90,37 @@ public class PostServiceImpl implements PostService {
     public Optional<PostDTO> getPostDetail(Long postId) {
         Optional<Post> post = postRepository.findById(postId);
         if (post.isPresent()) {
+            Map<Long, UserDTO> userDTOMap = userClient.getListUserDetail(
+                    getUserIdSet(new ArrayList<>() {{
+                        add(post.get());
+                    }})
+            );
             PostDTO postDTO = postMapper.postToDTO(post.get());
             List<PostReactionDTO> postReactionDTOList = postReactionMapper.postReactionListToDTO(
                     post.get().getPostReactions()
             );
+            for (PostReactionDTO postReactionDTO : postReactionDTOList) {
+                postReactionDTO.setUser(userDTOMap.get(postReactionDTO.getUserId()));
+            }
 
-            List<CommentDTO> commentDTOList = commentMapper.commentListToDTO(
-                    post.get().getComments()
-            );
-
-            //Qua nhieu lan goi db cho 1 vong lap
+            List<CommentDTO> commentDTOList = new ArrayList<>();
             for (Comment comment :
                     post.get().getComments()) {
                 List<CommentReactionDTO> commentReactionDTOList =
                         commentReactionMapper.commentReactionListToDTO(
                                 comment.getCommentReactions()
                         );
-//                commentDTO.setCommentReactionDTOList(commentReactionDTOList);
+                for (CommentReactionDTO commentReactionDTO : commentReactionDTOList) {
+                    commentReactionDTO.setUser(userDTOMap.get(commentReactionDTO.getUserId()));
+                }
+                CommentDTO commentDTO = commentMapper.commentToDTO(comment);
+                commentDTO.setCommentReactionDTOList(commentReactionDTOList);
+                commentDTO.setUser(userDTOMap.get(commentDTO.getUserId()));
+                commentDTOList.add(commentDTO);
             }
 
             postDTO.setComments(commentDTOList);
+            postDTO.setUser(userDTOMap.get(postDTO.getUserId()));
             postDTO.setPostReactions(postReactionDTOList);
             return Optional.of(postDTO);
         }
@@ -117,8 +133,7 @@ public class PostServiceImpl implements PostService {
         List<UserDTO> userDTOList = userClient.getListFriend(userId).getBody();
         //Get post of each friend and group
         List<PostDTO> newFeeds = new ArrayList<>();
-        for (UserDTO userDTO :
-                userDTOList) {
+        for (UserDTO userDTO : userDTOList) {
             List<PostDTO> postDTOList = getPostOfUser(userDTO.getUserId()).get();
             newFeeds.addAll(postDTOList);
         }
@@ -133,14 +148,14 @@ public class PostServiceImpl implements PostService {
     public boolean deletePost(PostDTO postDTO) {
         Optional<Post> postOptional = postRepository.findByPostIdAndCreatorId(postDTO.getPostId(), postDTO.getUserId());
         if (postOptional.isPresent()) {
-            Map<String,String> rs = cloudinaryService.deleteImage(postOptional.get().getAttachmentUrl());
-            if (rs!=null) {
+            Map<String, String> rs = cloudinaryService.deleteImage(postOptional.get().getAttachmentUrl());
+            if (rs != null) {
                 Optional<List<PostReaction>> postReactions = reactionRepository.findByPostId(postOptional.get().getPostId());
                 List<Comment> comments = commentRepository.findByPostId(postOptional.get().getPostId());
 
                 reactionRepository.deleteAll(postReactions.get());
-                for (Comment comment:
-                     comments) {
+                for (Comment comment :
+                        comments) {
                     commentReactionRepository.deleteAll(
                             commentReactionRepository.findByCommentId(comment.getCommentId())
                     );
@@ -151,6 +166,24 @@ public class PostServiceImpl implements PostService {
             return true;
         }
         return false;
+    }
+
+    Set<Long> getUserIdSet(List<Post> lstPost) {
+        Set<Long> listUserId = new HashSet<>();
+        for (Post post : lstPost) {
+            listUserId.add(post.getCreatorId());
+            for (PostReaction postReaction : post.getPostReactions()) {
+                listUserId.add(postReaction.getPostReactionId().getUserId());
+            }
+
+            for (Comment comment : post.getComments()) {
+                listUserId.add(comment.getUserId());
+                for (CommentReaction commentReaction : comment.getCommentReactions()) {
+                    listUserId.add(commentReaction.getCommentReactionId().getUserId());
+                }
+            }
+        }
+        return listUserId;
     }
 }
 

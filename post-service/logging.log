@@ -222,3 +222,21 @@
 2023-06-02 10:22:23 INFO  PostServiceImpl:53 - [Got all user posts]
 2023-06-02 10:22:23 INFO  PostServiceImpl:58 - [Request reaction for post 9]
 2023-06-02 10:22:23 INFO  PostServiceImpl:63 - [Done]
+2023-06-05 11:45:02 INFO  PostServiceImpl:60 - [Request reaction for post 9]
+2023-06-05 11:45:02 INFO  PostServiceImpl:67 - [Done]
+2023-06-05 13:08:16 INFO  GlobalExceptionHandler:15 - org.springframework.web.bind.MissingRequestHeaderException: Required request header 'userId' for method parameter type Long is not present
+2023-06-05 13:17:29 INFO  GlobalExceptionHandler:19 - :((
+2023-06-05 13:22:07 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 13:22:07 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 13:25:24 INFO  PostServiceImpl:60 - [Request reaction for post 8]
+2023-06-05 13:25:24 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 13:25:24 INFO  PostServiceImpl:60 - [Request reaction for post 9]
+2023-06-05 13:25:24 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 13:31:12 INFO  PostServiceImpl:60 - [Request reaction for post 8]
+2023-06-05 13:31:12 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 13:31:12 INFO  PostServiceImpl:60 - [Request reaction for post 9]
+2023-06-05 13:31:12 INFO  PostServiceImpl:68 - [Done]
+2023-06-05 16:45:23 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Font
+2023-06-05 16:48:30 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Font
+2023-06-05 16:49:32 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Font
+2023-06-05 16:51:55 INFO  GlobalExceptionHandler:32 - java.lang.IllegalArgumentException: Invalid char (/) found at index (23) in sheet name 'Post Created Between 25/05/2023'

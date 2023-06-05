@@ -14,9 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @RestController
 @RequestMapping(path = "/user")
@@ -34,7 +32,7 @@ public class UserController {
         Optional<User> user = userService.registerUser(_user);
         if (user.isPresent()) {
             String token = UUID.randomUUID().toString();
-            String verifyURL = applicationURL(request) + "/user/verifyRegistration?token=" + token;
+            String verifyURL = applicationURL(request) + "/user/verifyRegistration?verify=" + token;
             userService.saveUserVerificationToken(token, user.get());
 
             sendEmailService.sendSimpleEmail(user.get().getEmail().trim(),
@@ -48,10 +46,10 @@ public class UserController {
     }
 
     @GetMapping("/verifyRegistration")
-    public String verifyRegistration(@RequestParam String token, final HttpServletRequest request) {
+    public String verifyRegistration(@RequestParam String verify, final HttpServletRequest request) {
         String newToken = UUID.randomUUID().toString();
-        String verifyURL = applicationURL(request) + "/user/verifyRegistration?token=" + newToken;
-        String response = userService.verifyRegistration(token, newToken);
+        String verifyURL = applicationURL(request) + "/user/verifyRegistration?verify=" + newToken;
+        String response = userService.verifyRegistration(verify, newToken);
         if (response.compareTo("Token Expired! A new verification token has been created")==0){
             User user = userService.getUserByVerificationToken(newToken);
 
@@ -66,7 +64,7 @@ public class UserController {
     @PostMapping("/forgot-password")
     public String forgotPassword(@RequestBody EmailAddressDTO email, final HttpServletRequest request) {
         String token = UUID.randomUUID().toString();
-        String verifyPasswordURL = applicationURL(request) + "/user/change-password?token=" + token;
+        String verifyPasswordURL = applicationURL(request) + "/user/change-password?verify=" + token;
         String rs = userService.saveResetPasswordToken(email.getEmail(), token);
         if (rs.compareTo("Reset password token created") == 0) {
             logger.info("Link to change password: " + verifyPasswordURL);
@@ -75,8 +73,8 @@ public class UserController {
     }
 
     @PostMapping("/change-password")
-    public String resetPassword(@RequestParam String token, @RequestBody NewPasswordDTO newPassword) {
-        String rs = userService.changePassword(newPassword.getNewPassword(), token);
+    public String resetPassword(@RequestParam String verify, @RequestBody NewPasswordDTO newPassword) {
+        String rs = userService.changePassword(newPassword.getNewPassword(), verify);
         return rs;
     }
 
@@ -144,9 +142,9 @@ public class UserController {
         return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
 
-    @PostMapping("/reaction-details")
-    public List<PostReactionDTO> getUserReactionDetail(@RequestBody List<PostReactionDTO> lstPostReactionDTO){
-        return userService.getUserReactionDetail(lstPostReactionDTO);
+    @PostMapping("/list-user-details")
+    public Map<Long,UserDTO> getListUserDetail(@RequestBody Set<Long> lstUserId){
+        return userService.getListUserDetail(lstUserId);
     }
 
     private String applicationURL(HttpServletRequest request) {

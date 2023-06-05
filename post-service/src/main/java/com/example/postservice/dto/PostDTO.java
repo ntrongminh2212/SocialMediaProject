@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PostDTO {
+    private UserDTO user;
     private Long postId;
     private Long userId;
     private String statusContent;

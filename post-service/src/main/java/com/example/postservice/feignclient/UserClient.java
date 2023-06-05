@@ -7,7 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 @FeignClient(name = "USER-SERVICE")
 public interface UserClient {
@@ -16,13 +18,11 @@ public interface UserClient {
             @PathVariable("user_id") Long user_id
     );
 
-    @PostMapping("/user/reaction-details")
-    List<PostReactionDTO> getUserReactionDetail(
-            @RequestBody List<PostReactionDTO> lstPostReactionDTO
-    );
-
     @GetMapping("/friend/list")
     ResponseEntity<List<UserDTO>> getListFriend(
             @RequestHeader("userId") Long userId
     );
+
+    @PostMapping("/user/list-user-details")
+    Map<Long,UserDTO> getListUserDetail(@RequestBody Set<Long> lstUserId);
 }

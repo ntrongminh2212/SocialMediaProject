@@ -6,6 +6,7 @@ import java.util.Map;
 public class ResponseDTO {
     public static Map<String,Object> BADREQUEST;
     public static  Map<String,Object> NOTFOUND;
+    public static  Map<String,Object> UNAUTHORIZED;
 
      static {
         BADREQUEST = new HashMap<>();
@@ -15,5 +16,9 @@ public class ResponseDTO {
         NOTFOUND = new HashMap<>();
         NOTFOUND.put("status",404);
         NOTFOUND.put("error", "Not Found");
+
+         UNAUTHORIZED = new HashMap<>();
+         UNAUTHORIZED.put("status",401);
+         UNAUTHORIZED.put("error", "Unauthorized");
     }
 }

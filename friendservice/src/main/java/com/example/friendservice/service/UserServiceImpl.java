@@ -22,9 +22,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -171,15 +169,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<PostReactionDTO> getUserReactionDetail(List<PostReactionDTO> lstPostReactionDTO) {
-        for (PostReactionDTO postReactionDTO: lstPostReactionDTO) {
-            Optional<User> user = userRepository.findById(postReactionDTO.getUserId());
-            if (user.isPresent()){
-                postReactionDTO = userMapper.updatePostReactionDTO(postReactionDTO,user.get());
-                logger.info("123");
-            }
+    public Map<Long, UserDTO> getListUserDetail(Set<Long> lstUserId) {
+        Map<Long, UserDTO> userDTOMap = new HashMap<>();
+        List<UserDTO> userDTOList = userMapper.userListToDTO(
+                userRepository.findAllById(lstUserId)
+        );
+
+        for (UserDTO userDTO : userDTOList) {
+            userDTOMap.put(userDTO.getUserId(), userDTO);
         }
-        return lstPostReactionDTO;
+        return userDTOMap;
     }
 }
 

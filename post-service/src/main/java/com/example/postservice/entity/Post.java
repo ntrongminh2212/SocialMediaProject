@@ -43,7 +43,7 @@ public class Post implements Serializable {
     @UpdateTimestamp
     private Date updatedTime;
 
-    @OneToMany(mappedBy = "post", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Comment> comments;
     @OneToMany(mappedBy = "postReactionId.post", fetch = FetchType.EAGER)
     private List<PostReaction> postReactions;

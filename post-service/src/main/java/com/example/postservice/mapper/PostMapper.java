@@ -13,9 +13,7 @@ import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface PostMapper {
-    @Mapping(source = "userDTO.firstName",target = "firstName")
-    @Mapping(source = "userDTO.lastName",target = "lastName")
-    @Mapping(source = "userDTO.avatar",target = "avatar")
+    @Mapping(source = "userDTO",target = "user")
     @Mapping(source = "postReaction.reaction",target = "reaction")
     PostReactionDTO userAndPostToPostReactionDTO(UserDTO userDTO, PostReaction postReaction);
 

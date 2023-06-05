@@ -7,7 +7,9 @@ import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.User;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 public interface UserService {
     public Optional<User> registerUser(RegisterUserDTO user);
@@ -26,5 +28,5 @@ public interface UserService {
 
     Optional<UserDTO> getUserInfo(Long userId);
 
-    List<PostReactionDTO> getUserReactionDetail(List<PostReactionDTO> lstPostReactionDTO);
+    Map<Long, UserDTO> getListUserDetail(Set<Long> lstUserId);
 }

@@ -72,7 +72,7 @@ public class AuthenticationFilter implements GlobalFilter {
 
         } else {
             if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-                exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
+                exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                 return Mono.empty();
             }
 
@@ -81,10 +81,10 @@ public class AuthenticationFilter implements GlobalFilter {
                 authToken = authToken.substring(7);
                 UserDTO userDTO = userClient.authenticate(authToken).getBody();
 
-                if (userDTO ==null){
-                    exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
-                    return Mono.empty();
-                }
+//                if (userDTO ==null){
+//                    exchange.getResponse().setStatusCode(HttpStatus.BAD_REQUEST);
+//                    return Mono.empty();
+//                }
                 if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
                         HttpMethod.PUT.name().equalsIgnoreCase(method) ||
                         HttpMethod.DELETE.name().equalsIgnoreCase(method))
