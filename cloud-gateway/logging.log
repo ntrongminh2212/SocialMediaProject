@@ -1605,3 +1605,10 @@
 2023-06-05 16:49:32 INFO  AuthenticationFilter:67 - [Method] GET
 2023-06-05 16:51:54 INFO  AuthenticationFilter:67 - [Method] GET
 2023-06-05 16:54:20 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-06 17:27:49 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-06 17:28:41 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-07 09:07:39 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-07 09:07:55 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-07 09:07:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-07 09:07:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-07 09:08:52 INFO  AuthenticationFilter:67 - [Method] GET

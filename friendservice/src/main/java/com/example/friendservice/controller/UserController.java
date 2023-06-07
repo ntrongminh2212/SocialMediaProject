@@ -147,6 +147,15 @@ public class UserController {
         return userService.getListUserDetail(lstUserId);
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<UserDTO>> searchUsers(
+            @RequestParam String searchStr,
+            @RequestHeader Long userId
+    ){
+        List<UserDTO> userDTOList = userService.searchUsers(searchStr);
+        return ResponseEntity.ok(userDTOList);
+    }
+
     private String applicationURL(HttpServletRequest request) {
         return "http://" + request.getServerName()
                 + ":" + request.getServerPort()

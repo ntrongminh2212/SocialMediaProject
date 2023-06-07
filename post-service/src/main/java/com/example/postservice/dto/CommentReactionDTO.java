@@ -18,5 +18,5 @@ public class CommentReactionDTO {
     private Long commentId;
     private Long userId;
     private String reaction;
-    private Date reactedTime;
+    private String reactedTime;
 }

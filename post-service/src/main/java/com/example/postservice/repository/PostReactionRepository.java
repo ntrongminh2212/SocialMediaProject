@@ -28,4 +28,6 @@ public interface PostReactionRepository extends JpaRepository<PostReaction, Post
             nativeQuery = true
     )
     Optional<PostReaction> findByPostIdAndUserId(Long postId, Long userId);
+
+    List<PostReaction> findByPostReactionIdUserId(Long userId);
 }

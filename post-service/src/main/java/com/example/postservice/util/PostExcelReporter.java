@@ -9,7 +9,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.hibernate.Hibernate;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,6 +23,8 @@ public class PostExcelReporter {
     private List<Post> postList;
 //    private final Long DAY = (long) (1000*60*60*24);
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss a");
+
+    private final String fileFolderPath = "src/main/resources/file/";
 
     public PostExcelReporter(List<Post> postList) {
         this.postList = postList;
@@ -82,7 +86,6 @@ public class PostExcelReporter {
             int columnCount = 0;
 
 //            createCell(row, columnCount++, post.getId(), style);
-
             createCell(row, columnCount++, post.getPostId(), style);
             createCell(row, columnCount++, post.getCreatorId(), style);
             createCell(row, columnCount++, post.getStatusContent(), style);
@@ -105,5 +108,16 @@ public class PostExcelReporter {
 
         outputStream.close();
 
+    }
+
+    public void export(String sheetName, String fileName) throws IOException {
+        createSheet(sheetName);
+        writeHeaderLine();
+        writeDataLines();
+
+        FileOutputStream outputStream = new FileOutputStream(fileFolderPath+fileName);
+        workbook.write(outputStream);
+        workbook.close();
+        outputStream.close();
     }
 }

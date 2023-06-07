@@ -29,4 +29,6 @@ public interface UserService {
     Optional<UserDTO> getUserInfo(Long userId);
 
     Map<Long, UserDTO> getListUserDetail(Set<Long> lstUserId);
+
+    List<UserDTO> searchUsers(String searchStr);
 }

@@ -1,5 +1,6 @@
 package com.example.postservice.service;
 
+import com.example.postservice.dto.ActivityDTO;
 import com.example.postservice.dto.PostDTO;
 
 import java.util.List;
@@ -17,4 +18,8 @@ public interface PostService {
     List<PostDTO> getNewFeed(Long userId);
 
     boolean deletePost(PostDTO postDTO);
+
+    List<ActivityDTO> getActivitiesHistory(Long userId);
+
+    List<PostDTO> searchPosts(String searchStr);
 }

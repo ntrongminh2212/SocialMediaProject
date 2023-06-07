@@ -23,4 +23,6 @@ public interface CommentReactionRepository extends JpaRepository<CommentReaction
             nativeQuery = true
     )
     Optional<CommentReaction> findById(Long commentId, Long userId);
+
+    List<CommentReaction> findByCommentReactionIdUserId(Long userId);
 }

@@ -1,13 +1,12 @@
 package com.example.postservice.controller;
 
-import com.example.postservice.configuration.MessageConfig;
+import com.example.postservice.dto.ActivityDTO;
 import com.example.postservice.dto.PostDTO;
 import com.example.postservice.dto.PostReactionDTO;
 import com.example.postservice.dto.ResponseDTO;
 import com.example.postservice.service.PostReactionService;
 import com.example.postservice.service.PostService;
 import com.example.postservice.service.StatisticService;
-import com.rabbitmq.tools.json.JSONUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
@@ -15,16 +14,13 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(path = "/post")
@@ -97,12 +93,28 @@ public class PostController {
     }
 
     @GetMapping("/new-feeds")
-    public ResponseEntity<Object> getNewFeeds(
-            @RequestHeader Long userId,
-            final HttpServletRequest request
+    public ResponseEntity<List<PostDTO>> getNewFeeds(
+            @RequestHeader Long userId
     ) {
         List<PostDTO> newFeedPostList = postService.getNewFeed(userId);
         return ResponseEntity.ok(newFeedPostList);
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<PostDTO>> searchPosts(
+            @RequestParam String searchStr,
+            @RequestHeader Long userId
+    ){
+        List<PostDTO> postDTOList = postService.searchPosts(searchStr);
+        return ResponseEntity.ok(postDTOList);
+    }
+
+    @GetMapping("/activities-history")
+    public ResponseEntity<List<ActivityDTO>> getActivitiesHistory(
+            @RequestHeader Long userId
+    ){
+        List<ActivityDTO> activityDTOS = postService.getActivitiesHistory(userId);
+        return ResponseEntity.ok(activityDTOS);
     }
 
     @GetMapping("/day-excel")
@@ -112,7 +124,14 @@ public class PostController {
             @RequestParam String dayTo,
             HttpServletResponse response
     ) throws IOException, ParseException {
-        statisticService.exportPostsByDayToExcel(dayFrom,dayTo,response);
+        statisticService.exportPostsByDayBetweenToExcel(dayFrom,dayTo,response);
+    }
+
+    @GetMapping("/post-to-csv-job")
+    public void exportPostsToCsv(
+            @RequestHeader Long userId
+    ){
+        statisticService.exportPostsToCsv();
     }
 }
 

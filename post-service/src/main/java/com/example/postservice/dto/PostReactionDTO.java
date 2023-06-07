@@ -17,5 +17,5 @@ public class PostReactionDTO {
     private Long userId;
     private Long postId;
     private String reaction;
-    private Date reactedTime;
+    private String reactedTime;
 }

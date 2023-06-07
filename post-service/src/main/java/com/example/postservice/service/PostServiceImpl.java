@@ -6,10 +6,7 @@ import com.example.postservice.entity.CommentReaction;
 import com.example.postservice.entity.Post;
 import com.example.postservice.entity.PostReaction;
 import com.example.postservice.feignclient.UserClient;
-import com.example.postservice.mapper.CommentMapper;
-import com.example.postservice.mapper.CommentReactionMapper;
-import com.example.postservice.mapper.PostMapper;
-import com.example.postservice.mapper.PostReactionMapper;
+import com.example.postservice.mapper.*;
 import com.example.postservice.repository.CommentReactionRepository;
 import com.example.postservice.repository.CommentRepository;
 import com.example.postservice.repository.PostReactionRepository;
@@ -19,6 +16,8 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Service
@@ -43,9 +42,12 @@ public class PostServiceImpl implements PostService {
     @Autowired
     CommentReactionMapper commentReactionMapper;
     @Autowired
+    ActivityMapper activityMapper;
+    @Autowired
     CloudinaryService cloudinaryService;
     @Autowired
     private RabbitTemplate rabbitTemplate;
+    private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
     @Override
     public Optional<List<PostDTO>> getPostOfUser(Long userId) {
@@ -139,7 +141,13 @@ public class PostServiceImpl implements PostService {
         }
         //Arrange by date create DESC
         Collections.sort(newFeeds, (postDTO1, postDTO2) -> {
-            return Math.toIntExact(postDTO2.getCreatedTime().getTime() - postDTO1.getCreatedTime().getTime());
+            try {
+                Date createTimed01 = dateTimeFormat.parse(postDTO1.getCreatedTime());
+                Date createTimed02 = dateTimeFormat.parse(postDTO2.getCreatedTime());
+                return Math.toIntExact(createTimed02.getTime() - createTimed01.getTime());
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
         });
         return newFeeds;
     }
@@ -166,6 +174,54 @@ public class PostServiceImpl implements PostService {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<ActivityDTO> getActivitiesHistory(Long userId) {
+        //Post
+        List<ActivityDTO> activityDTOS = new ArrayList<>();
+        activityDTOS.addAll(activityMapper.postToActivityDTO(
+                postMapper.postToDTO(
+                        postRepository.findByCreatorId(userId)
+                )
+        ));
+        //PostReaction
+        activityDTOS.addAll(activityMapper.postReactionToActivityDTO(
+                postReactionMapper.postReactionListToDTO(
+                        reactionRepository.findByPostReactionIdUserId(userId)
+                )
+        ));
+        //Comment
+        activityDTOS.addAll(activityMapper.commentToActivityDTO(
+                commentMapper.commentListToDTO(
+                        commentRepository.findByUserId(userId)
+                )
+        ));
+        //CommentReaction
+        activityDTOS.addAll(activityMapper.commentReactionToActivityDTO(
+                commentReactionMapper.commentReactionListToDTO(
+                        commentReactionRepository.findByCommentReactionIdUserId(userId)
+                )
+        ));
+
+        Collections.sort(activityDTOS, (activity01, activity02) -> {
+            try {
+                Date actionTime01 = dateTimeFormat.parse(activity01.getActionTime());
+                Date actionTime02 = dateTimeFormat.parse(activity02.getActionTime());
+                return Math.toIntExact(actionTime02.getTime() - actionTime01.getTime());
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return activityDTOS;
+    }
+
+    @Override
+    public List<PostDTO> searchPosts(String searchStr) {
+        List<PostDTO> postDTOList = postMapper.postToDTO(
+                postRepository.findBySearchString(searchStr.toUpperCase())
+        );
+        return postDTOList;
     }
 
     Set<Long> getUserIdSet(List<Post> lstPost) {

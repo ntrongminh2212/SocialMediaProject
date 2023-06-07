@@ -180,6 +180,14 @@ public class UserServiceImpl implements UserService {
         }
         return userDTOMap;
     }
+
+    @Override
+    public List<UserDTO> searchUsers(String searchStr) {
+        List<UserDTO> userDTOList = userMapper.userListToDTO(
+                userRepository.findBySearchString(searchStr.toUpperCase())
+        );
+        return userDTOList;
+    }
 }
 
 

@@ -19,8 +19,10 @@ public class PostDTO {
     private Long userId;
     private String statusContent;
     private String attachmentUrl;
-    private Date createdTime;
-    private Date updatedTime;
+    private String createdTime;
+    private String updatedTime;
     private List<PostReactionDTO> postReactions;
     private List<CommentDTO> comments;
+    private int postReactionsCount;
+    private int commentsCount;
 }

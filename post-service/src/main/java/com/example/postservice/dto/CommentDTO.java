@@ -20,7 +20,8 @@ public class CommentDTO {
     private Long postId;
     private Long userId;
     private String content;
-    private Date createTime;
-    private Date updateTime;
+    private String createTime;
+    private String updateTime;
     private List<CommentReactionDTO> commentReactionDTOList;
+    private int commentReactionCount;
 }

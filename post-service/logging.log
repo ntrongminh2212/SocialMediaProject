@@ -240,3 +240,157 @@
 2023-06-05 16:48:30 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Font
 2023-06-05 16:49:32 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Font
 2023-06-05 16:51:55 INFO  GlobalExceptionHandler:32 - java.lang.IllegalArgumentException: Invalid char (/) found at index (23) in sheet name 'Post Created Between 25/05/2023'
+2023-06-06 11:49:09 INFO  StatisticService:65 - Excel file export at 06-06-2023 11:49:09
+2023-06-06 11:49:14 INFO  StatisticService:65 - Excel file export at 06-06-2023 11:49:14
+2023-06-06 11:49:27 INFO  StatisticService:65 - Excel file export at 06-06-2023 11:49:27
+2023-06-06 11:50:40 INFO  StatisticService:65 - Excel file export at 06-06-2023 11:50:40
+2023-06-06 11:50:58 INFO  StatisticService:61 - Excel file export at 06-06-2023 11:50:58
+2023-06-06 11:51:04 INFO  StatisticService:61 - Excel file export at 06-06-2023 11:51:04
+2023-06-06 11:51:11 INFO  StatisticService:61 - Excel file export at 06-06-2023 11:51:11
+2023-06-06 11:51:17 INFO  StatisticService:61 - Excel file export at 06-06-2023 11:51:17
+2023-06-06 11:53:26 INFO  StatisticService:61 - Excel file export at 06-06-2023 11:53:26
+2023-06-06 13:03:49 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:03:49
+2023-06-06 13:04:41 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:04:41
+2023-06-06 13:06:38 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:06:38
+2023-06-06 13:08:28 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:08:28
+2023-06-06 13:11:12 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:11:12
+2023-06-06 13:13:18 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:13:18
+2023-06-06 13:18:17 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:18:17
+2023-06-06 13:23:17 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:23:17
+2023-06-06 13:28:17 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:28:17
+2023-06-06 13:33:17 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:33:17
+2023-06-06 13:38:17 INFO  StatisticService:62 - Excel file export at 06-06-2023 13:38:17
+2023-06-06 15:45:09 INFO  StatisticService:62 - Excel file export at 06-06-2023 15:45:09
+2023-06-06 17:25:21 INFO  StatisticService:71 - Excel file export at 06-06-2023 17:25:21
+2023-06-06 17:28:42 INFO  GlobalExceptionHandler:32 - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+2023-06-07 09:05:10 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:05:10
+2023-06-07 09:08:53 INFO  GlobalExceptionHandler:32 - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+2023-06-07 09:10:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:10:09
+2023-06-07 09:15:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:15:09
+2023-06-07 09:20:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:20:09
+2023-06-07 09:20:50 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:20:50
+2023-06-07 09:24:54 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:24:54
+2023-06-07 09:25:12 INFO  GlobalExceptionHandler:32 - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+2023-06-07 09:25:57 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:25:57
+2023-06-07 09:26:04 INFO  GlobalExceptionHandler:32 - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+2023-06-07 09:30:56 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:30:56
+2023-06-07 09:35:19 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:35:19
+2023-06-07 09:38:56 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:38:56
+2023-06-07 09:43:55 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:43:55
+2023-06-07 09:46:45 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:46:45
+2023-06-07 09:47:56 INFO  GlobalExceptionHandler:32 - org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+2023-06-07 09:51:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:51:44
+2023-06-07 09:56:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 09:56:44
+2023-06-07 10:01:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:01:44
+2023-06-07 10:08:30 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:08:30
+2023-06-07 10:09:32 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:09:32
+2023-06-07 10:13:59 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:13:59
+2023-06-07 10:14:15 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:14:15
+2023-06-07 10:15:43 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:15:43
+2023-06-07 10:16:37 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:16:37
+2023-06-07 10:16:45 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:16:45
+2023-06-07 10:18:01 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:18:01
+2023-06-07 10:25:02 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:25:02
+2023-06-07 10:25:24 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:25:24
+2023-06-07 10:25:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:25:44
+2023-06-07 10:26:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:26:09
+2023-06-07 10:26:50 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:26:50
+2023-06-07 10:28:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:28:09
+2023-06-07 10:30:16 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:30:16
+2023-06-07 10:47:00 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:47:00
+2023-06-07 10:52:00 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:52:00
+2023-06-07 10:57:00 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:57:00
+2023-06-07 10:58:51 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:58:51
+2023-06-07 10:59:32 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:59:32
+2023-06-07 10:59:39 INFO  StatisticService:71 - Excel file export at 07-06-2023 10:59:39
+2023-06-07 11:00:02 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:00:02
+2023-06-07 11:00:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:00:14
+2023-06-07 11:00:32 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:00:32
+2023-06-07 11:02:19 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:02:19
+2023-06-07 11:05:43 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:05:43
+2023-06-07 11:06:25 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:06:25
+2023-06-07 11:13:01 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:13:01
+2023-06-07 11:13:22 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:13:22
+2023-06-07 11:13:36 INFO  PostServiceImpl:102 - 02-06-2023 11:11:52
+2023-06-07 11:17:45 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:17:45
+2023-06-07 11:22:23 INFO  PostServiceImpl:102 - 02-06-2023 11:11:52
+2023-06-07 11:22:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:22:44
+2023-06-07 11:27:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:27:44
+2023-06-07 11:30:26 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:30:26
+2023-06-07 11:35:25 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:35:25
+2023-06-07 11:40:25 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:40:25
+2023-06-07 11:55:36 INFO  StatisticService:71 - Excel file export at 07-06-2023 11:55:36
+2023-06-07 12:00:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:00:34
+2023-06-07 12:05:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:05:34
+2023-06-07 12:10:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:10:34
+2023-06-07 12:15:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:15:34
+2023-06-07 12:20:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:20:34
+2023-06-07 12:25:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:25:34
+2023-06-07 12:30:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:30:34
+2023-06-07 12:35:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:35:34
+2023-06-07 12:40:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:40:34
+2023-06-07 12:45:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:45:34
+2023-06-07 12:50:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:50:34
+2023-06-07 12:55:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 12:55:34
+2023-06-07 13:00:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:00:34
+2023-06-07 13:05:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:05:34
+2023-06-07 13:10:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:10:34
+2023-06-07 13:15:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:15:34
+2023-06-07 13:20:34 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:20:34
+2023-06-07 13:23:51 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:23:51
+2023-06-07 13:25:45 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:25:45
+2023-06-07 13:30:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:30:44
+2023-06-07 13:35:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:35:44
+2023-06-07 13:40:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:40:44
+2023-06-07 13:45:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:45:44
+2023-06-07 13:50:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:50:44
+2023-06-07 13:55:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 13:55:44
+2023-06-07 14:00:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:00:44
+2023-06-07 14:05:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:05:44
+2023-06-07 14:10:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:10:44
+2023-06-07 14:17:50 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:17:50
+2023-06-07 14:24:20 INFO  PostServiceImpl:187 - []
+2023-06-07 14:24:20 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:24:20
+2023-06-07 14:25:15 INFO  PostServiceImpl:187 - []
+2023-06-07 14:27:49 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:27:49
+2023-06-07 14:28:51 INFO  PostServiceImpl:187 - []
+2023-06-07 14:29:21 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.StackOverflowError
+2023-06-07 14:29:39 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.StackOverflowError
+2023-06-07 14:31:14 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.StackOverflowError
+2023-06-07 14:32:49 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:32:49
+2023-06-07 14:35:31 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:35:31
+2023-06-07 14:36:20 INFO  GlobalExceptionHandler:32 - jakarta.servlet.ServletException: Handler dispatch failed: java.lang.StackOverflowError
+2023-06-07 14:40:30 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:40:30
+2023-06-07 14:42:59 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:42:59
+2023-06-07 14:44:33 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:44:33
+2023-06-07 14:46:30 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:46:30
+2023-06-07 14:51:29 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:51:29
+2023-06-07 14:55:25 INFO  PostServiceImpl:189 - [ActivityDTO(type=POST, activity=PostDTO(user=null, postId=8, userId=15, statusContent=dang bai so 2, attachmentUrl=http://res.cloudinary.com/minh2212/image/upload/v1684831014/socialmedia/post/w4ew5td4omkuqxppii7j.webp, createdTime=23-05-2023 15:36:54, updatedTime=23-05-2023 15:36:54, postReactions=[PostReactionDTO(user=null, userId=null, postId=null, reaction=HAHA, reactedTime=5/29/23, 10:20 AM)], comments=[CommentDTO(user=null, commentId=1, postId=null, userId=15, content=Toi di comment dao, createTime=5/24/23, 3:55 PM, updateTime=5/24/23, 4:52 PM, commentReactionDTOList=null, commentReactionCount=0), CommentDTO(user=null, commentId=2, postId=null, userId=15, content=ok ok, createTime=5/24/23, 5:10 PM, updateTime=5/24/23, 5:10 PM, commentReactionDTOList=null, commentReactionCount=0)], postReactionsCount=1, commentsCount=2), actionTime=23-05-2023 15:36:54)]
+2023-06-07 14:56:09 INFO  StatisticService:71 - Excel file export at 07-06-2023 14:56:09
+2023-06-07 14:57:56 INFO  PostServiceImpl:189 - [ActivityDTO(type=POST, activity=PostDTO(user=null, postId=8, userId=15, statusContent=dang bai so 2, attachmentUrl=http://res.cloudinary.com/minh2212/image/upload/v1684831014/socialmedia/post/w4ew5td4omkuqxppii7j.webp, createdTime=23-05-2023 15:36:54, updatedTime=23-05-2023 15:36:54, postReactions=[PostReactionDTO(user=null, userId=null, postId=null, reaction=HAHA, reactedTime=5/29/23, 10:20 AM)], comments=[CommentDTO(user=null, commentId=1, postId=null, userId=15, content=Toi di comment dao, createTime=5/24/23, 3:55 PM, updateTime=5/24/23, 4:52 PM, commentReactionDTOList=null, commentReactionCount=0), CommentDTO(user=null, commentId=2, postId=null, userId=15, content=ok ok, createTime=5/24/23, 5:10 PM, updateTime=5/24/23, 5:10 PM, commentReactionDTOList=null, commentReactionCount=0)], postReactionsCount=1, commentsCount=2), actionTime=23-05-2023 15:36:54)]
+2023-06-07 15:13:24 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:13:24
+2023-06-07 15:15:59 INFO  PostServiceImpl:187 - [ActivityDTO(type=POST, action=PostDTO(user=null, postId=8, userId=15, statusContent=dang bai so 2, attachmentUrl=http://res.cloudinary.com/minh2212/image/upload/v1684831014/socialmedia/post/w4ew5td4omkuqxppii7j.webp, createdTime=23-05-2023 15:36:54, updatedTime=23-05-2023 15:36:54, postReactions=[PostReactionDTO(user=null, userId=null, postId=null, reaction=HAHA, reactedTime=5/29/23, 10:20 AM)], comments=[CommentDTO(user=null, commentId=1, postId=null, userId=15, content=Toi di comment dao, createTime=5/24/23, 3:55 PM, updateTime=5/24/23, 4:52 PM, commentReactionDTOList=null, commentReactionCount=0), CommentDTO(user=null, commentId=2, postId=null, userId=15, content=ok ok, createTime=5/24/23, 5:10 PM, updateTime=5/24/23, 5:10 PM, commentReactionDTOList=null, commentReactionCount=0)], postReactionsCount=1, commentsCount=2), actionTime=23-05-2023 15:36:54)]
+2023-06-07 15:18:23 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:18:23
+2023-06-07 15:45:45 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:45:45
+2023-06-07 15:50:44 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:50:44
+2023-06-07 15:51:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:51:14
+2023-06-07 15:56:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 15:56:14
+2023-06-07 16:01:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:01:14
+2023-06-07 16:06:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:06:14
+2023-06-07 16:11:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:11:14
+2023-06-07 16:16:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:16:14
+2023-06-07 16:21:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:21:14
+2023-06-07 16:26:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:26:14
+2023-06-07 16:31:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:31:14
+2023-06-07 16:36:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:36:14
+2023-06-07 16:41:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:41:14
+2023-06-07 16:46:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:46:14
+2023-06-07 16:51:14 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:51:14
+2023-06-07 16:55:08 INFO  StatisticService:71 - Excel file export at 07-06-2023 16:55:08
+2023-06-07 17:00:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:00:07
+2023-06-07 17:05:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:05:07
+2023-06-07 17:10:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:10:07
+2023-06-07 17:15:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:15:07
+2023-06-07 17:20:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:20:07
+2023-06-07 17:25:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:25:07
+2023-06-07 17:30:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:30:07

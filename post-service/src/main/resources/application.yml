@@ -28,6 +28,17 @@ spring:
           - POST
           - PUT
           - DELETE
+  batch:
+    jdbc:
+      initialize-schema: "always"
+    job:
+      enabled: false
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/postdb
+  schemas: POSTSERVICE
+  user: postgres
+  password: sa123
 
 eureka:
   client:
