@@ -10,12 +10,13 @@ import org.mapstruct.Named;
 
 import java.util.List;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, uses = {CommentReactionMapper.class})
 public interface CommentMapper {
     @Mapping(source = "comment.post.postId",target = "postId")
     @Mapping(source = "comment.createTime", target = "createTime", dateFormat = "dd-MM-yyyy HH:mm:ss")
     @Mapping(source = "comment.updateTime", target = "updateTime", dateFormat = "dd-MM-yyyy HH:mm:ss")
     @Mapping(source = "comment.commentReactions", target = "commentReactionCount",qualifiedByName = "commentReactionCount")
+    @Mapping(source = "comment.commentReactions",target = "commentReactionDTOList")
     CommentDTO commentToDTO(Comment comment);
     @Mapping(source = "commentDTO.postId",target = "post.postId")
     @Mapping(source = "commentDTO.createTime", target = "createTime", dateFormat = "dd-MM-yyyy HH:mm:ss")

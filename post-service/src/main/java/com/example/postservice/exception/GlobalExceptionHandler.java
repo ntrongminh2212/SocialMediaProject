@@ -1,12 +1,15 @@
 package com.example.postservice.exception;
 
 import com.example.postservice.dto.ResponseDTO;
+import jakarta.ws.rs.ForbiddenException;
+import jakarta.ws.rs.NotFoundException;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingRequestHeaderException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.text.ParseException;
 
@@ -26,6 +29,20 @@ public class GlobalExceptionHandler {
 
         return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
     }
+
+    @ExceptionHandler({ResponseStatusException.class})
+    public ResponseEntity<Object> responseStatusException(ResponseStatusException e){
+        if (e.getStatusCode() == HttpStatus.FORBIDDEN) {
+            return new ResponseEntity<>(ResponseDTO.FORBIDDEN, HttpStatus.FORBIDDEN);
+        }
+        return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler({NotFoundException.class})
+    public ResponseEntity<Object> notFoundException(Exception e){
+        return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleUnwantedException(Exception e) {
 

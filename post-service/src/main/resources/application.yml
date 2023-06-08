@@ -16,7 +16,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: 'true'
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: 'true'
   globalcors:
     corsConfigurations:
@@ -28,6 +28,8 @@ spring:
           - POST
           - PUT
           - DELETE
+  flyway:
+    baseline-on-migrate: true
   batch:
     jdbc:
       initialize-schema: "always"

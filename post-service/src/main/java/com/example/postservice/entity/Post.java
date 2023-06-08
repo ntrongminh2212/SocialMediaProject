@@ -42,6 +42,8 @@ public class Post implements Serializable {
     @Column(name = "updated_datetime")
     @UpdateTimestamp
     private Date updatedTime;
+    @Column(columnDefinition = "boolean default true")
+    private boolean isActive;
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Comment> comments;

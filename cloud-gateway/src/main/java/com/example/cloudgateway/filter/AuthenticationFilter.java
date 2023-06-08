@@ -94,6 +94,7 @@ public class AuthenticationFilter implements GlobalFilter {
                     exchange.mutate().request(
                             exchange.getRequest().mutate()
                                     .header("userId", String.valueOf(userDTO.getUserId()))
+                                    .header("role", userDTO.getRole().name())
                                     .build());
 
                     ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config()
@@ -113,6 +114,7 @@ public class AuthenticationFilter implements GlobalFilter {
                     return chain.filter(exchange.mutate().request(
                                     exchange.getRequest().mutate()
                                             .header("userId", String.valueOf(userDTO.getUserId()))
+                                            .header("role", userDTO.getRole().name())
                                             .build())
                             .build());
 

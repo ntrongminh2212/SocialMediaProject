@@ -394,3 +394,79 @@
 2023-06-07 17:20:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:20:07
 2023-06-07 17:25:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:25:07
 2023-06-07 17:30:07 INFO  StatisticService:71 - Excel file export at 07-06-2023 17:30:07
+2023-06-08 09:13:00 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:13:00
+2023-06-08 09:15:15 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:15:15
+2023-06-08 09:20:14 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:20:14
+2023-06-08 09:23:00 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:23:00
+2023-06-08 09:28:12 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:28:12
+2023-06-08 09:33:12 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:33:12
+2023-06-08 09:38:12 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:38:12
+2023-06-08 09:39:13 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:39:13
+2023-06-08 09:41:45 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:41:45
+2023-06-08 09:46:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:46:44
+2023-06-08 09:51:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:51:44
+2023-06-08 09:56:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 09:56:44
+2023-06-08 10:01:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:01:44
+2023-06-08 10:06:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:06:44
+2023-06-08 10:11:44 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:11:44
+2023-06-08 10:14:53 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:14:53
+2023-06-08 10:19:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:19:52
+2023-06-08 10:24:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:24:52
+2023-06-08 10:29:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:29:52
+2023-06-08 10:34:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:34:52
+2023-06-08 10:39:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:39:52
+2023-06-08 10:44:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 10:44:52
+2023-06-08 14:28:32 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:28:32
+2023-06-08 14:33:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:33:31
+2023-06-08 14:38:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:38:31
+2023-06-08 14:43:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:43:31
+2023-06-08 14:48:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:48:31
+2023-06-08 14:53:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:53:31
+2023-06-08 14:58:31 INFO  StatisticService:71 - Excel file export at 08-06-2023 14:58:31
+2023-06-08 15:05:30 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:05:30
+2023-06-08 15:10:29 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:10:29
+2023-06-08 15:15:29 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:15:29
+2023-06-08 15:20:29 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:20:29
+2023-06-08 15:25:29 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:25:29
+2023-06-08 15:30:29 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:30:29
+2023-06-08 15:49:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:49:52
+2023-06-08 15:54:01 INFO  GlobalExceptionHandler:33 - org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present
+2023-06-08 15:54:24 INFO  PostServiceImpl:57 - [Request reaction for post 9]
+2023-06-08 15:54:24 INFO  PostServiceImpl:66 - [Done]
+2023-06-08 15:54:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:54:52
+2023-06-08 15:59:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 15:59:52
+2023-06-08 16:00:15 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:00:15
+2023-06-08 16:01:54 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:03:01 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:03:01 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:05:14 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:05:14
+2023-06-08 16:10:14 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:10:14
+2023-06-08 16:15:15 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:15:15
+2023-06-08 16:16:18 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:16:18
+2023-06-08 16:21:18 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:21:18
+2023-06-08 16:25:42 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:25:42
+2023-06-08 16:27:11 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:27:11 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:28:00 INFO  PostServiceImpl:60 - [Done]
+2023-06-08 16:30:41 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:30:41
+2023-06-08 16:35:18 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:35:18
+2023-06-08 16:40:17 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:40:17
+2023-06-08 16:45:17 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:45:17
+2023-06-08 16:50:17 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:50:17
+2023-06-08 16:51:25 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:51:25
+2023-06-08 16:52:19 INFO  PostServiceImpl:61 - [Done]
+2023-06-08 16:56:24 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:56:24
+2023-06-08 16:56:50 INFO  StatisticService:71 - Excel file export at 08-06-2023 16:56:50
+2023-06-08 17:01:49 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:01:49
+2023-06-08 17:06:49 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:06:49
+2023-06-08 17:10:52 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:10:52
+2023-06-08 17:15:51 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:15:51
+2023-06-08 17:20:51 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:20:51
+2023-06-08 17:23:30 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:23:36 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:24:00 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:25:43 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:25:43
+2023-06-08 17:25:53 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:27:00 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:27:04 INFO  GlobalExceptionHandler:34 - java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2023-06-08 17:30:41 INFO  StatisticService:71 - Excel file export at 08-06-2023 17:30:41

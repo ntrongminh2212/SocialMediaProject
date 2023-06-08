@@ -16,7 +16,7 @@ import org.mapstruct.Named;
 import java.util.Date;
 import java.util.List;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, uses = {PostReactionMapper.class, CommentMapper.class})
 public interface PostMapper {
     @Mapping(source = "userDTO",target = "user")
     @Mapping(source = "postReaction.reaction",target = "reaction")
@@ -33,8 +33,10 @@ public interface PostMapper {
     @Mapping(source = "post.updatedTime", target = "updatedTime", dateFormat = "dd-MM-yyyy HH:mm:ss")
     @Mapping(source = "post.postReactions", target = "postReactionsCount", qualifiedByName = "postReactionCount")
     @Mapping(source = "post.comments", target = "commentsCount", qualifiedByName = "commentCount")
-    PostDTO postToDTO(Post post);
-    List<PostDTO> postToDTO(List<Post> postList);
+    @Mapping(source = "post.postReactions", target = "postReactions")
+    @Mapping(source = "post.comments", target = "comments", conditionExpression = "java(isMappingComment==true)" )
+    PostDTO postToDTO(Post post, boolean isMappingComment);
+
     @Mapping(source = "postDTO.userId",target = "creatorId")
     @Mapping(source = "postDTO.createdTime", target = "createdTime", dateFormat = "dd-MM-yyyy HH:mm:ss")
     @Mapping(source = "postDTO.updatedTime", target = "updatedTime", dateFormat = "dd-MM-yyyy HH:mm:ss")

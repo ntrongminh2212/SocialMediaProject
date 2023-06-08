@@ -7,6 +7,8 @@ import com.example.postservice.repository.PostReactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,5 +32,19 @@ public class PostReactionServiceImpl implements PostReactionService {
         return Optional.ofNullable(reactionMapper.postReactionToDTO(
                 reactionRepository.save(postReaction)
         ));
+    }
+
+    @Override
+    public List<PostReactionDTO> findByPostId(Long postId) {
+        Optional<List<PostReaction>> optionalPostReactionList =reactionRepository.findByPostId(postId);
+        if (optionalPostReactionList.isPresent()) {
+            return reactionMapper.postReactionListToDTO(optionalPostReactionList.get());
+        }
+        return new ArrayList<>();
+    }
+
+    @Override
+    public List<PostReaction> findByPostReactionIdUserId(Long userId) {
+        return reactionRepository.findByPostReactionIdUserId(userId);
     }
 }

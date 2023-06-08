@@ -1,25 +1,34 @@
 package com.example.postservice.service;
 
-import com.example.postservice.dto.ActivityDTO;
 import com.example.postservice.dto.PostDTO;
+import com.example.postservice.entity.Post;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface PostService {
-    Optional<List<PostDTO>> getPostOfUser(Long userId);
-
+     PostDTO createPost(Post postDTO);
+//    List<PostDTO> getPostOfUser(Long userId);
+//
+////    Optional<PostDTO> createPost(PostDTO postDTO);
+//
 //    Optional<PostDTO> createPost(PostDTO postDTO);
+//
+//    Optional<PostDTO> getPostDetail(Long postId);
+//
+//    List<PostDTO> getNewFeed(Long userId);
+//
+//    boolean deletePost(PostDTO postDTO);
+//
+//    List<ActivityDTO> getActivitiesHistory(Long userId);
+//
+//    List<PostDTO> searchPosts(String searchStr);
 
-    Optional<PostDTO> createPost(PostDTO postDTO);
+    List<Post> findByCreatorIdOrderByCreatedTimeDesc(Long userId);
 
-    Optional<PostDTO> getPostDetail(Long postId);
+    Optional<Post> findById(Long postId);
 
-    List<PostDTO> getNewFeed(Long userId);
+    List<Post> findByCreatorId(Long userId);
 
-    boolean deletePost(PostDTO postDTO);
-
-    List<ActivityDTO> getActivitiesHistory(Long userId);
-
-    List<PostDTO> searchPosts(String searchStr);
+    List<Post> findBySearchString(String upperCase);
 }

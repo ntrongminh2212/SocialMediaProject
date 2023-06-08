@@ -12,6 +12,7 @@ import com.example.postservice.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -68,5 +69,10 @@ public class CommentServiceImpl implements CommentService{
             return commentReactionMapper.commentReactionToDTO(reactionRepository.save(commentReaction));
         }
         return commentReactionMapper.commentReactionToDTO(commentReactionOptional.get());
+    }
+
+    @Override
+    public List<Comment> findByUserId(Long userId) {
+        return commentRepository.findByUserId(userId);
     }
 }

@@ -23,7 +23,7 @@ public class CloudinaryService {
     }
 
     public Map<String, String> uploadImage(String base64Image) {
-        Map result = null;
+        Map<String,String> result = null;
         try {
             result = cloudinary.uploader()
                     .upload(base64Image, options);

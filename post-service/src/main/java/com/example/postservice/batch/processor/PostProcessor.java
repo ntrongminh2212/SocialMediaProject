@@ -12,6 +12,6 @@ public class PostProcessor implements ItemProcessor<Post, PostDTO> {
     PostMapper postMapper;
     @Override
     public PostDTO process(Post post) throws Exception {
-        return postMapper.postToDTO(post);
+        return postMapper.postToDTO(post,false);
     }
 }
