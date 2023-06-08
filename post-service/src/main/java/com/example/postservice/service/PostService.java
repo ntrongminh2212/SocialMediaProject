@@ -31,4 +31,8 @@ public interface PostService {
     List<Post> findByCreatorId(Long userId);
 
     List<Post> findBySearchString(String upperCase);
+
+    Optional<Post> findByPostIdAndCreatorId(Long userId, Long postId);
+
+    void deletePost(Post post);
 }

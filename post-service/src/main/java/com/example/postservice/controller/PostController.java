@@ -40,8 +40,8 @@ public class PostController {
     }
 
     @GetMapping("/detail")
-    public ResponseEntity<PostDTO> getPostDetail(@RequestParam("post_id") Long post_id, @RequestHeader Long userId, final HttpServletRequest request) {
-        Optional<PostDTO> postDTO = postFacade.getPostDetail(post_id);
+    public ResponseEntity<PostDTO> getPostDetail(@RequestParam("postId") Long postId, @RequestHeader Long userId, final HttpServletRequest request) {
+        Optional<PostDTO> postDTO = postFacade.getPostDetail(postId);
         if (postDTO.isPresent()) {
             return ResponseEntity.ok(postDTO.get());
         }
@@ -66,7 +66,7 @@ public class PostController {
 
     @DeleteMapping("/delete-post")
     public ResponseEntity<Object> deletePost(@RequestHeader Long userId, @RequestBody PostDTO postDTO) {
-        boolean rs = postFacade.deletePost(postDTO);
+        boolean rs = postFacade.deletePost(postDTO,userId);
         if (rs) return ResponseEntity.ok(ResponseDTO.SUCCESS);
         else return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
     }
@@ -94,7 +94,7 @@ public class PostController {
         if (role.compareTo(Role.ADMIN.name()) == 0) {
             statisticService.exportPostsByDayBetweenToExcel(dayFrom, dayTo, response);
         }
-        throw new ForbiddenException();
+        throw new ResponseStatusException(HttpStatus.FORBIDDEN);
     }
 
     @GetMapping("/post-to-csv-job")

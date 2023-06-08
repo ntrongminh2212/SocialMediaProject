@@ -125,8 +125,12 @@ public class PostFacade {
         return newFeeds;
     }
 
-    public boolean deletePost(PostDTO postDTO) {
-
+    public boolean deletePost(PostDTO postDTO, Long userId) {
+        Optional<Post> post = postService.findByPostIdAndCreatorId(userId,postDTO.getPostId());
+        if (post.isPresent()) {
+            postService.deletePost(post.get());
+            return true;
+        }
         return false;
     }
 

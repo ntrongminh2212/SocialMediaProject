@@ -51,7 +51,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<Post> findByCreatorIdOrderByCreatedTimeDesc(Long userId) {
-        Optional<List<Post>>optionalPostList = postRepository.findByCreatorIdOrderByCreatedTimeDesc(userId);
+        Optional<List<Post>>optionalPostList = postRepository.findByCreatorIdAndIsActiveOrderByCreatedTimeDesc(userId,true);
         return optionalPostList.orElseGet(ArrayList::new);
     }
 
@@ -63,12 +63,23 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<Post> findByCreatorId(Long userId) {
-        return postRepository.findByCreatorId(userId);
+        return postRepository.findByCreatorIdAndIsActive(userId,true);
     }
 
     @Override
     public List<Post> findBySearchString(String upperCase) {
         return postRepository.findBySearchString(upperCase);
+    }
+
+    @Override
+    public Optional<Post> findByPostIdAndCreatorId(Long userId, Long postId) {
+        return postRepository.findByPostIdAndCreatorIdAndIsActive(postId,userId,true);
+    }
+
+    @Override
+    public void deletePost(Post post) {
+        post.setActive(false);
+        postRepository.save(post);
     }
 }
 

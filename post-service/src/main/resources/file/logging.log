@@ -1,0 +1,15 @@
+2023-06-08 21:20:49 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:20:49
+2023-06-08 21:25:48 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:25:48
+2023-06-08 21:30:48 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:30:48
+2023-06-08 21:35:48 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:35:48
+2023-06-08 21:40:47 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:40:47
+2023-06-08 21:45:47 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:45:47
+2023-06-08 21:48:40 INFO  GlobalExceptionHandler:49 - org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+2023-06-08 21:50:19 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:50:19
+2023-06-08 21:53:43 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:53:43
+2023-06-08 21:56:37 INFO  GlobalExceptionHandler:49 - org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present
+2023-06-08 21:57:13 INFO  PostServiceImpl:61 - [Done]
+2023-06-08 21:58:41 INFO  StatisticService:71 - Excel file export at 08-06-2023 21:58:41
+2023-06-08 22:00:12 INFO  GlobalExceptionHandler:49 - org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'post_id' for method parameter type Long is not present
+2023-06-08 22:01:18 INFO  StatisticService:71 - Excel file export at 08-06-2023 22:01:18
+2023-06-08 22:06:17 INFO  StatisticService:71 - Excel file export at 08-06-2023 22:06:17

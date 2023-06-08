@@ -193,27 +193,6 @@ CREATE SEQUENCE public.comment_sequence
 ALTER TABLE public.comment_sequence OWNER TO postgres;
 
 --
--- TOC entry 229 (class 1259 OID 41194)
--- Name: flyway_schema_history; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.flyway_schema_history (
-    installed_rank integer NOT NULL,
-    version character varying(50),
-    description character varying(200) NOT NULL,
-    type character varying(20) NOT NULL,
-    script character varying(1000) NOT NULL,
-    checksum integer,
-    installed_by character varying(100) NOT NULL,
-    installed_on timestamp without time zone DEFAULT now() NOT NULL,
-    execution_time integer NOT NULL,
-    success boolean NOT NULL
-);
-
-
-ALTER TABLE public.flyway_schema_history OWNER TO postgres;
-
---
 -- TOC entry 214 (class 1259 OID 32781)
 -- Name: post_sequence; Type: SEQUENCE; Schema: public; Owner: postgres
 --
@@ -423,18 +402,6 @@ COPY public.batch_step_execution_context (step_execution_id, short_context, seri
 12	rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAGdAAfUmVwb3NpdG9yeUl0ZW1SZWFkZXIucmVhZC5jb3VudHNyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAAEdAAgRmxhdEZpbGVJdGVtV3JpdGVyLmN1cnJlbnQuY291bnRzcgAOamF2YS5sYW5nLkxvbmc7i+SQzI8j3wIAAUoABXZhbHVleHEAfgAEAAAAAAAAAmB0ABpGbGF0RmlsZUl0ZW1Xcml0ZXIud3JpdHRlbnNxAH4ABwAAAAAAAAADdAARYmF0Y2gudGFza2xldFR5cGV0AD1vcmcuc3ByaW5nZnJhbWV3b3JrLmJhdGNoLmNvcmUuc3RlcC5pdGVtLkNodW5rT3JpZW50ZWRUYXNrbGV0dAANYmF0Y2gudmVyc2lvbnQABTUuMC4xdAAOYmF0Y2guc3RlcFR5cGV0ADdvcmcuc3ByaW5nZnJhbWV3b3JrLmJhdGNoLmNvcmUuc3RlcC50YXNrbGV0LlRhc2tsZXRTdGVweA==	\N
 \.
 
-
---
--- TOC entry 3406 (class 0 OID 41194)
--- Dependencies: 229
--- Data for Name: flyway_schema_history; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.flyway_schema_history (installed_rank, version, description, type, script, checksum, installed_by, installed_on, execution_time, success) FROM stdin;
-1	1	<< Flyway Baseline >>	BASELINE	<< Flyway Baseline >>	\N	postgres	2023-06-08 09:12:46.063513	0	t
-\.
-
-
 --
 -- TOC entry 3394 (class 0 OID 32885)
 -- Dependencies: 217
@@ -579,15 +546,6 @@ ALTER TABLE ONLY public.batch_step_execution
 
 
 --
--- TOC entry 3239 (class 2606 OID 41201)
--- Name: flyway_schema_history flyway_schema_history_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.flyway_schema_history
-    ADD CONSTRAINT flyway_schema_history_pk PRIMARY KEY (installed_rank);
-
-
---
 -- TOC entry 3229 (class 2606 OID 41132)
 -- Name: batch_job_instance job_inst_un; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
@@ -630,14 +588,6 @@ ALTER TABLE ONLY public.tbl_post
 
 ALTER TABLE ONLY public.tbl_post_reaction
     ADD CONSTRAINT tbl_post_reaction_pkey PRIMARY KEY (post_id, user_id);
-
-
---
--- TOC entry 3240 (class 1259 OID 41202)
--- Name: flyway_schema_history_s_idx; Type: INDEX; Schema: public; Owner: postgres
---
-
-CREATE INDEX flyway_schema_history_s_idx ON public.flyway_schema_history USING btree (success);
 
 
 --
