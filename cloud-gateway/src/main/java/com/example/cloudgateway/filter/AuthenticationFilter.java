@@ -42,6 +42,7 @@ public class AuthenticationFilter implements GlobalFilter {
             "/conversation/**"
     };
     private static final String CONTENT_TYPE_JSON = "application/json";
+    private static final String CONTENT_TYPE_FORM_DATA ="multipart/form-data";
     private static final String CONTENT_TYPE = "Content-Type";
     private UserClient userClient;
     private final ModifyRequestBodyGatewayFilterFactory factory;
@@ -63,6 +64,7 @@ public class AuthenticationFilter implements GlobalFilter {
         ServerHttpRequest request = exchange.getRequest();
 
         String contentType = request.getHeaders().getFirst(CONTENT_TYPE);
+        logger.info(contentType);
         String method = request.getMethod().name();
         logger.info("[Method] " + method);
 
@@ -88,7 +90,8 @@ public class AuthenticationFilter implements GlobalFilter {
                 if (contentType != null && (HttpMethod.POST.name().equalsIgnoreCase(method) ||
                         HttpMethod.PUT.name().equalsIgnoreCase(method) ||
                         HttpMethod.DELETE.name().equalsIgnoreCase(method))
-                        && contentType.contains(CONTENT_TYPE_JSON)
+                        && (contentType.contains(CONTENT_TYPE_JSON)
+                        || contentType.contains(CONTENT_TYPE_FORM_DATA))
                         && userDTO!=null
                 ) {
                     exchange.mutate().request(
@@ -97,9 +100,14 @@ public class AuthenticationFilter implements GlobalFilter {
                                     .header("role", userDTO.getRole().name())
                                     .build());
 
-                    ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config()
-                            .setContentType(ContentType.APPLICATION_JSON.getMimeType())
-                            .setRewriteFunction(Map.class, Map.class, (exchange1, originalRequestBody) -> {
+                    ModifyRequestBodyGatewayFilterFactory.Config modifyRequestConfig = new ModifyRequestBodyGatewayFilterFactory.Config();
+                    if (contentType.contains(CONTENT_TYPE_JSON)) {
+                        modifyRequestConfig.setContentType(ContentType.APPLICATION_JSON.getMimeType());
+                    }else if (contentType.contains(CONTENT_TYPE_FORM_DATA)) {
+                        modifyRequestConfig.setContentType(ContentType.MULTIPART_FORM_DATA.getMimeType());
+                    }
+
+                    modifyRequestConfig.setRewriteFunction(Map.class, Map.class, (exchange1, originalRequestBody) -> {
 //                                logger.info(originalRequestBody);
                                 if (userDTO!=null) {
                                     originalRequestBody.put("userId", userDTO.getUserId());

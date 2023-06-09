@@ -1704,3 +1704,134 @@
 2023-06-08 17:25:50 INFO  AuthenticationFilter:67 - [Method] GET
 2023-06-08 17:27:00 INFO  AuthenticationFilter:67 - [Method] GET
 2023-06-08 17:27:04 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:01:56 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:03:32 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:04:01 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:04:01 INFO  AuthenticationFilter:124 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"197c2ba1-022a-4c97-ac0b-4226f7cdb679", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"78"]
+2023-06-09 09:04:09 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:04:16 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:04:30 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:04:38 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:05:14 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:05:38 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:05:38 INFO  AuthenticationFilter:124 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"9c8c674d-7c39-4e11-b118-26fbe712ce30", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"88"]
+2023-06-09 09:05:54 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:05:58 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:06:23 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:06:28 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:06:46 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:06:46 INFO  AuthenticationFilter:124 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"11752ac1-101e-4780-837d-bc402d5bf2e9", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"78"]
+2023-06-09 09:07:05 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:09:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:38:45 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:38:45 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NTY3OTAxNywiZXhwIjoxNjg2MjgzODE3fQ.SB_rZVViPEcDIYNKH7i8X2J9bnjT4p3EJcaLmilWnxI", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"5389ab62-01cc-4259-bea0-aef10ab63e0c", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------855652381280237240354472", Content-Length:"130351"]
+2023-06-09 09:39:16 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:39:16 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"34a4a65b-ca6b-4ccf-9a7c-0c41a208f829", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------683319032284051366093612", Content-Length:"130351"]
+2023-06-09 09:39:24 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:39:24 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"28d71787-7aa6-4e60-8fc2-eac58444b5f0", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------447686731511141956945602", Content-Length:"130351"]
+2023-06-09 09:40:26 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:40:26 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"bc4a72a3-0848-4713-ae11-4116782da144", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------877837684393067229529232", Content-Length:"130351"]
+2023-06-09 09:40:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:40:31 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:42:05 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:42:14 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:42:14 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"4d3f4742-36e3-4c11-a243-d11abf82f37b", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------097196735973617735305337", Content-Length:"130351"]
+2023-06-09 09:43:14 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:50:29 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 09:50:34 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:50:34 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"5366d783-bb45-4d64-9abd-b546b99d5788", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------741363770117123771083470", Content-Length:"130351"]
+2023-06-09 09:51:00 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:51:00 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"fc900f66-4cbc-4025-b3cf-b4a7f75a6b61", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------504787403502348856997276", Content-Length:"130351"]
+2023-06-09 09:51:48 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:52:27 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:58:58 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:59:28 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 09:59:28 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"e25325ca-7f9c-4774-abdf-6d4a59d3e55c", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------334553118106788345486134", Content-Length:"130351"]
+2023-06-09 10:00:28 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:00:28 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"5fd732db-2446-4d75-bc88-a91067493f87", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------623807182829597130011239", Content-Length:"130351"]
+2023-06-09 10:00:36 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:00:36 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"3a438a89-2029-471c-9b93-4eb9fbd348de", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------212599639583101304738276", Content-Length:"130351"]
+2023-06-09 10:00:55 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:00:55 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"432b0867-9457-4fe9-915e-b68f4108acbd", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------748518306777012084393059", Content-Length:"130351"]
+2023-06-09 10:01:26 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:01:33 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:01:37 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:02:25 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:02:30 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:04:10 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:06:34 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:08:58 INFO  AuthenticationFilter:67 - [Method] GET
+2023-06-09 10:09:21 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:09:21 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"398aacfa-2e25-456b-a064-f0bf12af598d", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------952500361674650418650651", Content-Length:"130351"]
+2023-06-09 10:10:11 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:10:11 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"c457abd9-33c1-4037-bfc6-348f9209b317", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------685444304747120787473107", Content-Length:"130351"]
+2023-06-09 10:10:49 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:10:49 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"43e0f084-4cb3-4adf-9647-76b68c7c45e3", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------756652691994907071201335", Content-Length:"130351"]
+2023-06-09 10:11:00 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:11:00 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"2b55a961-07dc-4592-985d-17b744b28748", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------720135481412201119535995", Content-Length:"130351"]
+2023-06-09 10:13:46 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:13:46 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"d07e2ef1-15a6-4bed-bd3e-27da0cc0f1fa", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------344309147725365900113801", Content-Length:"130351"]
+2023-06-09 10:15:40 INFO  AuthenticationFilter:67 - [Method] POST
+2023-06-09 10:15:40 INFO  AuthenticationFilter:124 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzY0MDYsImV4cCI6MTY4Njg4MTIwNn0.vFnBcBep-K6BDMlNd0cluv3eTHMvqR-jQzAyBZEf5tU", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"233f9a99-f0bd-4622-bf08-8869cb9da7f5", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Type:"multipart/form-data; boundary=--------------------------535506634589465098513190", Content-Length:"130351"]
+2023-06-09 10:20:04 INFO  AuthenticationFilter:68 - [Method] POST
+2023-06-09 10:20:32 INFO  AuthenticationFilter:68 - [Method] POST
+2023-06-09 10:20:33 INFO  AuthenticationFilter:68 - [Method] POST
+2023-06-09 10:20:44 INFO  AuthenticationFilter:68 - [Method] GET
+2023-06-09 10:22:25 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------226920426404892677195257
+2023-06-09 10:23:01 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:25:26 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------822163064277357132572599
+2023-06-09 10:25:28 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:29:36 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------025757636391220493149478
+2023-06-09 10:29:46 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:30:26 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------348142219391634005278252
+2023-06-09 10:30:26 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:30:29 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:30:29 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:30:36 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:30:36 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:30:40 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------344608465710841001836338
+2023-06-09 10:30:40 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:31:04 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------687883089713018613399560
+2023-06-09 10:31:04 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:02 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------201173144630547977170510
+2023-06-09 10:32:02 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:03 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------638764109538361690252902
+2023-06-09 10:32:03 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:09 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------973009850569226721755088
+2023-06-09 10:32:09 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:10 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------204831997309593268494812
+2023-06-09 10:32:10 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:11 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------845437159436477796214400
+2023-06-09 10:32:11 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:12 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------697654533235861489531802
+2023-06-09 10:32:12 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:32:25 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:32:25 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:35:38 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------522634865682473605677035
+2023-06-09 10:35:38 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 10:44:25 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:44:25 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:48:45 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:48:45 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:49:21 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:49:21 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:49:21 INFO  AuthenticationFilter:132 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU2NzY5NTUsImV4cCI6MTY4NjI4MTc1NX0.Ytsw4YUYgUXsOdH59MGwm6BhQaJ6DZzIwKC_0gOrquI", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"1ddf198b-a081-48e0-8800-0be8fb4e9b93", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive"]
+2023-06-09 10:49:37 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:49:37 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:50:05 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:50:05 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:50:05 INFO  AuthenticationFilter:132 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU2NzY5NTUsImV4cCI6MTY4NjI4MTc1NX0.Ytsw4YUYgUXsOdH59MGwm6BhQaJ6DZzIwKC_0gOrquI", User-Agent:"PostmanRuntime/7.32.2", Accept:"*/*", Postman-Token:"60b74b76-e15f-4619-90db-f662fb519456", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive"]
+2023-06-09 10:50:17 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:50:17 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 10:50:26 INFO  AuthenticationFilter:67 - 
+2023-06-09 10:50:26 INFO  AuthenticationFilter:69 - [Method] GET
+2023-06-09 11:22:01 INFO  AuthenticationFilter:67 - multipart/form-data
+2023-06-09 11:22:01 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 11:22:27 INFO  AuthenticationFilter:67 - multipart/form-data
+2023-06-09 11:22:27 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 11:25:17 INFO  AuthenticationFilter:67 - multipart/form-data
+2023-06-09 11:25:17 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 11:27:05 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------177558155114387050133476
+2023-06-09 11:27:05 INFO  AuthenticationFilter:69 - [Method] POST
+2023-06-09 11:27:33 INFO  AuthenticationFilter:67 - multipart/form-data; boundary=--------------------------005779322934948362869494
+2023-06-09 11:27:33 INFO  AuthenticationFilter:69 - [Method] POST

@@ -9,11 +9,13 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.ws.rs.ForbiddenException;
 import jakarta.ws.rs.NotFoundException;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
@@ -52,6 +54,24 @@ public class PostController {
     @PostMapping("/create")
     public ResponseEntity<PostDTO> createPost(@RequestHeader Long userId, @RequestBody PostDTO postDTO) throws IOException {
         postDTO = postFacade.createPost(postDTO);
+        return ResponseEntity.ok(postDTO);
+    }
+
+    @PostMapping("/createv2")
+    public ResponseEntity<PostDTO>  createPostv2(@RequestHeader Long userId,@RequestBody String statusContent, @RequestBody MultipartFile file) {
+        PostDTO postDTO = new PostDTO();
+        try{
+            byte[] image = Base64.encodeBase64(file.getBytes());
+            String base64Str = new String(image);
+
+            postDTO.setAttachmentUrl(base64Str);
+            postDTO.setUserId(userId);
+            postDTO.setStatusContent(statusContent);
+
+            postDTO = postFacade.createPost(postDTO);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
         return ResponseEntity.ok(postDTO);
     }
 
@@ -98,9 +118,10 @@ public class PostController {
     }
 
     @GetMapping("/post-to-csv-job")
-    public void exportPostsToCsv(@RequestHeader Long userId, @RequestHeader String role) {
+    public ResponseEntity<Object> exportPostsToCsv(@RequestHeader Long userId, @RequestHeader String role) {
         if (role.compareTo(Role.ADMIN.name()) == 0) {
             statisticService.exportPostsToCsv();
+            return ResponseEntity.ok(ResponseDTO.SUCCESS);
         }
         throw new ResponseStatusException(HttpStatus.FORBIDDEN);
     }

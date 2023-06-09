@@ -65,7 +65,8 @@ public class PostFacade {
     public PostDTO createPost(PostDTO postDTO) {
         Map<String, String> result = cloudinaryService.uploadImage(postDTO.getAttachmentUrl());
         postDTO.setAttachmentUrl(String.valueOf(result.get("url")));
-        return postService.createPost(postMapper.postToEntity(postDTO));
+        Post post = postMapper.postToEntity(postDTO);
+        return postService.createPost(post);
     }
 
 //    @RabbitListener(queues = MessageConfig.QUEUE)

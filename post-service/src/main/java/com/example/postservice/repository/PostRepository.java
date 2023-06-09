@@ -22,6 +22,7 @@ public interface PostRepository extends JpaRepository<Post, Long> {
                     "where p.createdTime between ?1 and ?2 \n" +
                     "and p.isActive = true"
     )
+    //
     List<Post> findAllByCreatedTimeBetween(Date dayFrom, Date dayTo);
 
     List<Post> findByCreatorIdAndIsActive(Long userId, boolean isActive);

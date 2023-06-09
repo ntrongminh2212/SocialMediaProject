@@ -2,6 +2,7 @@ package com.example.postservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -16,6 +17,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Table(
         name = "tbl_post"
 )
@@ -43,7 +45,7 @@ public class Post implements Serializable {
     @UpdateTimestamp
     private Date updatedTime;
     @Column(columnDefinition = "boolean default true")
-    private boolean isActive;
+    private boolean isActive=true;
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Comment> comments;
