@@ -86,7 +86,7 @@ public class PostController {
 
     @DeleteMapping("/delete-post")
     public ResponseEntity<Object> deletePost(@RequestHeader Long userId, @RequestBody PostDTO postDTO) {
-        boolean rs = postFacade.deletePost(postDTO,userId);
+        boolean rs = postFacade.deletePost(postDTO.getPostId(),userId);
         if (rs) return ResponseEntity.ok(ResponseDTO.SUCCESS);
         else return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
     }

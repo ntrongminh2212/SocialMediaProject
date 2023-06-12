@@ -126,8 +126,8 @@ public class PostFacade {
         return newFeeds;
     }
 
-    public boolean deletePost(PostDTO postDTO, Long userId) {
-        Optional<Post> post = postService.findByPostIdAndCreatorId(userId,postDTO.getPostId());
+    public boolean deletePost(Long postId, Long userId) {
+        Optional<Post> post = postService.findByPostIdAndCreatorId(userId,postId);
         if (post.isPresent()) {
             postService.deletePost(post.get());
             return true;
@@ -182,7 +182,7 @@ public class PostFacade {
                 .collect(Collectors.toList());
     }
 
-    public Set<Long> getUserIdSet(List<Post> listPost) {
+    private Set<Long> getUserIdSet(List<Post> listPost) {
         Set<Long> listUserId = new HashSet<>();
         for (Post post : listPost) {
             listUserId.add(post.getCreatorId());
