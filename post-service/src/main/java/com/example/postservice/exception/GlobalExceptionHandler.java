@@ -38,11 +38,6 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler({NotFoundException.class})
-    public ResponseEntity<Object> notFoundException(Exception e){
-        return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
-    }
-
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleUnwantedException(Exception e) {
 

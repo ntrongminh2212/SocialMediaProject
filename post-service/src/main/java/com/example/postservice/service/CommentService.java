@@ -1,19 +1,16 @@
 package com.example.postservice.service;
 
-import com.example.postservice.dto.CommentDTO;
-import com.example.postservice.dto.CommentReactionDTO;
 import com.example.postservice.entity.Comment;
-
 import java.util.List;
+import java.util.Optional;
 
-public interface CommentService{
-    CommentDTO sendComment(CommentDTO commentDTO);
+public interface CommentService {
 
-    CommentDTO modifyComment(CommentDTO commentDTO);
+    Comment save(Comment comment);
 
-    boolean deleteComment(CommentDTO commentDTO);
+    Optional<Comment> findByCommentIdAndUserId(Long commentId, Long userId);
 
-    CommentReactionDTO reactToComment(CommentReactionDTO reactionDTO);
+    void delete(Comment comment);
 
     List<Comment> findByUserId(Long userId);
 }

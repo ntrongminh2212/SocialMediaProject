@@ -284,3 +284,59 @@
 2023-06-12 17:19:29 INFO  StatisticService:71 - Excel file export at 12-06-2023 17:19:29
 2023-06-12 17:20:54 INFO  StatisticService:71 - Excel file export at 12-06-2023 17:20:54
 2023-06-12 17:27:16 INFO  StatisticService:71 - Excel file export at 12-06-2023 17:27:16
+2023-06-13 09:12:22 INFO  StatisticService:71 - Excel file export at 13-06-2023 09:12:22
+2023-06-13 09:13:04 INFO  StatisticService:71 - Excel file export at 13-06-2023 09:13:04
+2023-06-13 09:14:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 09:14:47
+2023-06-13 09:16:32 INFO  StatisticService:71 - Excel file export at 13-06-2023 09:16:32
+2023-06-13 09:21:35 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 09:21:36 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 09:21:36 INFO  StatisticService:71 - Excel file export at 13-06-2023 09:21:36
+2023-06-13 13:37:33 INFO  StatisticService:71 - Excel file export at 13-06-2023 13:37:33
+2023-06-13 13:39:36 INFO  StatisticService:71 - Excel file export at 13-06-2023 13:39:36
+2023-06-13 13:41:23 INFO  StatisticService:71 - Excel file export at 13-06-2023 13:41:23
+2023-06-13 13:55:33 INFO  StatisticService:71 - Excel file export at 13-06-2023 13:55:33
+2023-06-13 14:37:42 INFO  StatisticService:71 - Excel file export at 13-06-2023 14:37:42
+2023-06-13 14:38:13 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 14:38:13 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 14:38:14 INFO  StatisticService:71 - Excel file export at 13-06-2023 14:38:14
+2023-06-13 14:39:28 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 14:39:28 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 14:39:29 INFO  StatisticService:71 - Excel file export at 13-06-2023 14:39:29
+2023-06-13 14:41:08 INFO  StatisticService:71 - Excel file export at 13-06-2023 14:41:08
+2023-06-13 15:13:00 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 15:13:00 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 15:13:01 INFO  StatisticService:71 - Excel file export at 13-06-2023 15:13:01
+2023-06-13 15:14:10 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 15:14:10 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 15:14:11 INFO  StatisticService:71 - Excel file export at 13-06-2023 15:14:11
+2023-06-13 16:01:56 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 16:01:56 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 16:01:57 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:01:57
+2023-06-13 16:35:49 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:35:49
+2023-06-13 16:38:29 INFO  PostServiceHandlerInterceptor:21 - handler Object: com.example.postservice.controller.PostController#getActivitiesHistory(Long)
+2023-06-13 16:40:10 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-13 16:40:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:40:47
+2023-06-13 16:45:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:45:47
+2023-06-13 16:46:33 INFO  PostServiceHandlerInterceptor:21 - handler Object: com.example.postservice.controller.PostController#getActivitiesHistory(Long)
+2023-06-13 16:47:24 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-13 16:50:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:50:47
+2023-06-13 16:55:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 16:55:47
+2023-06-13 17:00:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:00:47
+2023-06-13 17:05:47 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:05:47
+2023-06-13 17:08:20 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:08:20
+2023-06-13 17:08:55 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 17:09:48 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 17:09:54 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:09:54
+2023-06-13 17:13:19 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:13:19
+2023-06-13 17:16:55 INFO  PostServiceHandlerInterceptor:21 - handler Object: com.example.postservice.controller.PostController#getPostsOfUser(Long, Long, HttpServletRequest)
+2023-06-13 17:16:55 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-13 17:16:58 INFO  PostServiceHandlerInterceptor:21 - handler Object: com.example.postservice.controller.PostController#getPostsOfUser(Long, Long, HttpServletRequest)
+2023-06-13 17:16:58 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-13 17:17:04 INFO  PostServiceImpl:61 - [Done]
+2023-06-13 17:17:04 INFO  PostServiceHandlerInterceptor:21 - handler Object: com.example.postservice.controller.PostController#getPostsOfUser(Long, Long, HttpServletRequest)
+2023-06-13 17:17:04 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-13 17:18:19 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:18:19
+2023-06-13 17:23:19 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:23:19
+2023-06-13 17:28:00 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:28:00
+2023-06-13 17:28:17 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:28:17
+2023-06-13 17:33:00 INFO  StatisticService:71 - Excel file export at 13-06-2023 17:33:00
