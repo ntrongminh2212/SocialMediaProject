@@ -7,6 +7,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Builder
 public class RegisterUserDTO {
     private Long userId;
     private String firstName;

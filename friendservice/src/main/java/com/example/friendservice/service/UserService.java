@@ -1,34 +1,45 @@
 package com.example.friendservice.service;
 
-import com.example.friendservice.dto.AuthDTO;
-import com.example.friendservice.dto.PostReactionDTO;
-import com.example.friendservice.dto.RegisterUserDTO;
-import com.example.friendservice.dto.UserDTO;
+import com.example.friendservice.entity.ResetPasswordToken;
 import com.example.friendservice.entity.User;
+import com.example.friendservice.entity.VerificationToken;
+import org.springframework.data.domain.PageRequest;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
 public interface UserService {
-    public Optional<User> registerUser(RegisterUserDTO user);
-    public Optional<AuthDTO> login(User user);
-    void saveUserVerificationToken(String token, User user);
 
-    String verifyRegistration(String token,String newToken);
+    User findByEmailAndPhoneNum(String email, String phoneNum);
 
-    String saveResetPasswordToken(String email, String token);
+    User save(User user);
 
-    String changePassword(String newPassword, String token);
+    Optional<User> findByEmailOrPhoneNum(String email, String phoneNum);
 
-    User getUserByVerificationToken(String token);
+    void saveVerificationToken(VerificationToken verificationToken);
 
-    Optional<User> getUserById(Long userId);
+    int updateUserEnableById(Long userId);
 
-    Optional<UserDTO> getUserInfo(Long userId);
+    void deleteVerificationToken(VerificationToken verificationToken);
 
-    Map<Long, UserDTO> getListUserDetail(Set<Long> lstUserId);
+    User findByEmail(String email);
 
-    List<UserDTO> searchUsers(String searchStr);
+    void saveResetPasswordToken(ResetPasswordToken resetPasswordToken);
+
+    ResetPasswordToken findResetPasswordTokenByToken(String token);
+
+    VerificationToken findVerificationTokenByToken(String token);
+
+    void deleteResetPasswordToken(ResetPasswordToken resetPasswordToken);
+
+    Optional<User> findById(Long userId);
+
+    List<User> findAllById(Set<Long> lstUserId);
+
+    List<User> findBySearchString(String upperCase);
+
+    List<User> findFriendByUserId(Long userId);
+
+    List<User> findAll(PageRequest limit);
 }

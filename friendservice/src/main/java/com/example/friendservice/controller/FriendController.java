@@ -1,90 +1,51 @@
 package com.example.friendservice.controller;
 
 import com.example.friendservice.dto.FriendDTO;
-import com.example.friendservice.dto.ResponseDTO;
 import com.example.friendservice.dto.UserDTO;
-import com.example.friendservice.entity.Friend;
-import com.example.friendservice.service.FriendService;
-import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.example.friendservice.facade.FriendFacade;
+
+import java.util.*;
 import org.apache.log4j.Logger;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.*;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping(path = "/friend")
 public class FriendController {
     @Autowired
-    private FriendService friendService;
+    private FriendFacade friendFacade;
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    private final Map<String,Object> falseResponse;
-
-    public FriendController() {
-        this.falseResponse = new HashMap<>();
-        this.falseResponse.put("error",400);
-    }
 
     Logger logger = Logger.getLogger(FriendController.class);
 
-    @GetMapping("/hellofriend")
-    public String hello() {
-        return "Hello";
-    }
-
     @PostMapping("/request")
-    public ResponseEntity<Object> requestFriend(
-            @RequestBody Map<String, String> body
-    ) {
-        if (body.get("userId") !=null) {
-            Optional<FriendDTO> friendDTO =friendService.requestFriend(body);
-            if (friendDTO.isPresent()) {
-                return ResponseEntity.ok(friendDTO.get());
-            }
-            ResponseDTO.BADREQUEST.put("message", "Friend request has already exist");
-            return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+    public ResponseEntity<FriendDTO> requestFriend(@RequestHeader Long userId, @RequestBody Map<String, String> body) {
+        Optional<FriendDTO> friendDTO = friendFacade.requestFriend(body);
+        if (friendDTO.isPresent()) {
+            return ResponseEntity.ok(friendDTO.get());
         }
-        ResponseDTO.BADREQUEST.put("message", "User not identified");
-        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Friend request has already exist");
     }
 
     @PutMapping("/request")
-    public ResponseEntity<Object> acceptFriendRequest(
-            @RequestBody Map<String, String> body
-    ){
-        if (body.get("userId") !=null) {
-            int rs = friendService.acceptFriendRequest(body);
-            if (rs > 0) {
-                return ResponseEntity.ok(true);
-            }
-            return new ResponseEntity<>(ResponseDTO.NOTFOUND, HttpStatus.NOT_FOUND);
+    public ResponseEntity<Boolean> acceptFriendRequest(
+            @RequestHeader Long userId, @RequestBody Map<String, String> body) {
+        int rs = friendFacade.acceptFriendRequest(body);
+        if (rs > 0) {
+            return ResponseEntity.ok(true);
         }
-        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Friend request not exist");
     }
 
     @GetMapping("/list")
-    public ResponseEntity<Object> getListFriend(
-            @RequestHeader("userId") Long userId
-    ){
-        logger.info(userId);
-        if (userId!=null){
-            List<UserDTO> friendList = friendService.getFriendList(userId);
-            return ResponseEntity.ok(friendList);
-        }
-        return ResponseEntity.badRequest().body(ResponseDTO.BADREQUEST);
+    public ResponseEntity<List<UserDTO>> getListFriend(@RequestHeader("userId") Long userId) {
+        List<UserDTO> friendList = friendFacade.getFriendList(userId);
+        return ResponseEntity.ok(friendList);
     }
 }
-
-
-
-
-
-
-
-
-

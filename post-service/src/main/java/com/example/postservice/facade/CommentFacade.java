@@ -67,16 +67,16 @@ public class CommentFacade {
     }
 
     public CommentReactionDTO reactToComment(CommentReactionDTO reactionDTO) {
-        Optional<CommentReaction> commentReactionOptional =
-                reactionService.findById(reactionDTO.getCommentId(), reactionDTO.getUserId());
-        if (commentReactionOptional.isEmpty()) {
-            CommentReaction commentReaction = commentReactionMapper.commentReactionToEntity(reactionDTO);
-            return commentReactionMapper.commentReactionToDTO(reactionService.save(commentReaction));
+        Optional<Comment> comment = commentService.findById(reactionDTO.getCommentId());
+        if (comment.isPresent()) {
+            Optional<CommentReaction> commentReactionOptional =
+                    reactionService.findById(reactionDTO.getCommentId(), reactionDTO.getUserId());
+            if (commentReactionOptional.isEmpty()) {
+                CommentReaction commentReaction = commentReactionMapper.commentReactionToEntity(reactionDTO);
+                return commentReactionMapper.commentReactionToDTO(reactionService.save(commentReaction));
+            }
+            return commentReactionMapper.commentReactionToDTO(commentReactionOptional.get());
         }
-        return commentReactionMapper.commentReactionToDTO(commentReactionOptional.get());
-    }
-
-    public List<Comment> findByUserId(Long userId) {
-        return commentService.findByUserId(userId);
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
     }
 }
