@@ -12,6 +12,8 @@ import java.util.Date;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class ResetPasswordToken {
 
     private static final int EXPIRATION_TIME = 15;

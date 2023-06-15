@@ -6,7 +6,9 @@ import com.example.friendservice.facade.UserFacade;
 import com.example.friendservice.service.AuthenticationService;
 import com.example.friendservice.service.SendEmailService;
 import jakarta.servlet.http.HttpServletRequest;
+
 import java.util.*;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -114,21 +116,15 @@ public class UserController {
 
     @GetMapping("/info")
     public ResponseEntity<UserDTO> getUserInfo(@RequestHeader Long userId, final HttpServletRequest request) {
-        Optional<UserDTO> user = userFacade.getUserInfo(userId);
-        if (user.isPresent()) {
-            return ResponseEntity.ok(user.get());
-        }
-        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        UserDTO user = userFacade.getUserInfo(userId);
+        return ResponseEntity.ok(user);
     }
 
     @GetMapping("/info/{ofUserId}")
     public ResponseEntity<UserDTO> getUserInfo(
             @RequestHeader Long userId, @PathVariable("ofUserId") Long ofUserId, final HttpServletRequest request) {
-        Optional<UserDTO> user = userFacade.getUserInfo(ofUserId);
-        if (user.isPresent()) {
-            return ResponseEntity.ok(user.get());
-        }
-        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        UserDTO user = userFacade.getUserInfo(ofUserId);
+        return ResponseEntity.ok(user);
     }
 
     @PostMapping("/list-user-details")

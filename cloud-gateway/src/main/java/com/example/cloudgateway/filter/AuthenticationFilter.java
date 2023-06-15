@@ -39,7 +39,10 @@ public class AuthenticationFilter implements GlobalFilter {
             "/user/register",
             "/ws/info",
             "/ws",
-            "/conversation/**"
+            "/conversation/**",
+            "/post-service/v3/api-docs",
+            "/friend-service/v3/api-docs",
+            "/message-service/v3/api-docs"
     };
     private static final String CONTENT_TYPE_JSON = "application/json";
     private static final String CONTENT_TYPE_FORM_DATA ="multipart/form-data";

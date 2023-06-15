@@ -27,6 +27,17 @@ spring:
           - PUT
           - DELETE
 
+openapi:
+  service:
+    title: MessageService APIs
+    version: 1.0.0
+    url: http://localhost:8080
+springdoc:
+  api-docs:
+    path: /message-service/v3/api-docs
+  swagger-ui:
+    path: /message-service/swagger-ui.html
+
 eureka:
   client:
     register-with-eureka: true

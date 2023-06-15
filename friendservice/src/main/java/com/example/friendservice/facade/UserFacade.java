@@ -23,6 +23,10 @@ import org.springframework.web.server.ResponseStatusException;
 @Component
 public class UserFacade {
 
+    public static final String TOKEN_EXPIRE_MESSAGE = "Token Expired! A new verification token has been created.";
+    public static final String ACCOUNT_VERIFIED_MESSAGE = "Account verified!";
+    public static final String RESET_PASSWORD_TOKEN_CREATED_MESSAGE = "Reset password token created";
+    public static final String PASSWORD_CHANGED_SUCCESSFULLY = "Password changed successfully!";
     private static Logger logger = Logger.getLogger(UserFacade.class);
 
     @Autowired
@@ -56,14 +60,14 @@ public class UserFacade {
     }
 
     public Optional<AuthDTO> login(User _user) {
-
-        User user = userService.findByEmailOrPhoneNum(_user.getEmail(), _user.getPhoneNum()).get();
-        if (Optional.ofNullable(user).isPresent() && passwordEncoder.matches(_user.getPassword(), user.getPassword())) {
-
-            String accessToken = jwtTokenUtil.generateAccessToken(user);
-
-            logger.info("[access token] " + accessToken);
-            return Optional.ofNullable(new AuthDTO(user.getEmail(), accessToken));
+        Optional<User> userOptional = userService.findByEmailOrPhoneNum(_user.getEmail(), _user.getPhoneNum());
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+            if (passwordEncoder.matches(_user.getPassword(), user.getPassword())) {
+                String accessToken = jwtTokenUtil.generateAccessToken(user);
+                logger.info("[access token] " + accessToken);
+                return Optional.ofNullable(new AuthDTO(user.getEmail(), accessToken));
+            }
         }
         return Optional.empty();
     }
@@ -74,21 +78,17 @@ public class UserFacade {
     }
 
     public String verifyRegistration(String token, String newToken) {
-        Optional<VerificationToken> vt = Optional.ofNullable(userService.findVerificationTokenByToken(token));
+        Optional<VerificationToken> vt = userService.findVerificationTokenByToken(token);
         if (vt.isEmpty()) {
-            return "Verify token invalid or the account which this token belong to has already been verified";
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"Verify token invalid or the account which this token belong to has already been verified");
         }
-
         VerificationToken verificationToken = vt.get();
         User user = verificationToken.getUser();
-
         if (verificationToken.getExpirationTime().getTime() - (new Date().getTime()) <= 0) {
             verificationToken.setToken(newToken);
             verificationToken.setExpirationTime();
             userService.saveVerificationToken(verificationToken);
-            // saveUserVerificationToken(newToken,user, verifyURL);
-
-            return "Token Expired! A new verification token has been created.";
+            return TOKEN_EXPIRE_MESSAGE;
         }
         logger.info("[User Id]: " + user.getUserId());
         Long userId = user.getUserId();
@@ -96,50 +96,45 @@ public class UserFacade {
         if (rs > 0) {
             userService.deleteVerificationToken(verificationToken);
         }
-        return "Account verified!";
+        return ACCOUNT_VERIFIED_MESSAGE;
     }
 
     public String saveResetPasswordToken(String email, String token) {
-        Optional<User> user = Optional.ofNullable(userService.findByEmail(email));
+        Optional<User> user = userService.findByEmail(email);
         if (user.isEmpty()) {
-            return "Email address not exist!";
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Email address not exist!");
         }
         ResetPasswordToken resetPasswordToken = new ResetPasswordToken(token, user.get());
         userService.saveResetPasswordToken(resetPasswordToken);
-        return "Reset password token created";
+        return RESET_PASSWORD_TOKEN_CREATED_MESSAGE;
     }
 
     public String changePassword(String newPassword, String token) {
-        Optional<ResetPasswordToken> rpt = Optional.ofNullable(userService.findResetPasswordTokenByToken(token));
+        Optional<ResetPasswordToken> rpt = userService.findResetPasswordTokenByToken(token);
         if (rpt.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Change password token invalid");
         }
-
         User user = rpt.get().getUser();
         user.setPassword(passwordEncoder.encode(newPassword));
         userService.save(user);
         userService.deleteResetPasswordToken(rpt.get());
-        return "Password changed successfully!";
+        return PASSWORD_CHANGED_SUCCESSFULLY;
     }
 
     public User getUserByVerificationToken(String _token) {
-        VerificationToken token = userService.findVerificationTokenByToken(_token);
-
-        return token.getUser();
-    }
-
-    public Optional<User> getUserById(Long userId) {
-        return userService.findById(userId);
-    }
-
-    public Optional<UserDTO> getUserInfo(Long userId) {
-        Optional<User> user = getUserById(userId);
-        if (user.isPresent()) {
-            return Optional.ofNullable(userMapper.userToUserDTO(user.get()));
+        Optional<VerificationToken> token = userService.findVerificationTokenByToken(_token);
+        if (token.isPresent()){
+            return token.get().getUser();
         }
-        return Optional.empty();
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
     }
-
+    public UserDTO getUserInfo(Long userId) {
+        Optional<User> user = userService.findById(userId);
+        if (user.isPresent()) {
+            return userMapper.userToUserDTO(user.get());
+        }
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+    }
     public Map<Long, UserDTO> getListUserDetail(Set<Long> lstUserId) {
         Map<Long, UserDTO> userDTOMap = new HashMap<>();
         List<UserDTO> userDTOList = userMapper.userListToDTO(userService.findAllById(lstUserId));
@@ -149,7 +144,6 @@ public class UserFacade {
         }
         return userDTOMap;
     }
-
     public List<UserDTO> searchUsers(String searchStr) {
         List<UserDTO> userDTOList = userMapper.userListToDTO(userService.findBySearchString(searchStr.toUpperCase()));
         return userDTOList;

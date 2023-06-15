@@ -1,6 +1,8 @@
 package com.example.friendservice.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,7 +11,9 @@ import java.util.Date;
 
 @Entity
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class VerificationToken {
 
     private static final int EXPIRATION_TIME = 15;

@@ -13,9 +13,10 @@ import java.util.Set;
 
 @FeignClient(name = "USER-SERVICE")
 public interface UserClient {
-    @GetMapping("/user/info/{user_id}")
+    @GetMapping("/user/info/{forUserId}")
     Optional<UserDTO> getUserInfo(
-            @PathVariable("user_id") Long user_id
+            @RequestHeader Long userId,
+            @PathVariable("forUserId") Long forUserId
     );
 
     @GetMapping("/friend/list")

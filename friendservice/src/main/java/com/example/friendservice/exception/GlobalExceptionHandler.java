@@ -21,6 +21,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler({ResponseStatusException.class})
     public ResponseEntity<Object> responseStatusException(ResponseStatusException e) {
+        logger.info("Response Exception");
         if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
             if (e.getReason() != null) {
                 ResponseDTO.NOTFOUND.put("reason", e.getReason());

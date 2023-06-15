@@ -187,6 +187,12 @@ class PostFacadeTest {
                 put(userDTO2.getUserId(), userDTO2);
             }
         });
+        Mockito.when(userClient.getUserInfo(anyLong(),anyLong()))
+                .thenAnswer(invocation -> {
+                    Long userId = invocation.getArgument(0);
+                    if (userId == userDTO1.getUserId()) return userDTO1;
+                    return userDTO2;
+                });
         Mockito.when(userClient.getListFriend(2L)).thenReturn(ResponseEntity.ok(List.of(userDTO1)));
         Mockito.when(userClient.getListFriend(0L)).thenReturn(ResponseEntity.ok(new ArrayList<>()));
         Mockito.when(postService.findByPostIdAndCreatorId(anyLong(), anyLong())).thenAnswer(invocation -> {

@@ -23,13 +23,13 @@ public interface UserService {
 
     void deleteVerificationToken(VerificationToken verificationToken);
 
-    User findByEmail(String email);
+    Optional<User> findByEmail(String email);
 
     void saveResetPasswordToken(ResetPasswordToken resetPasswordToken);
 
-    ResetPasswordToken findResetPasswordTokenByToken(String token);
+    Optional<ResetPasswordToken> findResetPasswordTokenByToken(String token);
 
-    VerificationToken findVerificationTokenByToken(String token);
+    Optional<VerificationToken> findVerificationTokenByToken(String token);
 
     void deleteResetPasswordToken(ResetPasswordToken resetPasswordToken);
 

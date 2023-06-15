@@ -3189,3 +3189,58 @@ java.lang.NumberFormatException: For input string: "13,ntrongminh2212@gmail.com"
 2023-06-14 17:49:49 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
 2023-06-14 17:49:49 INFO  UserFacade:65 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjczOTc4OSwiZXhwIjoxNjg3MzQ0NTg5fQ._sR1rwfAfaGjuPzA8cFaygbGnaBWljxfjLBtRftOLLU
 2023-06-14 17:49:49 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjczOTc4OSwiZXhwIjoxNjg3MzQ0NTg5fQ._sR1rwfAfaGjuPzA8cFaygbGnaBWljxfjLBtRftOLLU
+2023-06-14 17:50:11 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-14 17:50:11 INFO  UserFacade:65 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjczOTgxMSwiZXhwIjoxNjg3MzQ0NjExfQ.DJMxUB-52n4oVoUhvC8DiFenagv4N1HSAk4H24BaROY
+2023-06-14 17:50:11 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjczOTgxMSwiZXhwIjoxNjg3MzQ0NjExfQ.DJMxUB-52n4oVoUhvC8DiFenagv4N1HSAk4H24BaROY
+2023-06-15 09:27:04 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 09:27:04 INFO  UserFacade:66 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4Njc5NjAyNCwiZXhwIjoxNjg3NDAwODI0fQ.ueTkIXH3_c91HAVYcwEl6_2gkjuiyoNsFxIe9RtTU0g
+2023-06-15 09:27:04 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4Njc5NjAyNCwiZXhwIjoxNjg3NDAwODI0fQ.ueTkIXH3_c91HAVYcwEl6_2gkjuiyoNsFxIe9RtTU0g
+2023-06-15 11:01:47 INFO  UserFacade:96 - [User Id]: 19
+2023-06-15 11:37:34 INFO  UserFacade:97 - [User Id]: 19
+2023-06-15 11:37:34 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 11:37:35 INFO  UserFacade:69 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgwMzg1NCwiZXhwIjoxNjg3NDA4NjU0fQ._qsncR9vwdqGjJDixPD9ApXeYJWD1ezVj4YhqTMWw0g
+2023-06-15 11:37:35 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgwMzg1NCwiZXhwIjoxNjg3NDA4NjU0fQ._qsncR9vwdqGjJDixPD9ApXeYJWD1ezVj4YhqTMWw0g
+2023-06-15 13:40:20 ERROR JwtTokenUtil:49 - Expired JWT token
+2023-06-15 13:40:32 ERROR JwtTokenUtil:49 - Expired JWT token
+2023-06-15 13:40:35 ERROR JwtTokenUtil:49 - Expired JWT token
+2023-06-15 13:40:37 ERROR JwtTokenUtil:49 - Expired JWT token
+2023-06-15 13:42:02 INFO  UserController:93 - LoginDTO(accountName=ntrongminh2212@gmail.com, password=123456)
+2023-06-15 13:42:02 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 13:42:02 INFO  UserFacade:70 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODY4MTEzMjIsImV4cCI6MTY4NzQxNjEyMn0.C_0giHPGFYqPY7q07mLBHbSvt3MIckXVbRI6W69BD2E
+2023-06-15 13:42:29 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODY4MTEzMjIsImV4cCI6MTY4NzQxNjEyMn0.C_0giHPGFYqPY7q07mLBHbSvt3MIckXVbRI6W69BD2E
+2023-06-15 13:42:29 INFO  UserController:110 - UserDTO(userId=16, firstName=Minh, lastName=Nguyen Trong, email=ntrongminh2212@gmail.com, phoneNum=0123456789, avatar=https://res.cloudinary.com/minh2212/image/upload/v1685933235/socialmedia/avatar/default-avatar-profile-icon-of-social-media-user-vector_wrvaav.jpg, sex=true, birthday=2000-05-11, role=ADMIN)
+2023-06-15 13:42:37 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODY4MTEzMjIsImV4cCI6MTY4NzQxNjEyMn0.C_0giHPGFYqPY7q07mLBHbSvt3MIckXVbRI6W69BD2E
+2023-06-15 13:42:37 INFO  UserController:110 - UserDTO(userId=16, firstName=Minh, lastName=Nguyen Trong, email=ntrongminh2212@gmail.com, phoneNum=0123456789, avatar=https://res.cloudinary.com/minh2212/image/upload/v1685933235/socialmedia/avatar/default-avatar-profile-icon-of-social-media-user-vector_wrvaav.jpg, sex=true, birthday=2000-05-11, role=ADMIN)
+2023-06-15 13:42:37 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 13:55:01 INFO  UserFacade:98 - [User Id]: 19
+2023-06-15 13:55:01 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 13:55:01 INFO  UserFacade:70 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMjEwMSwiZXhwIjoxNjg3NDE2OTAxfQ.gDbVPziT8W0GaPEClY5kY1KF0uk9glv99DfFUs-D2bI
+2023-06-15 13:55:01 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMjEwMSwiZXhwIjoxNjg3NDE2OTAxfQ.gDbVPziT8W0GaPEClY5kY1KF0uk9glv99DfFUs-D2bI
+2023-06-15 13:59:38 ERROR JwtTokenUtil:49 - Expired JWT token
+2023-06-15 14:00:39 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODY4MTEzMjIsImV4cCI6MTY4NzQxNjEyMn0.C_0giHPGFYqPY7q07mLBHbSvt3MIckXVbRI6W69BD2E
+2023-06-15 14:00:39 INFO  UserController:110 - UserDTO(userId=16, firstName=Minh, lastName=Nguyen Trong, email=ntrongminh2212@gmail.com, phoneNum=0123456789, avatar=https://res.cloudinary.com/minh2212/image/upload/v1685933235/socialmedia/avatar/default-avatar-profile-icon-of-social-media-user-vector_wrvaav.jpg, sex=true, birthday=2000-05-11, role=ADMIN)
+2023-06-15 14:07:40 INFO  UserFacade:98 - [User Id]: 19
+2023-06-15 14:07:40 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 14:07:40 INFO  UserFacade:70 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMjg2MCwiZXhwIjoxNjg3NDE3NjYwfQ.7o_KFuulJ7YgHg-irHvo9F0paQeuKqkEAjTrRjxx1tM
+2023-06-15 14:07:40 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMjg2MCwiZXhwIjoxNjg3NDE3NjYwfQ.7o_KFuulJ7YgHg-irHvo9F0paQeuKqkEAjTrRjxx1tM
+2023-06-15 14:21:55 INFO  UserFacade:97 - [User Id]: 19
+2023-06-15 14:21:55 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 14:21:55 INFO  UserFacade:70 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMzcxNSwiZXhwIjoxNjg3NDE4NTE1fQ.C5n6pfCzOwVL0iGJKAr1yJ2j0gvisZhQoSkncAQal5U
+2023-06-15 14:21:55 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxMzcxNSwiZXhwIjoxNjg3NDE4NTE1fQ.C5n6pfCzOwVL0iGJKAr1yJ2j0gvisZhQoSkncAQal5U
+2023-06-15 14:30:25 INFO  UserFacade:93 - [User Id]: 19
+2023-06-15 14:30:25 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 14:30:25 INFO  UserFacade:68 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxNDIyNSwiZXhwIjoxNjg3NDE5MDI1fQ.BEszIqTtMSdHWfjM7umlDnQUBXc0Y8EdvWNRXFwdueo
+2023-06-15 14:30:25 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxNDIyNSwiZXhwIjoxNjg3NDE5MDI1fQ.BEszIqTtMSdHWfjM7umlDnQUBXc0Y8EdvWNRXFwdueo
+2023-06-15 14:31:53 INFO  UserFacade:93 - [User Id]: 19
+2023-06-15 14:31:53 INFO  JwtTokenUtil:20 - [Secret token]Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm
+2023-06-15 14:31:53 INFO  UserFacade:68 - [access token] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxNDMxMywiZXhwIjoxNjg3NDE5MTEzfQ.a6lJqiYZUXCBLHuwGElxvIiyor-5sira3eu4LxyWDFM
+2023-06-15 14:31:53 INFO  AuthenticationService:30 - [Access token found] eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSxzbS51c2VyNUB5b3BtYWlsLmNvbSIsImlzcyI6Ik5ndXllblRyb25nTWluaCIsImlhdCI6MTY4NjgxNDMxMywiZXhwIjoxNjg3NDE5MTEzfQ.a6lJqiYZUXCBLHuwGElxvIiyor-5sira3eu4LxyWDFM
+2023-06-15 17:21:22 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:21:22 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:21:22 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:28:48 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:28:48 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:28:48 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:33:11 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:33:11 INFO  GlobalExceptionHandler:24 - Response Exception
+2023-06-15 17:33:11 INFO  GlobalExceptionHandler:24 - Response Exception

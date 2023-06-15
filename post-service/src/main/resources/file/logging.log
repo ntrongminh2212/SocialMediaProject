@@ -366,3 +366,288 @@
 2023-06-14 11:25:28 INFO  StatisticService:71 - Excel file export at 14-06-2023 11:25:28
 2023-06-14 11:25:28 INFO  PostServiceImpl:61 - [Done]
 2023-06-14 11:25:28 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 15:18:00 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:18:00
+2023-06-15 15:18:58 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 15:18:58 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 15:18:58 INFO  PostServiceHandlerInterceptor:22 - Model and view: ModelAndView [view="error"; model={timestamp=Thu Jun 15 15:18:58 ICT 2023, status=500, error=Internal Server Error, trace=java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+	at com.example.postservice.interceptor.PostServiceHandlerInterceptor.postHandle(PostServiceHandlerInterceptor.java:22)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPostHandle(HandlerExecutionChain.java:163)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null, path=/swagger-ui/index.html}]
+2023-06-15 15:18:58 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 15:18:58 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-06-15 15:18:58 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-15 15:21:18 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 15:21:18 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 15:21:18 INFO  PostServiceHandlerInterceptor:22 - Model and view: ModelAndView [view="error"; model={timestamp=Thu Jun 15 15:21:18 ICT 2023, status=500, error=Internal Server Error, trace=java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+	at com.example.postservice.interceptor.PostServiceHandlerInterceptor.postHandle(PostServiceHandlerInterceptor.java:22)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPostHandle(HandlerExecutionChain.java:163)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null, path=/swagger-ui/index.html}]
+2023-06-15 15:21:18 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 15:21:18 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-06-15 15:21:18 INFO  GlobalExceptionHandler:44 - java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.ModelAndView.toString()" because "modelAndView" is null
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:52 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:21:52
+2023-06-15 15:21:53 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:21:53 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2023-06-15 15:21:53 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 15:26:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:26:51
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2023-06-15 15:28:27 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 15:31:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:31:51
+2023-06-15 15:36:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:36:51
+2023-06-15 15:41:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:41:51
+2023-06-15 15:46:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:46:51
+2023-06-15 15:51:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:51:51
+2023-06-15 15:56:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 15:56:51
+2023-06-15 16:01:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:01:51
+2023-06-15 16:04:23 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:23 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:23 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:23 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:23 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:24 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:24 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2023-06-15 16:04:24 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-06-15 16:04:31 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2023-06-15 16:04:31 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:06:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:06:51
+2023-06-15 16:11:51 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:11:51
+2023-06-15 16:13:16 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:13:16
+2023-06-15 16:18:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:18:15
+2023-06-15 16:21:17 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:17 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:21:17 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:17 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-06-15 16:21:19 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:19 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:21:21 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:21 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:21:37 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:37 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:21:50 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:21:50 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:04 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:23:04 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:06 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:23:06 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:07 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:23:07 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:08 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:23:08 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:09 INFO  PostServiceHandlerInterceptor:21 - handler Object: ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-15 16:23:09 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-06-15 16:23:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:23:15
+2023-06-15 16:23:30 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:28:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:28:15
+2023-06-15 16:33:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:33:15
+2023-06-15 16:34:47 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:34:55 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:38:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:38:15
+2023-06-15 16:38:46 INFO  PostServiceHandlerInterceptor:21 - handler Object: org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2023-06-15 16:43:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:43:15
+2023-06-15 16:48:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:48:15
+2023-06-15 16:53:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:53:15
+2023-06-15 16:58:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 16:58:15
+2023-06-15 17:03:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:03:15
+2023-06-15 17:08:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:08:15
+2023-06-15 17:13:15 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:13:15
+2023-06-15 17:14:27 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:14:27
+2023-06-15 17:14:41 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:14:41
+2023-06-15 17:14:53 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:14:53
+2023-06-15 17:14:57 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:14:57
+2023-06-15 17:14:57 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:14:57 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:19:41 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:19:41
+2023-06-15 17:21:05 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:21:05
+2023-06-15 17:21:17 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:21:17
+2023-06-15 17:21:24 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:21:24
+2023-06-15 17:21:27 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:21:27
+2023-06-15 17:21:27 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:21:27 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:26:17 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:26:17
+2023-06-15 17:28:33 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:28:33
+2023-06-15 17:28:49 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:28:49
+2023-06-15 17:28:52 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:28:52
+2023-06-15 17:28:52 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:28:52 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:32:57 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:32:57
+2023-06-15 17:33:13 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:33:13
+2023-06-15 17:33:17 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:33:17
+2023-06-15 17:33:17 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:33:17 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:34:21 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:34:21
+2023-06-15 17:34:31 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:34:31
+2023-06-15 17:34:39 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:34:39
+2023-06-15 17:34:42 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:34:42
+2023-06-15 17:34:42 INFO  PostServiceImpl:61 - [Done]
+2023-06-15 17:34:42 INFO  PostServiceImpl:61 - [Done]

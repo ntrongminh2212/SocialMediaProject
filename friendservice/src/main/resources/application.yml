@@ -37,6 +37,17 @@ spring:
     host: localhost
     username: guest
 
+openapi:
+  service:
+    title: FriendService APIs
+    version: 1.0.0
+    url: http://localhost:8080
+springdoc:
+  api-docs:
+    path: /friend-service/v3/api-docs
+  swagger-ui:
+    path: /friend-service/swagger-ui.html
+
 app:
   jwt:
     secret: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=JOB64bisd1b6B7ebfi7jdB965KCUIgdfndkawcnopa53sdjNDIF8BFAba0s1blsdlfhbcpiVYS54BVdjdfuzm

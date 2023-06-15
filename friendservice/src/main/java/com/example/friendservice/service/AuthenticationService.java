@@ -20,7 +20,7 @@ public class AuthenticationService {
     JwtTokenUtil jwtTokenUtil;
 
     @Autowired
-    UserFacade userFacade;
+    UserService userService;
 
     @Autowired
     UserMapper userMapper;
@@ -31,7 +31,7 @@ public class AuthenticationService {
             // Lấy id user từ chuỗi jwt
             Long userId = jwtTokenUtil.getUserIdFromJWT(accessToken);
             // Lấy thông tin người dùng từ id
-            Optional<User> userOptional = userFacade.getUserById(userId);
+            Optional<User> userOptional = userService.findById(userId);
             if (userOptional.isPresent()) {
                 UserDTO userDTO = userMapper.userToUserDTO(userOptional.get());
                 return Optional.ofNullable(userDTO);

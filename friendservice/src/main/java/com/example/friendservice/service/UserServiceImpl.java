@@ -53,7 +53,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByEmail(String email) {
+    public Optional<User> findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
@@ -63,12 +63,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResetPasswordToken findResetPasswordTokenByToken(String token) {
+    public Optional<ResetPasswordToken> findResetPasswordTokenByToken(String token) {
         return resetPasswordTokenRepository.findByToken(token);
     }
 
     @Override
-    public VerificationToken findVerificationTokenByToken(String token) {
+    public Optional<VerificationToken> findVerificationTokenByToken(String token) {
         return verificationTokenRepository.findByToken(token);
     }
 

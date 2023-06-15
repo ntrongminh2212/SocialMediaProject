@@ -19,7 +19,8 @@ public class WebSecurityConfig {
             "/friend/**",
 //            "/user/verifyRegistration",
             "/swagger-ui/**",
-            "/v3/api-docs/**"
+            "/v3/api-docs/**",
+            "/friend-service/**"
     };
 
     @Bean

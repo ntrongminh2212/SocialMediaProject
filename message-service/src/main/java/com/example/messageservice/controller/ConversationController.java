@@ -78,7 +78,7 @@ public class ConversationController {
                 ResponseDTO.BADREQUEST
         );
     }
-g
+
     @GetMapping("/message")
     public ResponseEntity<Object> getConversationMessages(
         @RequestParam("conversation_id") Long conversationId,
