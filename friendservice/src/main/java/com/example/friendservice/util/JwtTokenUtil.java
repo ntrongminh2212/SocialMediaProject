@@ -19,15 +19,13 @@ public class JwtTokenUtil {
     public String generateAccessToken(User user) {
         logger.info("[Secret token]" + SECRET_KEY);
         Date current = new Date();
-        String token = Jwts.builder()
+        return Jwts.builder()
                 .setSubject(String.format("%s,%s", user.getUserId(), user.getEmail()))
                 .setIssuer("NguyenTrongMinh")
                 .setIssuedAt(current)
                 .setExpiration(new Date(current.getTime()+ EXPIRE_DURATION))
                 .signWith(SignatureAlgorithm.HS256,SECRET_KEY)
                 .compact();
-
-        return token;
     }
 
     public Long getUserIdFromJWT(String token) {

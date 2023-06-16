@@ -33,36 +33,36 @@ public class LoggingAspect {
         if (retValue instanceof List){
             List<Object> objects = (List<Object>) retValue;
             for (Object oj:objects) {
-                setUserForObject(oj);
+//                setUserForObject(oj);
             }
         }else {
-            setUserForObject(retValue);
+//            setUserForObject(retValue);
         }
         System.out.println("Time consume: "+ timeConsume + "milisecond");
         System.out.println("Return: "+ retValue.toString());
     }
 
     private void setUserForObject(Object retValue){
-//        if (retValue instanceof PostDTO){
-//            System.out.println("Instance of: PostDTO");
-//            PostDTO postDTO = (PostDTO) retValue;
-//            UserDTO userDTO = userClient.getUserInfo(postDTO.getUserId(),postDTO.getUserId()).get();
-//            postDTO.setUser(userDTO);
-//        }else if (retValue instanceof CommentDTO) {
-//            System.out.println("Instance of: CommentDTO");
-//            CommentDTO commentDTO = (CommentDTO) retValue;
-//            UserDTO userDTO = userClient.getUserInfo(commentDTO.getUserId(),commentDTO.getUserId()).get();
-//            commentDTO.setUser(userDTO);
-//        }else if (retValue instanceof PostReactionDTO) {
-//            System.out.println("Instance of: PostReactionDTO");
-//            PostReactionDTO postReactionDTO = (PostReactionDTO) retValue;
-//            UserDTO userDTO = userClient.getUserInfo(postReactionDTO.getUserId(),postReactionDTO.getUserId()).get();
-//            postReactionDTO.setUser(userDTO);
-//        }else if (retValue instanceof CommentReactionDTO) {
-//            System.out.println("Instance of: CommentReactionDTO");
-//            CommentReactionDTO commentReactionDTO = (CommentReactionDTO) retValue;
-//            UserDTO userDTO = userClient.getUserInfo(commentReactionDTO.getUserId(),commentReactionDTO.getUserId()).get();
-//            commentReactionDTO.setUser(userDTO);
-//        }
+        if (retValue instanceof PostDTO){
+            System.out.println("Instance of: PostDTO");
+            PostDTO postDTO = (PostDTO) retValue;
+            UserDTO userDTO = userClient.getUserInfo(postDTO.getUserId(),postDTO.getUserId()).get();
+            postDTO.setUser(userDTO);
+        }else if (retValue instanceof CommentDTO) {
+            System.out.println("Instance of: CommentDTO");
+            CommentDTO commentDTO = (CommentDTO) retValue;
+            UserDTO userDTO = userClient.getUserInfo(commentDTO.getUserId(),commentDTO.getUserId()).get();
+            commentDTO.setUser(userDTO);
+        }else if (retValue instanceof PostReactionDTO) {
+            System.out.println("Instance of: PostReactionDTO");
+            PostReactionDTO postReactionDTO = (PostReactionDTO) retValue;
+            UserDTO userDTO = userClient.getUserInfo(postReactionDTO.getUserId(),postReactionDTO.getUserId()).get();
+            postReactionDTO.setUser(userDTO);
+        }else if (retValue instanceof CommentReactionDTO) {
+            System.out.println("Instance of: CommentReactionDTO");
+            CommentReactionDTO commentReactionDTO = (CommentReactionDTO) retValue;
+            UserDTO userDTO = userClient.getUserInfo(commentReactionDTO.getUserId(),commentReactionDTO.getUserId()).get();
+            commentReactionDTO.setUser(userDTO);
+        }
     }
 }

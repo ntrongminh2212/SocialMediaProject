@@ -14,7 +14,7 @@ import java.util.List;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public abstract class UserMapper {
     @Autowired
-    private PasswordEncoder passwordEncoder;
+    PasswordEncoder passwordEncoder;
 
     public abstract UserDTO  userToUserDTO(User user);
     @Mapping(source = "user.password",target = "password",qualifiedByName = "encodePassword")

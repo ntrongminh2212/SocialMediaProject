@@ -2,6 +2,7 @@ package com.example.postservice.facade;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.when;
 
 import com.example.postservice.dto.*;
 import com.example.postservice.entity.Comment;
@@ -11,56 +12,83 @@ import com.example.postservice.entity.PostReaction;
 import com.example.postservice.feignclient.UserClient;
 import com.example.postservice.id.CommentReactionId;
 import com.example.postservice.id.PostReactionId;
-import com.example.postservice.mapper.PostMapper;
+import com.example.postservice.mapper.*;
 import com.example.postservice.service.*;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
+import org.mockito.*;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
 class PostFacadeTest {
 
-    @Autowired
-    private PostFacade postFacade;
+    @InjectMocks
+    PostFacade postFacade = new PostFacade();
 
-    @Autowired
-    private PostMapper postMapper;
+    @Spy
+    CommentReactionMapper commentReactionMapper = new CommentReactionMapperImpl();
+    @Spy
+    PostReactionMapper postReactionMapper = new PostReactionMapperImpl();
+    @Spy
+    CommentMapper commentMapper = new CommentMapperImpl();
+    @Spy
+    PostMapper postMapper = new PostMapperImpl();
 
-    @MockBean
-    private PostService postService;
+    @Spy
+    ActivityMapper activityMapper = new ActivityMapperImpl();
 
-    @MockBean
-    private CloudinaryService cloudinaryService;
+    @Mock
+    PostService postService;
 
-    @MockBean
-    private CommentService commentService;
+    @Mock
+    CloudinaryService cloudinaryService;
 
-    @MockBean
-    private CommentReactionService commentReactionService;
+    @Mock
+    CommentService commentService;
 
-    @MockBean
-    private PostReactionService postReactionService;
+    @Mock
+    CommentReactionService commentReactionService;
 
-    @MockBean
-    private UserClient userClient;
+    @Mock
+    PostReactionService postReactionService;
+
+    @Mock
+    UserClient userClient;
 
     private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
     @BeforeEach
     void setUp() throws ParseException {
+        ReflectionTestUtils.setField(
+                postMapper,
+                "postReactionMapper",
+                postReactionMapper
+        );
+        ReflectionTestUtils.setField(
+                postMapper,
+                "commentMapper",
+                commentMapper
+        );
+        ReflectionTestUtils.setField(
+                commentMapper,
+                "commentReactionMapper",
+                commentReactionMapper
+        );
 
+        MockitoAnnotations.initMocks(this);
         UserDTO userDTO1 = UserDTO.builder()
                 .userId(1L)
                 .firstName("Minh")
@@ -164,10 +192,10 @@ class PostFacadeTest {
         List<PostReaction> postReactions = List.of(postReaction1);
         post1.setPostReactions(List.of(postReaction1));
 
-        Mockito.when(postService.findByCreatorIdOrderByCreatedTimeDesc(1L))
+        when(postService.findByCreatorIdOrderByCreatedTimeDesc(1L))
                 .thenReturn(
                         posts.stream().filter(post -> post.getCreatorId() == 1l).collect(Collectors.toList()));
-        Mockito.when(cloudinaryService.uploadImage("base64img")).thenReturn(new HashMap<>() {
+        when(cloudinaryService.uploadImage("base64img")).thenReturn(new HashMap<>() {
             {
                 put("success", "true");
                 put(
@@ -175,27 +203,27 @@ class PostFacadeTest {
                         "https://res.cloudinary.com/minh2212/image/upload/v1686279541/socialmedia/post/lfi4mx34mqlsreu4glhe.jpg");
             }
         });
-        Mockito.when(postService.createPost(any(Post.class))).thenAnswer(invocation -> {
+        when(postService.createPost(any(Post.class))).thenAnswer(invocation -> {
             Post post = invocation.getArgument(0);
             return postMapper.postToDTO(post, false);
         });
 
-        Mockito.when(postService.findById(1L)).thenReturn(Optional.of(post1));
-        Mockito.when(userClient.getListUserDetail(anySet())).thenReturn(new HashMap<>() {
+        when(postService.findById(1L)).thenReturn(Optional.of(post1));
+        when(userClient.getListUserDetail(anySet())).thenReturn(new HashMap<>() {
             {
                 put(userDTO1.getUserId(), userDTO1);
                 put(userDTO2.getUserId(), userDTO2);
             }
         });
-        Mockito.when(userClient.getUserInfo(anyLong(),anyLong()))
+        when(userClient.getUserInfo(anyLong(), anyLong()))
                 .thenAnswer(invocation -> {
                     Long userId = invocation.getArgument(0);
                     if (userId == userDTO1.getUserId()) return userDTO1;
                     return userDTO2;
                 });
-        Mockito.when(userClient.getListFriend(2L)).thenReturn(ResponseEntity.ok(List.of(userDTO1)));
-        Mockito.when(userClient.getListFriend(0L)).thenReturn(ResponseEntity.ok(new ArrayList<>()));
-        Mockito.when(postService.findByPostIdAndCreatorId(anyLong(), anyLong())).thenAnswer(invocation -> {
+        when(userClient.getListFriend(2L)).thenReturn(ResponseEntity.ok(List.of(userDTO1)));
+        when(userClient.getListFriend(0L)).thenReturn(ResponseEntity.ok(new ArrayList<>()));
+        when(postService.findByPostIdAndCreatorId(anyLong(), anyLong())).thenAnswer(invocation -> {
             Long userId = invocation.getArgument(0);
             Long postId = invocation.getArgument(0);
             List<Post> foundPost = posts.stream()
@@ -213,14 +241,14 @@ class PostFacadeTest {
                 })
                 .when(postService)
                 .deletePost(post1);
-        Mockito.when(postService.findByCreatorId(anyLong())).thenAnswer(invocation -> {
+        when(postService.findByCreatorId(anyLong())).thenAnswer(invocation -> {
             Long userId = invocation.getArgument(0);
             List<Post> foundPost = new ArrayList<>();
             foundPost =
                     posts.stream().filter(post -> post.getCreatorId() == userId).collect(Collectors.toList());
             return foundPost;
         });
-        Mockito.when(commentService.findByUserId(anyLong())).thenAnswer(invocation -> {
+        when(commentService.findByUserId(anyLong())).thenAnswer(invocation -> {
             Long userId = invocation.getArgument(0);
             List<Comment> foundComments = new ArrayList<>();
             foundComments = comments.stream()
@@ -228,7 +256,7 @@ class PostFacadeTest {
                     .collect(Collectors.toList());
             return foundComments;
         });
-        Mockito.when(postReactionService.findByPostReactionIdUserId(anyLong())).thenAnswer(invocation -> {
+        when(postReactionService.findByPostReactionIdUserId(anyLong())).thenAnswer(invocation -> {
             Long userId = invocation.getArgument(0);
             List<PostReaction> foundPostReactions = new ArrayList<>();
             foundPostReactions = postReactions.stream()
@@ -236,7 +264,7 @@ class PostFacadeTest {
                     .collect(Collectors.toList());
             return foundPostReactions;
         });
-        Mockito.when(commentReactionService.findByCommentReactionIdUserId(anyLong()))
+        when(commentReactionService.findByCommentReactionIdUserId(anyLong()))
                 .thenAnswer(invocation -> {
                     Long userId = invocation.getArgument(0);
                     List<CommentReaction> foundCommentReactions = new ArrayList<>();
@@ -246,7 +274,7 @@ class PostFacadeTest {
                             .collect(Collectors.toList());
                     return foundCommentReactions;
                 });
-        Mockito.when(postService.findBySearchString(anyString())).thenAnswer(invocation -> {
+        when(postService.findBySearchString(anyString())).thenAnswer(invocation -> {
             String searchStr = invocation.getArgument(0);
             List<Post> foundPosts = posts.stream()
                     .filter(post -> post.getStatusContent().toUpperCase().contains(searchStr.toUpperCase()))
@@ -292,6 +320,7 @@ class PostFacadeTest {
 
     @Test
     void whenPostIdIsValid_thenReturnPostDetail() {
+
         Long expectPostId = 1L;
         int expectCommentCount = 1;
         Long expectUserId = 1L;

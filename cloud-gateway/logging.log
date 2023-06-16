@@ -1927,3 +1927,89 @@
 2023-06-15 16:39:43 INFO  AuthenticationFilter:70 - 
 2023-06-15 16:39:43 INFO  AuthenticationFilter:72 - [Method] GET
 2023-06-15 16:39:43 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=7872C2D6127A249C7AA13BAB163DB5F6"]
+2023-06-16 09:28:08 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:28:08 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:28:43 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:28:43 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:28:55 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:28:55 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:28:55 INFO  AuthenticationFilter:135 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODYyNzYyNDEsImV4cCI6MTY4Njg4MTA0MX0.rOmN_Csvk-YNYvJ6fVvWfVLG0lvv0zILoZIoBV6cAEk", User-Agent:"PostmanRuntime/7.32.3", Accept:"*/*", Postman-Token:"9e5521f5-ac59-40a3-8e66-1e929e8df090", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive"]
+2023-06-16 09:29:03 INFO  AuthenticationFilter:70 - application/json
+2023-06-16 09:29:03 INFO  AuthenticationFilter:72 - [Method] POST
+2023-06-16 09:29:03 INFO  AuthenticationFilter:135 - [Content-Type:"application/json", User-Agent:"PostmanRuntime/7.32.3", Accept:"*/*", Postman-Token:"a1daa18f-5fe9-4d0f-9d6f-2f66ecca9657", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive", Content-Length:"78"]
+2023-06-16 09:29:16 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:29:16 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:29:58 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:29:58 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:31:01 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:31:01 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:34:36 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:34:36 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:34:36 INFO  AuthenticationFilter:135 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU2NzY5NTUsImV4cCI6MTY4NjI4MTc1NX0.Ytsw4YUYgUXsOdH59MGwm6BhQaJ6DZzIwKC_0gOrquI", User-Agent:"PostmanRuntime/7.32.3", Accept:"*/*", Postman-Token:"dfb2cd40-a02e-4a58-a0cf-48f114abb7b9", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive"]
+2023-06-16 09:34:42 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:34:42 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:34:53 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:34:53 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:36:37 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:36:37 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:36:37 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Post%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:36:42 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:36:42 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:36:42 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:36:51 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:36:51 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:36:51 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Post%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:39:08 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:39:08 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:39:08 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:39:13 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:39:13 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:39:13 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:39:14 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:39:14 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:39:14 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", sec-ch-ua-mobile:"?0", sec-ch-ua-platform:""Windows"", Upgrade-Insecure-Requests:"1", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", Accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"navigate", Sec-Fetch-User:"?1", Sec-Fetch-Dest:"document", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:39:26 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:39:26 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:39:26 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Post%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:40:58 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:40:58 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:40:58 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:41:57 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:41:57 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:41:57 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:44:02 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:44:02 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:44:02 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 09:44:40 INFO  AuthenticationFilter:70 - 
+2023-06-16 09:44:48 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 09:44:48 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8"]
+2023-06-16 10:15:49 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:15:49 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:15:49 INFO  AuthenticationFilter:135 - [Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNixudHJvbmdtaW5oMjIxMkBnbWFpbC5jb20iLCJpc3MiOiJOZ3V5ZW5Ucm9uZ01pbmgiLCJpYXQiOjE2ODU5NDYyODQsImV4cCI6MTY4NjU1MTA4NH0.VwUI55NiksXDYXimxWpIlX96PsXIH7LtDulCSryhmCM", User-Agent:"PostmanRuntime/7.32.3", Accept:"*/*", Postman-Token:"2bd41518-af05-4786-9a33-54df65c3bea7", Host:"localhost:8080", Accept-Encoding:"gzip, deflate, br", Connection:"keep-alive"]
+2023-06-16 10:16:12 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:16:12 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:18:39 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:18:39 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:18:39 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=672E0EFFA5E35F5DEDBFD6F9E712FFC8"]
+2023-06-16 10:43:06 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:43:06 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:48:33 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:48:33 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:48:33 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Post%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=672E0EFFA5E35F5DEDBFD6F9E712FFC8"]
+2023-06-16 10:48:39 INFO  AuthenticationFilter:70 - 
+2023-06-16 10:48:39 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 10:48:39 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=672E0EFFA5E35F5DEDBFD6F9E712FFC8"]
+2023-06-16 11:02:23 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:02:23 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:02:31 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:02:31 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:04:18 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:04:18 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:12:19 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:12:19 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:15:35 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:15:35 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:15:35 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Post%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=672E0EFFA5E35F5DEDBFD6F9E712FFC8"]
+2023-06-16 11:15:36 INFO  AuthenticationFilter:70 - 
+2023-06-16 11:15:36 INFO  AuthenticationFilter:72 - [Method] GET
+2023-06-16 11:15:36 INFO  AuthenticationFilter:135 - [Host:"localhost:8080", Connection:"keep-alive", sec-ch-ua:""Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"", Accept:"application/json,*/*", sec-ch-ua-mobile:"?0", User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36", sec-ch-ua-platform:""Windows"", Sec-Fetch-Site:"same-origin", Sec-Fetch-Mode:"cors", Sec-Fetch-Dest:"empty", Referer:"http://localhost:8080/webjars/swagger-ui/4.15.5/index.html?urls.primaryName=Friend%20Service", Accept-Encoding:"gzip, deflate, br", Accept-Language:"en-US,en;q=0.9,vi;q=0.8", Cookie:"JSESSIONID=672E0EFFA5E35F5DEDBFD6F9E712FFC8"]

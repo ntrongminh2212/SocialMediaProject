@@ -1,27 +1,35 @@
 package com.example.friendservice.facade;
 
+import com.example.friendservice.configuration.Constants;
 import com.example.friendservice.dto.AuthDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.ResetPasswordToken;
+import com.example.friendservice.entity.Role;
 import com.example.friendservice.entity.User;
 import com.example.friendservice.entity.VerificationToken;
+import com.example.friendservice.mapper.UserMapper;
+import com.example.friendservice.mapper.UserMapperImpl;
 import com.example.friendservice.repository.UserRepository;
 import com.example.friendservice.repository.VerificationTokenRepository;
 import com.example.friendservice.service.AuthenticationService;
 import com.example.friendservice.service.UserService;
+import com.example.friendservice.util.JwtTokenUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
+import org.mockito.*;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
@@ -31,24 +39,64 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
 class UserFacadeTest {
     private List<User> users = new ArrayList<>();
     private List<VerificationToken> verificationTokens = new ArrayList<>();
     private List<ResetPasswordToken> resetPasswordTokens = new ArrayList<>();
-    @Autowired
-    UserFacade userFacade;
-    @Autowired
-    UserRepository userRepository;
-    @Autowired
-    AuthenticationService authenticationService;
-    @MockBean
+    private String SECRET_KEY = Constants.SECRET_KEY_FOR_TEST;
+    @InjectMocks
+    UserFacade userFacade = new UserFacade();
+    @Spy
+    AuthenticationService authenticationService = new AuthenticationService();
+    @Spy
+    PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(11);
+    @Spy
+    UserMapper userMapper = new UserMapperImpl();
+    @Spy
+    JwtTokenUtil jwtTokenUtil = new JwtTokenUtil();
+    @Mock
     UserService userService;
 
     @BeforeEach
     void setUp() {
-        users = userRepository.findAll(PageRequest.of(0, 10)).toList();
+        MockitoAnnotations.openMocks(this);
+        ReflectionTestUtils.setField(userMapper,"passwordEncoder",passwordEncoder);
+        ReflectionTestUtils.setField(jwtTokenUtil,"SECRET_KEY",SECRET_KEY);
+        ReflectionTestUtils.setField(authenticationService,"jwtTokenUtil",jwtTokenUtil);
+        ReflectionTestUtils.setField(authenticationService,"userService",userService);
+        ReflectionTestUtils.setField(authenticationService,"userMapper",userMapper);
+        User user1 = User.builder()
+                .userId(1L)
+                .firstName("Minh")
+                .lastName("Nguyen Trong")
+                .email("ntrongminh2212@gmail.com")
+                .phoneNum("0123456789")
+                .avatar("abcd")
+                .password(passwordEncoder.encode("123456"))
+                .role(Role.ADMIN)
+                .sex(true)
+                .birthday(LocalDate.of(2000,12,22))
+                .enable(true)
+                .joinedTime(new Date())
+                .updatedTime(new Date())
+                .build();
+        User user2 = User.builder()
+                .userId(2L)
+                .firstName("B")
+                .lastName("Tran Van")
+                .email("sm.user01@gmail.com")
+                .phoneNum("0123456781")
+                .avatar("abcd")
+                .password(passwordEncoder.encode("123456"))
+                .role(Role.ADMIN)
+                .sex(true)
+                .birthday(LocalDate.of(1999,4,12))
+                .enable(true)
+                .joinedTime(new Date())
+                .updatedTime(new Date())
+                .build();
+        users = List.of(user1,user2);
 
         VerificationToken verificationToken1 = VerificationToken.builder()
                 .id(1L)
@@ -163,7 +211,12 @@ class UserFacadeTest {
         Mockito.when(userService.findBySearchString(anyString()))
                 .thenAnswer(invocation -> {
                     String searchStr = invocation.getArgument(0);
-                    return userRepository.findBySearchString(searchStr);
+                    List<User> foundUsers = users.stream()
+                            .filter(user -> {
+                                String userInfoStr = (user.getEmail()+" "+user.getPhoneNum()+" "+user.getLastName()+" "+user.getFirstName()).toUpperCase();
+                                return userInfoStr.contains(searchStr);
+                            }).collect(Collectors.toList());
+                    return foundUsers;
                 });
     }
 
@@ -289,7 +342,7 @@ class UserFacadeTest {
         String expireToken = verificationTokens.get(0).getToken();
         String actual = userFacade.verifyRegistration(expireToken,UUID.randomUUID().toString());
 
-        String expect = userFacade.TOKEN_EXPIRE_MESSAGE;
+        String expect = Constants.TOKEN_EXPIRE_MESSAGE;
         assertEquals(expect,actual);
     }
 
@@ -298,7 +351,7 @@ class UserFacadeTest {
         String expireToken = verificationTokens.get(0).getToken();
         String actual = userFacade.verifyRegistration(expireToken,UUID.randomUUID().toString());
 
-        String expect = userFacade.ACCOUNT_VERIFIED_MESSAGE;
+        String expect = Constants.ACCOUNT_VERIFIED_MESSAGE;
         assertEquals(expect,actual);
     }
 
@@ -315,7 +368,7 @@ class UserFacadeTest {
     public void whenEmailValid_returnResetPasswordTokenCreatedMessage(){
         String email = users.get(0).getEmail();
         String actual = userFacade.saveResetPasswordToken(email, UUID.randomUUID().toString());
-        String expect = userFacade.RESET_PASSWORD_TOKEN_CREATED_MESSAGE;
+        String expect = Constants.RESET_PASSWORD_TOKEN_CREATED_MESSAGE;
         assertEquals(expect,actual);
     }
 
@@ -331,7 +384,7 @@ class UserFacadeTest {
     @Test
     public void whenResetPasswordTokenValid_thenPasswordChangeSuccessfully(){
         String token = resetPasswordTokens.get(0).getToken();
-        String expect = userFacade.PASSWORD_CHANGED_SUCCESSFULLY;
+        String expect = Constants.PASSWORD_CHANGED_SUCCESSFULLY;
         String actual = userFacade.changePassword("new password", token);
         assertEquals(expect,actual);
     }

@@ -11,7 +11,9 @@ import com.example.postservice.entity.CommentReaction;
 import com.example.postservice.entity.Post;
 import com.example.postservice.id.CommentReactionId;
 import com.example.postservice.mapper.CommentMapper;
+import com.example.postservice.mapper.CommentMapperImpl;
 import com.example.postservice.mapper.CommentReactionMapper;
+import com.example.postservice.mapper.CommentReactionMapperImpl;
 import com.example.postservice.service.CommentReactionService;
 import com.example.postservice.service.CommentService;
 import com.example.postservice.service.PostService;
@@ -26,42 +28,48 @@ import java.util.stream.Collectors;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
+import org.mockito.*;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.server.ResponseStatusException;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
 class CommentFacadeTest {
 
-    @Autowired
-    private CommentFacade commentFacade;
+    @InjectMocks
+    CommentFacade commentFacade = new CommentFacade();
 
-    @MockBean
-    private CommentService commentService;
+    @Mock
+    CommentService commentService;
 
-    @MockBean
-    private CommentReactionService reactionService;
+    @Mock
+    CommentReactionService reactionService;
 
-    @MockBean
-    private PostService postService;
+    @Mock
+    PostService postService;
 
-    @Autowired
-    private CommentMapper commentMapper;
+    @Spy
+    CommentMapper commentMapper = new CommentMapperImpl();
 
-    @Autowired
-    private CommentReactionMapper commentReactionMapper;
+    @Spy
+    CommentReactionMapper commentReactionMapper = new CommentReactionMapperImpl();
 
     private SimpleDateFormat dateTimeFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
     @BeforeEach
     void setUp() throws ParseException {
+        ReflectionTestUtils.setField(
+                commentMapper,
+                "commentReactionMapper",
+                commentReactionMapper
+        );
 
+        MockitoAnnotations.openMocks(this);
         Post post1 = Post.builder()
                 .postId(1L)
                 .creatorId(1l)

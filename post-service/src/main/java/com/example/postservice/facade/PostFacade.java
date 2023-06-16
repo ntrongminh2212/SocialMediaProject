@@ -8,6 +8,7 @@ import com.example.postservice.entity.PostReaction;
 import com.example.postservice.feignclient.UserClient;
 import com.example.postservice.mapper.*;
 import com.example.postservice.service.*;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,8 +19,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
+@Slf4j
 public class PostFacade {
-    private final Logger logger = Logger.getLogger(PostServiceImpl.class);
     @Autowired
     UserClient userClient;
     @Autowired
@@ -58,7 +59,7 @@ public class PostFacade {
             postDTO.setUser(userDTOMap.get(postDTO.getUserId()));
             listPostDTO.add(postDTO);
         }
-        logger.info("[Done]");
+        log.info("[Done]");
         return listPostDTO;
     }
 

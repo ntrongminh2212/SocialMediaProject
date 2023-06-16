@@ -1,16 +1,18 @@
 package com.example.friendservice.facade;
 
+import com.example.friendservice.configuration.Constants;
 import com.example.friendservice.dto.AuthDTO;
 import com.example.friendservice.dto.RegisterUserDTO;
 import com.example.friendservice.dto.UserDTO;
 import com.example.friendservice.entity.ResetPasswordToken;
-import com.example.friendservice.entity.Role;
 import com.example.friendservice.entity.User;
 import com.example.friendservice.entity.VerificationToken;
 import com.example.friendservice.mapper.UserMapper;
 import com.example.friendservice.service.UserService;
 import com.example.friendservice.util.JwtTokenUtil;
 import java.util.*;
+
+import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -21,14 +23,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
 @Component
+@Slf4j
 public class UserFacade {
-
-    public static final String TOKEN_EXPIRE_MESSAGE = "Token Expired! A new verification token has been created.";
-    public static final String ACCOUNT_VERIFIED_MESSAGE = "Account verified!";
-    public static final String RESET_PASSWORD_TOKEN_CREATED_MESSAGE = "Reset password token created";
-    public static final String PASSWORD_CHANGED_SUCCESSFULLY = "Password changed successfully!";
-    private static Logger logger = Logger.getLogger(UserFacade.class);
-
     @Autowired
     private UserService userService;
 
@@ -65,7 +61,7 @@ public class UserFacade {
             User user = userOptional.get();
             if (passwordEncoder.matches(_user.getPassword(), user.getPassword())) {
                 String accessToken = jwtTokenUtil.generateAccessToken(user);
-                logger.info("[access token] " + accessToken);
+                log.info("[access token] " + accessToken);
                 return Optional.ofNullable(new AuthDTO(user.getEmail(), accessToken));
             }
         }
@@ -88,15 +84,15 @@ public class UserFacade {
             verificationToken.setToken(newToken);
             verificationToken.setExpirationTime();
             userService.saveVerificationToken(verificationToken);
-            return TOKEN_EXPIRE_MESSAGE;
+            return Constants.TOKEN_EXPIRE_MESSAGE;
         }
-        logger.info("[User Id]: " + user.getUserId());
+        log.info("[User Id]: " + user.getUserId());
         Long userId = user.getUserId();
         int rs = userService.updateUserEnableById(userId);
         if (rs > 0) {
             userService.deleteVerificationToken(verificationToken);
         }
-        return ACCOUNT_VERIFIED_MESSAGE;
+        return Constants.ACCOUNT_VERIFIED_MESSAGE;
     }
 
     public String saveResetPasswordToken(String email, String token) {
@@ -106,7 +102,7 @@ public class UserFacade {
         }
         ResetPasswordToken resetPasswordToken = new ResetPasswordToken(token, user.get());
         userService.saveResetPasswordToken(resetPasswordToken);
-        return RESET_PASSWORD_TOKEN_CREATED_MESSAGE;
+        return Constants.RESET_PASSWORD_TOKEN_CREATED_MESSAGE;
     }
 
     public String changePassword(String newPassword, String token) {
@@ -118,7 +114,7 @@ public class UserFacade {
         user.setPassword(passwordEncoder.encode(newPassword));
         userService.save(user);
         userService.deleteResetPasswordToken(rpt.get());
-        return PASSWORD_CHANGED_SUCCESSFULLY;
+        return Constants.PASSWORD_CHANGED_SUCCESSFULLY;
     }
 
     public User getUserByVerificationToken(String _token) {

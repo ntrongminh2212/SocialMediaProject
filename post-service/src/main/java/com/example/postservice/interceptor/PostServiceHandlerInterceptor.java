@@ -7,28 +7,33 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @Component
 public class PostServiceHandlerInterceptor implements HandlerInterceptor {
 
     Logger logger = Logger.getLogger(PostServiceHandlerInterceptor.class);
+    SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss a dd/MM/yyyy");
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
-        return HandlerInterceptor.super.preHandle(request, response, handler);
+        logger.info("[PreHandle][" + request + "]" + "[" + request.getMethod()
+                + "]" + request.getRequestURI());
+        logger.info("Time: "+ dateFormat.format(new Date()));
+        return true;
     }
 
     @Override
     public void postHandle(
-            HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
-            throws Exception {
-        logger.info("handler Object: " + handler.toString());
-        //        logger.info("Model and view: "+modelAndView.toString());
+            HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception{
+         logger.info("[PostHandle][" + request + "]");
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
             throws Exception {
-        HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
+        logger.info("Responsed !");
     }
 }

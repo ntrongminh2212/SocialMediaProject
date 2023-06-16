@@ -651,3 +651,216 @@
 2023-06-15 17:34:42 INFO  StatisticService:71 - Excel file export at 15-06-2023 17:34:42
 2023-06-15 17:34:42 INFO  PostServiceImpl:61 - [Done]
 2023-06-15 17:34:42 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 09:21:45 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:21:45
+2023-06-16 09:21:51 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:21:51
+2023-06-16 09:21:51 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 09:21:51 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 09:22:24 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:22:24
+2023-06-16 09:28:14 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:28:14
+2023-06-16 09:28:43 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3c3180b9]][GET]/post/search
+2023-06-16 09:28:43 INFO  PostServiceHandlerInterceptor:24 - Time: 09:28:43 AM 16/06/2023
+2023-06-16 09:28:43 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3c3180b9]]
+2023-06-16 09:28:43 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:28:55 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3e5c25a7]][GET]/post/day-excel
+2023-06-16 09:28:55 INFO  PostServiceHandlerInterceptor:24 - Time: 09:28:55 AM 16/06/2023
+2023-06-16 09:28:55 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:29:16 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@460e24c5]][GET]/post/day-excel
+2023-06-16 09:29:16 INFO  PostServiceHandlerInterceptor:24 - Time: 09:29:16 AM 16/06/2023
+2023-06-16 09:29:16 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:29:58 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@462ee1f6]][GET]/post/day-excel
+2023-06-16 09:29:58 INFO  PostServiceHandlerInterceptor:24 - Time: 09:29:58 AM 16/06/2023
+2023-06-16 09:29:58 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:31:01 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@2c60ad8c]][GET]/post/day-excel
+2023-06-16 09:31:01 INFO  PostServiceHandlerInterceptor:24 - Time: 09:31:01 AM 16/06/2023
+2023-06-16 09:31:01 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:33:13 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:33:13
+2023-06-16 09:34:19 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:34:19
+2023-06-16 09:34:36 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@2a916166]][GET]/post/detail
+2023-06-16 09:34:36 INFO  PostServiceHandlerInterceptor:24 - Time: 09:34:36 AM 16/06/2023
+2023-06-16 09:34:36 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:34:42 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@24e98c02]][GET]/post/detail
+2023-06-16 09:34:42 INFO  PostServiceHandlerInterceptor:24 - Time: 09:34:42 AM 16/06/2023
+2023-06-16 09:34:43 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@24e98c02]]
+2023-06-16 09:34:43 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:34:53 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@32e68749]][GET]/post/detail
+2023-06-16 09:34:53 INFO  PostServiceHandlerInterceptor:24 - Time: 09:34:53 AM 16/06/2023
+2023-06-16 09:34:53 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@32e68749]]
+2023-06-16 09:34:53 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:36:37 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@72566d5c]][GET]/post-service/v3/api-docs
+2023-06-16 09:36:37 INFO  PostServiceHandlerInterceptor:24 - Time: 09:36:37 AM 16/06/2023
+2023-06-16 09:36:38 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@72566d5c]]
+2023-06-16 09:36:38 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:36:51 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@68805464]][GET]/post-service/v3/api-docs
+2023-06-16 09:36:51 INFO  PostServiceHandlerInterceptor:24 - Time: 09:36:51 AM 16/06/2023
+2023-06-16 09:36:51 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@68805464]]
+2023-06-16 09:36:51 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:39:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:39:18
+2023-06-16 09:39:26 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@1392e219]][GET]/post-service/v3/api-docs
+2023-06-16 09:39:26 INFO  PostServiceHandlerInterceptor:24 - Time: 09:39:26 AM 16/06/2023
+2023-06-16 09:39:26 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@1392e219]]
+2023-06-16 09:39:26 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 09:44:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:44:18
+2023-06-16 09:49:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:49:18
+2023-06-16 09:54:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:54:18
+2023-06-16 09:59:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 09:59:18
+2023-06-16 10:04:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:04:18
+2023-06-16 10:09:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:09:18
+2023-06-16 10:14:18 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:14:18
+2023-06-16 10:15:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:15:31
+2023-06-16 10:15:50 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3cf2c8db]][GET]/post/new-feeds
+2023-06-16 10:15:50 INFO  PostServiceHandlerInterceptor:24 - Time: 10:15:50 AM 16/06/2023
+2023-06-16 10:15:51 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 10:16:12 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@6d0c80e8]][GET]/post/new-feeds
+2023-06-16 10:16:12 INFO  PostServiceHandlerInterceptor:24 - Time: 10:16:12 AM 16/06/2023
+2023-06-16 10:16:13 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 10:16:13 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 10:16:13 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@6d0c80e8]]
+2023-06-16 10:16:13 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 10:17:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:17:35
+2023-06-16 10:22:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:22:35
+2023-06-16 10:27:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:27:35
+2023-06-16 10:32:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:32:35
+2023-06-16 10:37:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:37:35
+2023-06-16 10:42:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:42:35
+2023-06-16 10:43:06 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@672b719b]][GET]/post/detail
+2023-06-16 10:43:06 INFO  PostServiceHandlerInterceptor:24 - Time: 10:43:06 AM 16/06/2023
+2023-06-16 10:43:07 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@672b719b]]
+2023-06-16 10:43:07 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 10:47:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:47:35
+2023-06-16 10:48:33 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4a1f3eff]][GET]/post-service/v3/api-docs
+2023-06-16 10:48:33 INFO  PostServiceHandlerInterceptor:24 - Time: 10:48:33 AM 16/06/2023
+2023-06-16 10:48:33 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4a1f3eff]]
+2023-06-16 10:48:33 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 10:52:35 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:52:35
+2023-06-16 10:57:49 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:57:49
+2023-06-16 10:57:56 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 10:57:57 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 10:57:57 INFO  StatisticService:71 - Excel file export at 16-06-2023 10:57:57
+2023-06-16 11:02:23 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@2e13ede9]][GET]/post/detail
+2023-06-16 11:02:23 INFO  PostServiceHandlerInterceptor:24 - Time: 11:02:23 AM 16/06/2023
+2023-06-16 11:02:23 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@2e13ede9]]
+2023-06-16 11:02:23 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 11:02:31 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@680ae7d1]][GET]/post/detail
+2023-06-16 11:02:31 INFO  PostServiceHandlerInterceptor:24 - Time: 11:02:31 AM 16/06/2023
+2023-06-16 11:02:31 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@680ae7d1]]
+2023-06-16 11:02:31 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 11:02:49 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:02:49
+2023-06-16 11:04:18 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4d27a57d]][GET]/post/detail
+2023-06-16 11:04:18 INFO  PostServiceHandlerInterceptor:24 - Time: 11:04:18 AM 16/06/2023
+2023-06-16 11:04:18 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4d27a57d]]
+2023-06-16 11:04:18 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 11:05:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:05:31
+2023-06-16 11:05:50 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:05:50
+2023-06-16 11:05:53 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:05:53
+2023-06-16 11:05:53 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 11:05:53 INFO  PostServiceImpl:61 - [Done]
+2023-06-16 11:10:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:10:31
+2023-06-16 11:12:19 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4ed73102]][GET]/post/day-excel
+2023-06-16 11:12:19 INFO  PostServiceHandlerInterceptor:24 - Time: 11:12:19 AM 16/06/2023
+2023-06-16 11:12:19 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 11:15:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:15:31
+2023-06-16 11:15:35 INFO  PostServiceHandlerInterceptor:22 - [PreHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@75dedb7]][GET]/post-service/v3/api-docs
+2023-06-16 11:15:35 INFO  PostServiceHandlerInterceptor:24 - Time: 11:15:35 AM 16/06/2023
+2023-06-16 11:15:35 INFO  PostServiceHandlerInterceptor:31 - [PostHandle][SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@75dedb7]]
+2023-06-16 11:15:35 INFO  PostServiceHandlerInterceptor:37 - Responsed !
+2023-06-16 11:20:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:20:31
+2023-06-16 11:25:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:25:31
+2023-06-16 11:30:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:30:31
+2023-06-16 11:35:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:35:31
+2023-06-16 11:40:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:40:31
+2023-06-16 11:45:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:45:31
+2023-06-16 11:50:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:50:31
+2023-06-16 11:55:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 11:55:31
+2023-06-16 12:00:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 12:00:31
+2023-06-16 12:05:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 12:05:31
+2023-06-16 12:10:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 12:10:31
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:08:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:08:30
+2023-06-16 13:10:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:10:31
+2023-06-16 13:15:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:15:30
+2023-06-16 13:20:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:20:30
+2023-06-16 13:25:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:25:30
+2023-06-16 13:30:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:30:30
+2023-06-16 13:35:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:35:30
+2023-06-16 13:40:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:40:30
+2023-06-16 13:45:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:45:30
+2023-06-16 13:50:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:50:30
+2023-06-16 13:55:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 13:55:30
+2023-06-16 14:00:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:00:30
+2023-06-16 14:05:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:05:30
+2023-06-16 14:10:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:10:30
+2023-06-16 14:15:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:15:30
+2023-06-16 14:20:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:20:30
+2023-06-16 14:25:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:25:30
+2023-06-16 14:30:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:30:30
+2023-06-16 14:35:30 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:35:30
+2023-06-16 14:36:48 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:36:48
+2023-06-16 14:37:00 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:37:00
+2023-06-16 14:37:09 INFO  CloudinaryService:31 - File not found or unreadable: base64img
+2023-06-16 14:37:10 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:37:10
+2023-06-16 14:39:41 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:39:41
+2023-06-16 14:39:50 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:39:50
+2023-06-16 14:40:17 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:40:17
+2023-06-16 14:40:29 INFO  CloudinaryService:31 - File not found or unreadable: base64img
+2023-06-16 14:40:29 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:40:29
+2023-06-16 14:41:28 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:41:28
+2023-06-16 14:44:02 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:44:02
+2023-06-16 14:44:16 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:44:16
+2023-06-16 14:47:44 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:47:44
+2023-06-16 14:47:56 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:47:56
+2023-06-16 14:49:46 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:49:46
+2023-06-16 14:52:56 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:52:56
+2023-06-16 14:53:24 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:53:24
+2023-06-16 14:56:47 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:56:47
+2023-06-16 14:58:24 INFO  StatisticService:71 - Excel file export at 16-06-2023 14:58:24
+2023-06-16 15:00:44 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:00:44
+2023-06-16 15:02:29 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:02:29
+2023-06-16 15:02:40 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:02:40
+2023-06-16 15:05:23 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:05:23
+2023-06-16 15:06:33 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:06:33
+2023-06-16 15:09:48 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:09:48
+2023-06-16 15:14:48 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:14:48
+2023-06-16 15:14:59 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:14:59
+2023-06-16 15:19:59 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:19:59
+2023-06-16 15:24:17 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:24:17
+2023-06-16 15:27:51 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:27:51
+2023-06-16 15:28:15 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:28:15
+2023-06-16 15:33:15 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:33:15
+2023-06-16 15:35:17 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:35:17
+2023-06-16 15:37:51 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:37:51
+2023-06-16 15:41:03 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:41:03
+2023-06-16 15:42:39 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:42:39
+2023-06-16 15:43:32 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:43:32
+2023-06-16 15:48:32 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:48:32
+2023-06-16 15:53:32 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:53:32
+2023-06-16 15:54:02 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:54:02
+2023-06-16 15:58:46 INFO  StatisticService:71 - Excel file export at 16-06-2023 15:58:46
+2023-06-16 16:00:49 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:00:49
+2023-06-16 16:02:07 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:02:07
+2023-06-16 16:05:34 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:05:34
+2023-06-16 16:05:49 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:05:49
+2023-06-16 16:08:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:08:31
+2023-06-16 16:13:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:13:31
+2023-06-16 16:18:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:18:31
+2023-06-16 16:23:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:23:31
+2023-06-16 16:28:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:28:31
+2023-06-16 16:33:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:33:31
+2023-06-16 16:38:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:38:31
+2023-06-16 16:43:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:43:31
+2023-06-16 16:48:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:48:31
+2023-06-16 16:53:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:53:31
+2023-06-16 16:58:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 16:58:31
+2023-06-16 17:03:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 17:03:31
+2023-06-16 17:08:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 17:08:31
+2023-06-16 17:13:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 17:13:31
+2023-06-16 17:18:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 17:18:31
+2023-06-16 17:23:31 INFO  StatisticService:71 - Excel file export at 16-06-2023 17:23:31
